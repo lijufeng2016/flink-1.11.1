@@ -177,6 +177,8 @@
     <file url="file://$PROJECT_DIR$/flink-python/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/flink-queryable-state/flink-queryable-state-client-java/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/flink-queryable-state/flink-queryable-state-runtime/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/flink-quickstart/flink-quickstart-java/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/flink-quickstart/flink-quickstart-scala/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/flink-runtime-web/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/flink-runtime-web/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/flink-runtime-web/web-dashboard" charset="UTF-8" />
@@ -211,6 +213,10 @@
     <file url="file://$PROJECT_DIR$/flink-test-utils-parent/flink-test-utils/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/flink-test-utils-parent/flink-test-utils/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/flink-walkthroughs/flink-walkthrough-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/flink-walkthroughs/flink-walkthrough-datastream-java/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/flink-walkthroughs/flink-walkthrough-datastream-scala/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/flink-walkthroughs/flink-walkthrough-table-java/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/flink-walkthroughs/flink-walkthrough-table-scala/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/flink-yarn/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/flink-yarn/src/main/resources" charset="UTF-8" />
   </component>
