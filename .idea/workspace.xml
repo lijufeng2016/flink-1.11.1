@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2af9f4e9-e6ff-4308-b368-3ccdbf2786b7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Package Object" />
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1fjRrD3tHf1NZwkqIiCDfIYLqzP" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../flink-1.11.1" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.4643678" />
+  </component>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.apache.flink.connector.redis.util" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\tmp\flink-1.11.1\flink-connectors\flink-connector-redis\src\main\resources" />
+      <recent name="E:\tmp\flink-1.11.1\flink-connectors\flink-connector-hbase\src\main\java\org\apache\flink\connector\hbase" />
+      <recent name="E:\tmp\flink-1.11.1\flink-connectors\flink-connector-hbase\src\main\java\org\apache\flink\table\descriptors" />
+      <recent name="E:\tmp\flink-1.11.1\flink-connectors\flink-connector-hbase\src\main\java\org\apache\flink\connector\hbase\source" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="BinaryArrayDataTest.testArrayTypes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="flink-table-runtime-blink_2.11" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.apache.flink.table.data.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.apache.flink.table.data" />
+      <option name="MAIN_CLASS_NAME" value="org.apache.flink.table.data.BinaryArrayDataTest" />
+      <option name="METHOD_NAME" value="testArrayTypes" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.BinaryArrayDataTest.testArrayTypes" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2af9f4e9-e6ff-4308-b368-3ccdbf2786b7" name="Default Changelist" comment="" />
+      <created>1596729711716</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1596729711716</updated>
+      <workItem from="1596729720066" duration="4330000" />
+      <workItem from="1596769365915" duration="2099000" />
+      <workItem from="1596779299423" duration="2223000" />
+      <workItem from="1597387325204" duration="73346000" />
+      <workItem from="1597904110190" duration="297000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="440" y="94" key="#Project_Structure" timestamp="1597807195062">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="94" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1597807195062" />
+    <state x="765" y="225" key="#com.intellij.ide.util.MemberChooser" timestamp="1597814651998">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="225" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1597814651998" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1597904441769">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1597904441769" />
+    <state width="194" height="524" key="Git.Branch.Popup" timestamp="1597903537728">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="194" height="524" key="Git.Branch.Popup/0.0.1920.1040@0.0.1920.1040" timestamp="1597903537728" />
+    <state width="1877" height="272" key="GridCell.Tab.0.bottom" timestamp="1597904073931">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="272" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597904073931" />
+    <state width="1877" height="272" key="GridCell.Tab.0.center" timestamp="1597904073930">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="272" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597904073930" />
+    <state width="1877" height="272" key="GridCell.Tab.0.left" timestamp="1597904073930">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="272" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597904073930" />
+    <state width="1877" height="272" key="GridCell.Tab.0.right" timestamp="1597904073931">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="272" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597904073931" />
+    <state x="440" y="94" key="SettingsEditor" timestamp="1597904176967">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1597904176967" />
+    <state x="632" y="29" width="1125" height="958" key="find.popup" timestamp="1597888896801">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="632" y="29" width="1125" height="958" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1597888896801" />
+    <state x="334" y="180" key="new project wizard" timestamp="1597736790858">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="334" y="180" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1597736790858" />
+    <state x="661" y="276" key="refactoring.ChangeSignatureDialog" timestamp="1597815703910">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="661" y="276" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597815703910" />
+    <state x="623" y="225" width="1093" height="678" key="search.everywhere.popup" timestamp="1597903701163">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="1093" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1597903701163" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/flink-table/flink-table-runtime-blink/src/test/java/org/apache/flink/table/data/BinaryArrayDataTest.java</url>
+          <line>112</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
