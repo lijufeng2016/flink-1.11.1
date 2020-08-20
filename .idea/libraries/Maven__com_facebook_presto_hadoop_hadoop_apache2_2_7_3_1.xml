@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.facebook.presto.hadoop:hadoop-apache2:2.7.3-1">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/facebook/presto/hadoop/hadoop-apache2/2.7.3-1/hadoop-apache2-2.7.3-1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/facebook/presto/hadoop/hadoop-apache2/2.7.3-1/hadoop-apache2-2.7.3-1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/facebook/presto/hadoop/hadoop-apache2/2.7.3-1/hadoop-apache2-2.7.3-1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

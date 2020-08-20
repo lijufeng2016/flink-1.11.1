@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="8.14">
+<file name="E:\tmp\flink-1.11.1\flink-connectors\flink-connector-redis\src\main\java\org\apache\flink\connector\redis\sink\RedisDynamicTableFactory.java">
+</file>
+<file name="E:\tmp\flink-1.11.1\flink-connectors\flink-connector-redis\src\main\java\org\apache\flink\connector\redis\sink\RedisDynamicTableSink.java">
+</file>
+<file name="E:\tmp\flink-1.11.1\flink-connectors\flink-connector-redis\src\main\java\org\apache\flink\connector\redis\sink\RedisOperator.java">
+</file>
+<file name="E:\tmp\flink-1.11.1\flink-connectors\flink-connector-redis\src\main\java\org\apache\flink\connector\redis\sink\RedisSinkFunction.java">
+</file>
+<file name="E:\tmp\flink-1.11.1\flink-connectors\flink-connector-redis\src\main\java\org\apache\flink\connector\redis\util\JedisUtil.java">
+</file>
+<file name="E:\tmp\flink-1.11.1\flink-connectors\flink-connector-redis\src\main\java\org\apache\flink\connector\redis\util\WriteTypeEnum.java">
+</file>
+</checkstyle>

@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <excludeFromCompile>
+      <directory url="file://$PROJECT_DIR$/flink-quickstart/flink-quickstart-java/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/flink-quickstart/flink-quickstart-scala/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/flink-walkthroughs/flink-walkthrough-table-java/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/flink-walkthroughs/flink-walkthrough-table-scala/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/flink-walkthroughs/flink-walkthrough-datastream-java/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/flink-walkthroughs/flink-walkthrough-datastream-scala/src/main/resources/archetype-resources" includeSubdirectories="true" />
+    </excludeFromCompile>
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="flink-datastream-allround-test" />
+        <module name="flink-connector-gcp-pubsub_2.11" />
+        <module name="flink-scala_2.11" />
+        <module name="flink-queryable-state-runtime_2.11" />
+        <module name="flink-hadoop-bulk_2.11" />
+        <module name="flink-connector-kafka_2.11" />
+        <module name="flink-runtime_2.11" />
+        <module name="flink-dataset-fine-grained-recovery-test" />
+        <module name="flink-examples-streaming-state-machine_2.11" />
+        <module name="flink-ml-uber_2.11" />
+        <module name="flink-streaming-kafka-test-base_2.11" />
+        <module name="flink-walkthrough-datastream-scala" />
+        <module name="flink-quickstart-scala" />
+        <module name="flink-runtime-web_2.11" />
+        <module name="flink-kubernetes_2.11" />
+        <module name="flink-parquet_2.11" />
+        <module name="flink-elasticsearch7-test" />
+        <module name="flink-connector-hive_2.11" />
+        <module name="flink-streaming-scala_2.11" />
+        <module name="flink-table-uber-blink_2.11" />
+        <module name="flink-bucketing-sink-test" />
+        <module name="flink-core" />
+        <module name="flink-mesos_2.11" />
+        <module name="flink-yarn-tests" />
+        <module name="flink-gelly_2.11" />
+        <module name="flink-walkthrough-table-java" />
+        <module name="flink-cli-test_2.11" />
+        <module name="flink-confluent-schema-registry" />
+        <module name="flink-quickstart-test" />
+        <module name="flink-oss-fs-hadoop" />
+        <module name="flink-swift-fs-hadoop" />
+        <module name="flink-walkthrough-common_2.11" />
+        <module name="flink-annotations" />
+        <module name="flink-stream-state-ttl-test" />
+        <module name="flink-gelly-examples_2.11" />
+        <module name="flink-metrics-availability-test" />
+        <module name="flink-examples-streaming-gcp-pubsub_2.11" />
+        <module name="flink-ml-api" />
+        <module name="flink-orc_2.11" />
+        <module name="flink-sql-connector-hive-3.1.2_2.11" />
+        <module name="flink-sql-parquet_2.11" />
+        <module name="flink-connector-filesystem_2.11" />
+        <module name="flink-metrics-core" />
+        <module name="flink-connector-twitter_2.11" />
+        <module name="flink-sql-connector-hive-2.3.6_2.11" />
+        <module name="flink-streaming-kafka-test_2.11" />
+        <module name="flink-metrics-slf4j" />
+        <module name="flink-metrics-statsd" />
+        <module name="flink-walkthrough-table-scala" />
+        <module name="flink-metrics-jmx_2.11" />
+        <module name="flink-queryable-state-test_2.11" />
+        <module name="flink-avro-confluent-registry" />
+        <module name="flink-hadoop-fs" />
+        <module name="flink-mapr-fs" />
+        <module name="flink-clients_2.11" />
+        <module name="flink-optimizer_2.11" />
+        <module name="flink-java" />
+        <module name="flink-sql-connector-kafka-0.10_2.11" />
+        <module name="flink-table-api-scala_2.11" />
+        <module name="flink-parent-child-classloading-test-lib-package_2.11" />
+        <module name="flink-stream-stateful-job-upgrade-test" />
+        <module name="flink-s3-fs-presto" />
+        <module name="flink-streaming-kafka010-test_2.11" />
+        <module name="flink-connector-elasticsearch5_2.11" />
+        <module name="flink-table-common" />
+        <module name="flink-dataset-allround-test" />
+        <module name="force-shading" />
+        <module name="flink-scala-shell_2.11" />
+        <module name="flink-batch-sql-test_2.11" />
+        <module name="flink-sql-orc_2.11" />
+        <module name="flink-connector-nifi_2.11" />
+        <module name="flink-connector-elasticsearch-base_2.11" />
+        <module name="flink-docs" />
+        <module name="flink-sql-connector-kafka-0.11_2.11" />
+        <module name="flink-state-evolution-test" />
+        <module name="flink-sequence-file" />
+        <module name="flink-sql-parser" />
+        <module name="flink-table-uber_2.11" />
+        <module name="flink-rocksdb-state-memory-control-test" />
+        <module name="flink-connector-cassandra_2.11" />
+        <module name="flink-metrics-reporter-prometheus-test" />
+        <module name="flink-connector-redis_2.11" />
+        <module name="flink-connector-elasticsearch6_2.11" />
+        <module name="flink-gelly-scala_2.11" />
+        <module name="flink-cep-scala_2.11" />
+        <module name="flink-sql-connector-hive-1.2.2_2.11" />
+        <module name="flink-python_2.11" />
+        <module name="flink-hadoop-compatibility_2.11" />
+        <module name="flink-examples-batch_2.11" />
+        <module name="flink-examples-table_2.11" />
+        <module name="flink-quickstart-java" />
+        <module name="flink-tpcds-test" />
+        <module name="flink-high-parallelism-iterations-test" />
+        <module name="flink-sql-connector-hive-2.2.0_2.11" />
+        <module name="flink-heavy-deployment-stress-test" />
+        <module name="flink-connector-elasticsearch7_2.11" />
+        <module name="flink-statebackend-rocksdb_2.11" />
+        <module name="flink-connector-kafka-base_2.11" />
+        <module name="flink-walkthrough-datastream-java" />
+        <module name="flink-streaming-file-sink-test" />
+        <module name="flink-s3-fs-hadoop" />
+        <module name="flink-fs-hadoop-shaded" />
+        <module name="flink-yarn_2.11" />
+        <module name="flink-dist_2.11" />
+        <module name="flink-external-resource-gpu" />
+        <module name="flink-metrics-graphite" />
+        <module name="flink-metrics-prometheus_2.11" />
+        <module name="flink-table-planner-blink_2.11" />
+        <module name="flink-metrics-influxdb_2.11" />
+        <module name="flink-metrics-datadog" />
+        <module name="flink-streaming-kinesis-test_2.11" />
+        <module name="flink-fs-tests" />
+        <module name="flink-compress" />
+        <module name="flink-connector-gcp-pubsub-emulator-tests" />
+        <module name="flink-hcatalog_2.11" />
+        <module name="flink-test-utils-junit" />
+        <module name="dummy-fs" />
+        <module name="flink-json" />
+        <module name="flink-sql-connector-kafka_2.11" />
+        <module name="flink-connector-rabbitmq_2.11" />
+        <module name="flink-end-to-end-tests-common-kafka" />
+        <module name="flink-tests" />
+        <module name="flink-test-utils_2.11" />
+        <module name="flink-table-api-java-bridge_2.11" />
+        <module name="flink-tpch-test" />
+        <module name="flink-avro" />
+        <module name="flink-connector-kafka-0.11_2.11" />
+        <module name="flink-metrics-dropwizard" />
+        <module name="flink-queryable-state-client-java" />
+        <module name="flink-connector-kinesis_2.11" />
+        <module name="flink-local-recovery-and-allocation-test" />
+        <module name="flink-parent-child-classloading-test-program_2.11" />
+        <module name="flink-connector-hbase_2.11" />
+        <module name="flink-ml-lib_2.11" />
+        <module name="flink-connector-wikiedits_2.11" />
+        <module name="flink-cep_2.11" />
+        <module name="flink-end-to-end-tests-common" />
+        <module name="flink-python-test_2.11" />
+        <module name="flink-table-api-scala-bridge_2.11" />
+        <module name="flink-csv" />
+        <module name="flink-elasticsearch5-test" />
+        <module name="flink-distributed-cache-via-blob-test_2.11" />
+        <module name="flink-sql-connector-elasticsearch6_2.11" />
+        <module name="flink-table-api-java" />
+        <module name="flink-orc-nohive_2.11" />
+        <module name="flink-state-processor-api_2.11" />
+        <module name="flink-s3-fs-base" />
+        <module name="flink-container_2.11" />
+        <module name="flink-connector-base" />
+        <module name="flink-examples-streaming_2.11" />
+        <module name="flink-statebackend-heap-spillable_2.11" />
+        <module name="flink-sql-parser-hive" />
+        <module name="flink-stream-sql-test_2.11" />
+        <module name="flink-sql-client-test" />
+        <module name="flink-table-planner_2.11" />
+        <module name="another-dummy-fs" />
+        <module name="flink-table-runtime-blink_2.11" />
+        <module name="flink-streaming-kafka011-test_2.11" />
+        <module name="flink-azure-fs-hadoop" />
+        <module name="flink-examples-streaming-twitter_2.11" />
+        <module name="flink-netty-shuffle-memory-control-test" />
+        <module name="flink-connector-jdbc_2.11" />
+        <module name="flink-sql-client_2.11" />
+        <module name="flink-streaming-java_2.11" />
+        <module name="flink-elasticsearch6-test" />
+        <module name="flink-connector-kafka-0.10_2.11" />
+        <module name="flink-sql-connector-elasticsearch7_2.11" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="another-dummy-fs" target="11" />
+      <module name="dummy-fs" target="11" />
+      <module name="flink-annotations" target="11" />
+      <module name="flink-avro" target="11" />
+      <module name="flink-avro-confluent-registry" target="11" />
+      <module name="flink-azure-fs-hadoop" target="11" />
+      <module name="flink-batch-sql-test_2.11" target="11" />
+      <module name="flink-bucketing-sink-test" target="11" />
+      <module name="flink-cep-scala_2.11" target="11" />
+      <module name="flink-cep_2.11" target="11" />
+      <module name="flink-cli-test_2.11" target="11" />
+      <module name="flink-clients_2.11" target="11" />
+      <module name="flink-compress" target="11" />
+      <module name="flink-confluent-schema-registry" target="11" />
+      <module name="flink-connector-base" target="11" />
+      <module name="flink-connector-cassandra_2.11" target="11" />
+      <module name="flink-connector-elasticsearch-base_2.11" target="11" />
+      <module name="flink-connector-elasticsearch5_2.11" target="11" />
+      <module name="flink-connector-elasticsearch6_2.11" target="11" />
+      <module name="flink-connector-elasticsearch7_2.11" target="11" />
+      <module name="flink-connector-filesystem_2.11" target="11" />
+      <module name="flink-connector-gcp-pubsub-emulator-tests" target="11" />
+      <module name="flink-connector-gcp-pubsub_2.11" target="11" />
+      <module name="flink-connector-hbase_2.11" target="11" />
+      <module name="flink-connector-hive_2.11" target="11" />
+      <module name="flink-connector-jdbc_2.11" target="11" />
+      <module name="flink-connector-kafka-0.10_2.11" target="11" />
+      <module name="flink-connector-kafka-0.11_2.11" target="11" />
+      <module name="flink-connector-kafka-base_2.11" target="11" />
+      <module name="flink-connector-kafka_2.11" target="11" />
+      <module name="flink-connector-kinesis_2.11" target="11" />
+      <module name="flink-connector-nifi_2.11" target="11" />
+      <module name="flink-connector-rabbitmq_2.11" target="11" />
+      <module name="flink-connector-redis_2.11" target="11" />
+      <module name="flink-connector-twitter_2.11" target="11" />
+      <module name="flink-connector-wikiedits_2.11" target="11" />
+      <module name="flink-connectors" target="11" />
+      <module name="flink-container_2.11" target="11" />
+      <module name="flink-contrib" target="11" />
+      <module name="flink-core" target="11" />
+      <module name="flink-csv" target="11" />
+      <module name="flink-dataset-allround-test" target="11" />
+      <module name="flink-dataset-fine-grained-recovery-test" target="11" />
+      <module name="flink-datastream-allround-test" target="11" />
+      <module name="flink-dist_2.11" target="11" />
+      <module name="flink-distributed-cache-via-blob-test_2.11" target="11" />
+      <module name="flink-docs" target="11" />
+      <module name="flink-elasticsearch5-test" target="11" />
+      <module name="flink-elasticsearch6-test" target="11" />
+      <module name="flink-elasticsearch7-test" target="11" />
+      <module name="flink-end-to-end-tests" target="11" />
+      <module name="flink-end-to-end-tests-common" target="11" />
+      <module name="flink-end-to-end-tests-common-kafka" target="11" />
+      <module name="flink-examples" target="11" />
+      <module name="flink-examples-batch_2.11" target="11" />
+      <module name="flink-examples-build-helper" target="11" />
+      <module name="flink-examples-streaming-gcp-pubsub_2.11" target="11" />
+      <module name="flink-examples-streaming-state-machine_2.11" target="11" />
+      <module name="flink-examples-streaming-twitter_2.11" target="11" />
+      <module name="flink-examples-streaming_2.11" target="11" />
+      <module name="flink-examples-table_2.11" target="11" />
+      <module name="flink-external-resource-gpu" target="11" />
+      <module name="flink-external-resources" target="11" />
+      <module name="flink-filesystems" target="11" />
+      <module name="flink-formats" target="11" />
+      <module name="flink-fs-hadoop-shaded" target="11" />
+      <module name="flink-fs-tests" target="11" />
+      <module name="flink-gelly-examples_2.11" target="11" />
+      <module name="flink-gelly-scala_2.11" target="11" />
+      <module name="flink-gelly_2.11" target="11" />
+      <module name="flink-hadoop-bulk_2.11" target="11" />
+      <module name="flink-hadoop-compatibility_2.11" target="11" />
+      <module name="flink-hadoop-fs" target="11" />
+      <module name="flink-hcatalog_2.11" target="11" />
+      <module name="flink-heavy-deployment-stress-test" target="11" />
+      <module name="flink-high-parallelism-iterations-test" target="11" />
+      <module name="flink-java" target="11" />
+      <module name="flink-json" target="11" />
+      <module name="flink-kubernetes_2.11" target="11" />
+      <module name="flink-libraries" target="11" />
+      <module name="flink-local-recovery-and-allocation-test" target="11" />
+      <module name="flink-mapr-fs" target="11" />
+      <module name="flink-mesos_2.11" target="11" />
+      <module name="flink-metrics" target="11" />
+      <module name="flink-metrics-availability-test" target="11" />
+      <module name="flink-metrics-core" target="11" />
+      <module name="flink-metrics-datadog" target="11" />
+      <module name="flink-metrics-dropwizard" target="11" />
+      <module name="flink-metrics-graphite" target="11" />
+      <module name="flink-metrics-influxdb_2.11" target="11" />
+      <module name="flink-metrics-jmx_2.11" target="11" />
+      <module name="flink-metrics-prometheus_2.11" target="11" />
+      <module name="flink-metrics-reporter-prometheus-test" target="11" />
+      <module name="flink-metrics-slf4j" target="11" />
+      <module name="flink-metrics-statsd" target="11" />
+      <module name="flink-ml-api" target="11" />
+      <module name="flink-ml-lib_2.11" target="11" />
+      <module name="flink-ml-parent" target="11" />
+      <module name="flink-ml-uber_2.11" target="11" />
+      <module name="flink-netty-shuffle-memory-control-test" target="11" />
+      <module name="flink-optimizer_2.11" target="11" />
+      <module name="flink-orc-nohive_2.11" target="11" />
+      <module name="flink-orc_2.11" target="11" />
+      <module name="flink-oss-fs-hadoop" target="11" />
+      <module name="flink-parent" target="11" />
+      <module name="flink-parent-child-classloading-test-lib-package_2.11" target="11" />
+      <module name="flink-parent-child-classloading-test-program_2.11" target="11" />
+      <module name="flink-parquet_2.11" target="11" />
+      <module name="flink-plugins-test" target="11" />
+      <module name="flink-python-test_2.11" target="11" />
+      <module name="flink-python_2.11" target="11" />
+      <module name="flink-queryable-state" target="11" />
+      <module name="flink-queryable-state-client-java" target="11" />
+      <module name="flink-queryable-state-runtime_2.11" target="11" />
+      <module name="flink-queryable-state-test_2.11" target="11" />
+      <module name="flink-quickstart" target="11" />
+      <module name="flink-quickstart-java" target="11" />
+      <module name="flink-quickstart-scala" target="11" />
+      <module name="flink-quickstart-test" target="11" />
+      <module name="flink-rocksdb-state-memory-control-test" target="11" />
+      <module name="flink-runtime-web_2.11" target="11" />
+      <module name="flink-runtime_2.11" target="11" />
+      <module name="flink-s3-fs-base" target="11" />
+      <module name="flink-s3-fs-hadoop" target="11" />
+      <module name="flink-s3-fs-presto" target="11" />
+      <module name="flink-scala-shell_2.11" target="11" />
+      <module name="flink-scala_2.11" target="11" />
+      <module name="flink-sequence-file" target="11" />
+      <module name="flink-sql-client-test" target="11" />
+      <module name="flink-sql-client_2.11" target="11" />
+      <module name="flink-sql-connector-elasticsearch6_2.11" target="11" />
+      <module name="flink-sql-connector-elasticsearch7_2.11" target="11" />
+      <module name="flink-sql-connector-hive-1.2.2_2.11" target="11" />
+      <module name="flink-sql-connector-hive-2.2.0_2.11" target="11" />
+      <module name="flink-sql-connector-hive-2.3.6_2.11" target="11" />
+      <module name="flink-sql-connector-hive-3.1.2_2.11" target="11" />
+      <module name="flink-sql-connector-kafka-0.10_2.11" target="11" />
+      <module name="flink-sql-connector-kafka-0.11_2.11" target="11" />
+      <module name="flink-sql-connector-kafka_2.11" target="11" />
+      <module name="flink-sql-orc_2.11" target="11" />
+      <module name="flink-sql-parquet_2.11" target="11" />
+      <module name="flink-sql-parser" target="11" />
+      <module name="flink-sql-parser-hive" target="11" />
+      <module name="flink-state-backends" target="11" />
+      <module name="flink-state-evolution-test" target="11" />
+      <module name="flink-state-processor-api_2.11" target="11" />
+      <module name="flink-statebackend-heap-spillable_2.11" target="11" />
+      <module name="flink-statebackend-rocksdb_2.11" target="11" />
+      <module name="flink-stream-sql-test_2.11" target="11" />
+      <module name="flink-stream-state-ttl-test" target="11" />
+      <module name="flink-stream-stateful-job-upgrade-test" target="11" />
+      <module name="flink-streaming-file-sink-test" target="11" />
+      <module name="flink-streaming-java_2.11" target="11" />
+      <module name="flink-streaming-kafka-test-base_2.11" target="11" />
+      <module name="flink-streaming-kafka-test_2.11" target="11" />
+      <module name="flink-streaming-kafka010-test_2.11" target="11" />
+      <module name="flink-streaming-kafka011-test_2.11" target="11" />
+      <module name="flink-streaming-kinesis-test_2.11" target="11" />
+      <module name="flink-streaming-scala_2.11" target="11" />
+      <module name="flink-swift-fs-hadoop" target="11" />
+      <module name="flink-table" target="11" />
+      <module name="flink-table-api-java" target="11" />
+      <module name="flink-table-api-java-bridge_2.11" target="11" />
+      <module name="flink-table-api-scala-bridge_2.11" target="11" />
+      <module name="flink-table-api-scala_2.11" target="11" />
+      <module name="flink-table-common" target="11" />
+      <module name="flink-table-planner-blink_2.11" target="11" />
+      <module name="flink-table-planner_2.11" target="11" />
+      <module name="flink-table-runtime-blink_2.11" target="11" />
+      <module name="flink-table-uber-blink_2.11" target="11" />
+      <module name="flink-table-uber_2.11" target="11" />
+      <module name="flink-test-utils-junit" target="11" />
+      <module name="flink-test-utils-parent" target="11" />
+      <module name="flink-test-utils_2.11" target="11" />
+      <module name="flink-tests" target="11" />
+      <module name="flink-tpcds-test" target="11" />
+      <module name="flink-tpch-test" target="11" />
+      <module name="flink-walkthrough-common_2.11" target="11" />
+      <module name="flink-walkthrough-datastream-java" target="11" />
+      <module name="flink-walkthrough-datastream-scala" target="11" />
+      <module name="flink-walkthrough-table-java" target="11" />
+      <module name="flink-walkthrough-table-scala" target="11" />
+      <module name="flink-walkthroughs" target="11" />
+      <module name="flink-yarn-tests" target="11" />
+      <module name="flink-yarn_2.11" target="11" />
+      <module name="force-shading" target="1.6" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="another-dummy-fs" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="dummy-fs" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-annotations" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-avro" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-avro-confluent-registry" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-azure-fs-hadoop" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-batch-sql-test_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-bucketing-sink-test" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-cep-scala_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-cep_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-cli-test_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-clients_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-compress" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-confluent-schema-registry" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-connector-base" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-connector-cassandra_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-connector-elasticsearch-base_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-connector-elasticsearch5_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-connector-elasticsearch6_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-connector-elasticsearch7_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-connector-filesystem_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-connector-gcp-pubsub-emulator-tests" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-connector-gcp-pubsub_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-connector-hbase_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-connector-hive_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-connector-jdbc_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-connector-kafka-0.10_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-connector-kafka-0.11_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-connector-kafka-base_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-connector-kafka_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-connector-kinesis_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-connector-nifi_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-connector-rabbitmq_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-connector-redis_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-connector-twitter_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-connector-wikiedits_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-container_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-core" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-csv" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-dataset-allround-test" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-dataset-fine-grained-recovery-test" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-datastream-allround-test" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-dist_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-distributed-cache-via-blob-test_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-docs" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-elasticsearch5-test" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-elasticsearch6-test" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-elasticsearch7-test" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-end-to-end-tests-common" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-end-to-end-tests-common-kafka" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-examples-batch_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-examples-streaming-gcp-pubsub_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-examples-streaming-state-machine_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-examples-streaming-twitter_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-examples-streaming_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-examples-table_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-external-resource-gpu" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-fs-hadoop-shaded" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-fs-tests" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-gelly-examples_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-gelly-scala_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-gelly_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-hadoop-bulk_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-hadoop-compatibility_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-hadoop-fs" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-hcatalog_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-heavy-deployment-stress-test" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-high-parallelism-iterations-test" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-java" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-json" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-kubernetes_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-local-recovery-and-allocation-test" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-mapr-fs" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-mesos_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-metrics-availability-test" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-metrics-core" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-metrics-datadog" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-metrics-dropwizard" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-metrics-graphite" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-metrics-influxdb_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-metrics-jmx_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-metrics-prometheus_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-metrics-reporter-prometheus-test" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-metrics-slf4j" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-metrics-statsd" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-ml-api" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-ml-lib_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-ml-uber_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-netty-shuffle-memory-control-test" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-optimizer_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-orc-nohive_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-orc_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-oss-fs-hadoop" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-parent-child-classloading-test-lib-package_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-parent-child-classloading-test-program_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-parquet_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-python-test_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-python_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-queryable-state-client-java" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-queryable-state-runtime_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-queryable-state-test_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-quickstart-java" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-quickstart-scala" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-quickstart-test" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-rocksdb-state-memory-control-test" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-runtime-web_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-runtime_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-s3-fs-base" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-s3-fs-hadoop" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-s3-fs-presto" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-scala-shell_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-scala_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-sequence-file" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-sql-client-test" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-sql-client_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-sql-connector-elasticsearch6_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-sql-connector-elasticsearch7_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-sql-connector-hive-1.2.2_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-sql-connector-hive-2.2.0_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-sql-connector-hive-2.3.6_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-sql-connector-hive-3.1.2_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-sql-connector-kafka-0.10_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-sql-connector-kafka-0.11_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-sql-connector-kafka_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-sql-orc_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-sql-parquet_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-sql-parser" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-sql-parser-hive" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-state-evolution-test" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-state-processor-api_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-statebackend-heap-spillable_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-statebackend-rocksdb_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-stream-sql-test_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-stream-state-ttl-test" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-stream-stateful-job-upgrade-test" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-streaming-file-sink-test" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-streaming-java_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-streaming-kafka-test-base_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-streaming-kafka-test_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-streaming-kafka010-test_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-streaming-kafka011-test_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-streaming-kinesis-test_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-streaming-scala_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-swift-fs-hadoop" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-table-api-java" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-table-api-java-bridge_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-table-api-scala-bridge_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-table-api-scala_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-table-common" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-table-planner-blink_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-table-planner_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-table-runtime-blink_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-table-uber-blink_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-table-uber_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-test-utils-junit" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-test-utils_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-tests" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-tpcds-test" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-tpch-test" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-walkthrough-common_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-walkthrough-datastream-java" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-walkthrough-datastream-scala" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-walkthrough-table-java" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-walkthrough-table-scala" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-yarn-tests" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+      <module name="flink-yarn_2.11" options="-Xpkginfo:always --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED" />
+    </option>
+  </component>
+</project>
