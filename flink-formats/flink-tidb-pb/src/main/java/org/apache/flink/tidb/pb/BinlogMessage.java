@@ -90,7 +90,7 @@ public final class BinlogMessage {
     }
     public static final com.google.protobuf.Descriptors.EnumDescriptor
         getDescriptor() {
-      return org.apache.flink.tidb.pb.BinlogMessage.getDescriptor().getEnumTypes().get(0);
+      return BinlogMessage.getDescriptor().getEnumTypes().get(0);
     }
 
     private static final MutationType[] VALUES = values();
@@ -196,7 +196,7 @@ public final class BinlogMessage {
     }
     public static final com.google.protobuf.Descriptors.EnumDescriptor
         getDescriptor() {
-      return org.apache.flink.tidb.pb.BinlogMessage.getDescriptor().getEnumTypes().get(1);
+      return BinlogMessage.getDescriptor().getEnumTypes().get(1);
     }
 
     private static final BinlogType[] VALUES = values();
@@ -383,14 +383,14 @@ public final class BinlogMessage {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return org.apache.flink.tidb.pb.BinlogMessage.internal_static_binlog_Column_descriptor;
+      return BinlogMessage.internal_static_binlog_Column_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return org.apache.flink.tidb.pb.BinlogMessage.internal_static_binlog_Column_fieldAccessorTable
+      return BinlogMessage.internal_static_binlog_Column_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              org.apache.flink.tidb.pb.BinlogMessage.Column.class, org.apache.flink.tidb.pb.BinlogMessage.Column.Builder.class);
+              Column.class, Builder.class);
     }
 
     private int bitField0_;
@@ -582,10 +582,10 @@ public final class BinlogMessage {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof org.apache.flink.tidb.pb.BinlogMessage.Column)) {
+      if (!(obj instanceof Column)) {
         return super.equals(obj);
       }
-      org.apache.flink.tidb.pb.BinlogMessage.Column other = (org.apache.flink.tidb.pb.BinlogMessage.Column) obj;
+      Column other = (Column) obj;
 
       boolean result = true;
       result = result && (hasIsNull() == other.hasIsNull());
@@ -664,69 +664,69 @@ public final class BinlogMessage {
       return hash;
     }
 
-    public static org.apache.flink.tidb.pb.BinlogMessage.Column parseFrom(
+    public static Column parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.Column parseFrom(
+    public static Column parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.Column parseFrom(
+    public static Column parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.Column parseFrom(
+    public static Column parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.Column parseFrom(byte[] data)
+    public static Column parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.Column parseFrom(
+    public static Column parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.Column parseFrom(java.io.InputStream input)
+    public static Column parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.Column parseFrom(
+    public static Column parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.Column parseDelimitedFrom(java.io.InputStream input)
+    public static Column parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.Column parseDelimitedFrom(
+    public static Column parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.Column parseFrom(
+    public static Column parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.Column parseFrom(
+    public static Column parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -738,7 +738,7 @@ public final class BinlogMessage {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(org.apache.flink.tidb.pb.BinlogMessage.Column prototype) {
+    public static Builder newBuilder(Column prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() {
@@ -765,17 +765,17 @@ public final class BinlogMessage {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:binlog.Column)
-        org.apache.flink.tidb.pb.BinlogMessage.ColumnOrBuilder {
+        ColumnOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return org.apache.flink.tidb.pb.BinlogMessage.internal_static_binlog_Column_descriptor;
+        return BinlogMessage.internal_static_binlog_Column_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return org.apache.flink.tidb.pb.BinlogMessage.internal_static_binlog_Column_fieldAccessorTable
+        return BinlogMessage.internal_static_binlog_Column_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                org.apache.flink.tidb.pb.BinlogMessage.Column.class, org.apache.flink.tidb.pb.BinlogMessage.Column.Builder.class);
+                Column.class, Builder.class);
       }
 
       // Construct using org.apache.flink.tidb.pb.BinlogMessage.Column.newBuilder()
@@ -812,23 +812,23 @@ public final class BinlogMessage {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return org.apache.flink.tidb.pb.BinlogMessage.internal_static_binlog_Column_descriptor;
+        return BinlogMessage.internal_static_binlog_Column_descriptor;
       }
 
-      public org.apache.flink.tidb.pb.BinlogMessage.Column getDefaultInstanceForType() {
-        return org.apache.flink.tidb.pb.BinlogMessage.Column.getDefaultInstance();
+      public Column getDefaultInstanceForType() {
+        return Column.getDefaultInstance();
       }
 
-      public org.apache.flink.tidb.pb.BinlogMessage.Column build() {
-        org.apache.flink.tidb.pb.BinlogMessage.Column result = buildPartial();
+      public Column build() {
+        Column result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public org.apache.flink.tidb.pb.BinlogMessage.Column buildPartial() {
-        org.apache.flink.tidb.pb.BinlogMessage.Column result = new org.apache.flink.tidb.pb.BinlogMessage.Column(this);
+      public Column buildPartial() {
+        Column result = new Column(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -887,16 +887,16 @@ public final class BinlogMessage {
         return (Builder) super.addRepeatedField(field, value);
       }
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof org.apache.flink.tidb.pb.BinlogMessage.Column) {
-          return mergeFrom((org.apache.flink.tidb.pb.BinlogMessage.Column)other);
+        if (other instanceof Column) {
+          return mergeFrom((Column)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(org.apache.flink.tidb.pb.BinlogMessage.Column other) {
-        if (other == org.apache.flink.tidb.pb.BinlogMessage.Column.getDefaultInstance()) return this;
+      public Builder mergeFrom(Column other) {
+        if (other == Column.getDefaultInstance()) return this;
         if (other.hasIsNull()) {
           setIsNull(other.getIsNull());
         }
@@ -930,11 +930,11 @@ public final class BinlogMessage {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        org.apache.flink.tidb.pb.BinlogMessage.Column parsedMessage = null;
+        Column parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (org.apache.flink.tidb.pb.BinlogMessage.Column) e.getUnfinishedMessage();
+          parsedMessage = (Column) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -1198,12 +1198,12 @@ public final class BinlogMessage {
     }
 
     // @@protoc_insertion_point(class_scope:binlog.Column)
-    private static final org.apache.flink.tidb.pb.BinlogMessage.Column DEFAULT_INSTANCE;
+    private static final Column DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new org.apache.flink.tidb.pb.BinlogMessage.Column();
+      DEFAULT_INSTANCE = new Column();
     }
 
-    public static org.apache.flink.tidb.pb.BinlogMessage.Column getDefaultInstance() {
+    public static Column getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -1226,7 +1226,7 @@ public final class BinlogMessage {
       return PARSER;
     }
 
-    public org.apache.flink.tidb.pb.BinlogMessage.Column getDefaultInstanceForType() {
+    public Column getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -1350,14 +1350,14 @@ public final class BinlogMessage {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return org.apache.flink.tidb.pb.BinlogMessage.internal_static_binlog_ColumnInfo_descriptor;
+      return BinlogMessage.internal_static_binlog_ColumnInfo_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return org.apache.flink.tidb.pb.BinlogMessage.internal_static_binlog_ColumnInfo_fieldAccessorTable
+      return BinlogMessage.internal_static_binlog_ColumnInfo_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              org.apache.flink.tidb.pb.BinlogMessage.ColumnInfo.class, org.apache.flink.tidb.pb.BinlogMessage.ColumnInfo.Builder.class);
+              ColumnInfo.class, Builder.class);
     }
 
     private int bitField0_;
@@ -1509,10 +1509,10 @@ public final class BinlogMessage {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof org.apache.flink.tidb.pb.BinlogMessage.ColumnInfo)) {
+      if (!(obj instanceof ColumnInfo)) {
         return super.equals(obj);
       }
-      org.apache.flink.tidb.pb.BinlogMessage.ColumnInfo other = (org.apache.flink.tidb.pb.BinlogMessage.ColumnInfo) obj;
+      ColumnInfo other = (ColumnInfo) obj;
 
       boolean result = true;
       result = result && (hasName() == other.hasName());
@@ -1559,69 +1559,69 @@ public final class BinlogMessage {
       return hash;
     }
 
-    public static org.apache.flink.tidb.pb.BinlogMessage.ColumnInfo parseFrom(
+    public static ColumnInfo parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.ColumnInfo parseFrom(
+    public static ColumnInfo parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.ColumnInfo parseFrom(
+    public static ColumnInfo parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.ColumnInfo parseFrom(
+    public static ColumnInfo parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.ColumnInfo parseFrom(byte[] data)
+    public static ColumnInfo parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.ColumnInfo parseFrom(
+    public static ColumnInfo parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.ColumnInfo parseFrom(java.io.InputStream input)
+    public static ColumnInfo parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.ColumnInfo parseFrom(
+    public static ColumnInfo parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.ColumnInfo parseDelimitedFrom(java.io.InputStream input)
+    public static ColumnInfo parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.ColumnInfo parseDelimitedFrom(
+    public static ColumnInfo parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.ColumnInfo parseFrom(
+    public static ColumnInfo parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.ColumnInfo parseFrom(
+    public static ColumnInfo parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -1633,7 +1633,7 @@ public final class BinlogMessage {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(org.apache.flink.tidb.pb.BinlogMessage.ColumnInfo prototype) {
+    public static Builder newBuilder(ColumnInfo prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() {
@@ -1653,17 +1653,17 @@ public final class BinlogMessage {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:binlog.ColumnInfo)
-        org.apache.flink.tidb.pb.BinlogMessage.ColumnInfoOrBuilder {
+        ColumnInfoOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return org.apache.flink.tidb.pb.BinlogMessage.internal_static_binlog_ColumnInfo_descriptor;
+        return BinlogMessage.internal_static_binlog_ColumnInfo_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return org.apache.flink.tidb.pb.BinlogMessage.internal_static_binlog_ColumnInfo_fieldAccessorTable
+        return BinlogMessage.internal_static_binlog_ColumnInfo_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                org.apache.flink.tidb.pb.BinlogMessage.ColumnInfo.class, org.apache.flink.tidb.pb.BinlogMessage.ColumnInfo.Builder.class);
+                ColumnInfo.class, Builder.class);
       }
 
       // Construct using org.apache.flink.tidb.pb.BinlogMessage.ColumnInfo.newBuilder()
@@ -1694,23 +1694,23 @@ public final class BinlogMessage {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return org.apache.flink.tidb.pb.BinlogMessage.internal_static_binlog_ColumnInfo_descriptor;
+        return BinlogMessage.internal_static_binlog_ColumnInfo_descriptor;
       }
 
-      public org.apache.flink.tidb.pb.BinlogMessage.ColumnInfo getDefaultInstanceForType() {
-        return org.apache.flink.tidb.pb.BinlogMessage.ColumnInfo.getDefaultInstance();
+      public ColumnInfo getDefaultInstanceForType() {
+        return ColumnInfo.getDefaultInstance();
       }
 
-      public org.apache.flink.tidb.pb.BinlogMessage.ColumnInfo build() {
-        org.apache.flink.tidb.pb.BinlogMessage.ColumnInfo result = buildPartial();
+      public ColumnInfo build() {
+        ColumnInfo result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public org.apache.flink.tidb.pb.BinlogMessage.ColumnInfo buildPartial() {
-        org.apache.flink.tidb.pb.BinlogMessage.ColumnInfo result = new org.apache.flink.tidb.pb.BinlogMessage.ColumnInfo(this);
+      public ColumnInfo buildPartial() {
+        ColumnInfo result = new ColumnInfo(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -1757,16 +1757,16 @@ public final class BinlogMessage {
         return (Builder) super.addRepeatedField(field, value);
       }
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof org.apache.flink.tidb.pb.BinlogMessage.ColumnInfo) {
-          return mergeFrom((org.apache.flink.tidb.pb.BinlogMessage.ColumnInfo)other);
+        if (other instanceof ColumnInfo) {
+          return mergeFrom((ColumnInfo)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(org.apache.flink.tidb.pb.BinlogMessage.ColumnInfo other) {
-        if (other == org.apache.flink.tidb.pb.BinlogMessage.ColumnInfo.getDefaultInstance()) return this;
+      public Builder mergeFrom(ColumnInfo other) {
+        if (other == ColumnInfo.getDefaultInstance()) return this;
         if (other.hasName()) {
           bitField0_ |= 0x00000001;
           name_ = other.name_;
@@ -1793,11 +1793,11 @@ public final class BinlogMessage {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        org.apache.flink.tidb.pb.BinlogMessage.ColumnInfo parsedMessage = null;
+        ColumnInfo parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (org.apache.flink.tidb.pb.BinlogMessage.ColumnInfo) e.getUnfinishedMessage();
+          parsedMessage = (ColumnInfo) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -2006,12 +2006,12 @@ public final class BinlogMessage {
     }
 
     // @@protoc_insertion_point(class_scope:binlog.ColumnInfo)
-    private static final org.apache.flink.tidb.pb.BinlogMessage.ColumnInfo DEFAULT_INSTANCE;
+    private static final ColumnInfo DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new org.apache.flink.tidb.pb.BinlogMessage.ColumnInfo();
+      DEFAULT_INSTANCE = new ColumnInfo();
     }
 
-    public static org.apache.flink.tidb.pb.BinlogMessage.ColumnInfo getDefaultInstance() {
+    public static ColumnInfo getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -2034,7 +2034,7 @@ public final class BinlogMessage {
       return PARSER;
     }
 
-    public org.apache.flink.tidb.pb.BinlogMessage.ColumnInfo getDefaultInstanceForType() {
+    public ColumnInfo getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -2047,12 +2047,12 @@ public final class BinlogMessage {
     /**
      * <code>repeated .binlog.Column columns = 1;</code>
      */
-    java.util.List<org.apache.flink.tidb.pb.BinlogMessage.Column>
+    java.util.List<Column>
         getColumnsList();
     /**
      * <code>repeated .binlog.Column columns = 1;</code>
      */
-    org.apache.flink.tidb.pb.BinlogMessage.Column getColumns(int index);
+    Column getColumns(int index);
     /**
      * <code>repeated .binlog.Column columns = 1;</code>
      */
@@ -2060,12 +2060,12 @@ public final class BinlogMessage {
     /**
      * <code>repeated .binlog.Column columns = 1;</code>
      */
-    java.util.List<? extends org.apache.flink.tidb.pb.BinlogMessage.ColumnOrBuilder>
+    java.util.List<? extends ColumnOrBuilder>
         getColumnsOrBuilderList();
     /**
      * <code>repeated .binlog.Column columns = 1;</code>
      */
-    org.apache.flink.tidb.pb.BinlogMessage.ColumnOrBuilder getColumnsOrBuilder(
+    ColumnOrBuilder getColumnsOrBuilder(
 		int index);
   }
   /**
@@ -2114,11 +2114,11 @@ public final class BinlogMessage {
             }
             case 10: {
               if (!((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
-                columns_ = new java.util.ArrayList<org.apache.flink.tidb.pb.BinlogMessage.Column>();
+                columns_ = new java.util.ArrayList<Column>();
                 mutable_bitField0_ |= 0x00000001;
               }
               columns_.add(
-                  input.readMessage(org.apache.flink.tidb.pb.BinlogMessage.Column.PARSER, extensionRegistry));
+                  input.readMessage(Column.PARSER, extensionRegistry));
               break;
             }
           }
@@ -2138,28 +2138,28 @@ public final class BinlogMessage {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return org.apache.flink.tidb.pb.BinlogMessage.internal_static_binlog_Row_descriptor;
+      return BinlogMessage.internal_static_binlog_Row_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return org.apache.flink.tidb.pb.BinlogMessage.internal_static_binlog_Row_fieldAccessorTable
+      return BinlogMessage.internal_static_binlog_Row_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              org.apache.flink.tidb.pb.BinlogMessage.Row.class, org.apache.flink.tidb.pb.BinlogMessage.Row.Builder.class);
+              Row.class, Builder.class);
     }
 
     public static final int COLUMNS_FIELD_NUMBER = 1;
-    private java.util.List<org.apache.flink.tidb.pb.BinlogMessage.Column> columns_;
+    private java.util.List<Column> columns_;
     /**
      * <code>repeated .binlog.Column columns = 1;</code>
      */
-    public java.util.List<org.apache.flink.tidb.pb.BinlogMessage.Column> getColumnsList() {
+    public java.util.List<Column> getColumnsList() {
       return columns_;
     }
     /**
      * <code>repeated .binlog.Column columns = 1;</code>
      */
-    public java.util.List<? extends org.apache.flink.tidb.pb.BinlogMessage.ColumnOrBuilder>
+    public java.util.List<? extends ColumnOrBuilder>
         getColumnsOrBuilderList() {
       return columns_;
     }
@@ -2172,13 +2172,13 @@ public final class BinlogMessage {
     /**
      * <code>repeated .binlog.Column columns = 1;</code>
      */
-    public org.apache.flink.tidb.pb.BinlogMessage.Column getColumns(int index) {
+    public Column getColumns(int index) {
       return columns_.get(index);
     }
     /**
      * <code>repeated .binlog.Column columns = 1;</code>
      */
-    public org.apache.flink.tidb.pb.BinlogMessage.ColumnOrBuilder getColumnsOrBuilder(
+    public ColumnOrBuilder getColumnsOrBuilder(
         int index) {
       return columns_.get(index);
     }
@@ -2220,10 +2220,10 @@ public final class BinlogMessage {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof org.apache.flink.tidb.pb.BinlogMessage.Row)) {
+      if (!(obj instanceof Row)) {
         return super.equals(obj);
       }
-      org.apache.flink.tidb.pb.BinlogMessage.Row other = (org.apache.flink.tidb.pb.BinlogMessage.Row) obj;
+      Row other = (Row) obj;
 
       boolean result = true;
       result = result && getColumnsList()
@@ -2248,69 +2248,69 @@ public final class BinlogMessage {
       return hash;
     }
 
-    public static org.apache.flink.tidb.pb.BinlogMessage.Row parseFrom(
+    public static Row parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.Row parseFrom(
+    public static Row parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.Row parseFrom(
+    public static Row parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.Row parseFrom(
+    public static Row parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.Row parseFrom(byte[] data)
+    public static Row parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.Row parseFrom(
+    public static Row parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.Row parseFrom(java.io.InputStream input)
+    public static Row parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.Row parseFrom(
+    public static Row parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.Row parseDelimitedFrom(java.io.InputStream input)
+    public static Row parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.Row parseDelimitedFrom(
+    public static Row parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.Row parseFrom(
+    public static Row parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.Row parseFrom(
+    public static Row parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -2322,7 +2322,7 @@ public final class BinlogMessage {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(org.apache.flink.tidb.pb.BinlogMessage.Row prototype) {
+    public static Builder newBuilder(Row prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() {
@@ -2342,17 +2342,17 @@ public final class BinlogMessage {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:binlog.Row)
-        org.apache.flink.tidb.pb.BinlogMessage.RowOrBuilder {
+        RowOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return org.apache.flink.tidb.pb.BinlogMessage.internal_static_binlog_Row_descriptor;
+        return BinlogMessage.internal_static_binlog_Row_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return org.apache.flink.tidb.pb.BinlogMessage.internal_static_binlog_Row_fieldAccessorTable
+        return BinlogMessage.internal_static_binlog_Row_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                org.apache.flink.tidb.pb.BinlogMessage.Row.class, org.apache.flink.tidb.pb.BinlogMessage.Row.Builder.class);
+                Row.class, Builder.class);
       }
 
       // Construct using org.apache.flink.tidb.pb.BinlogMessage.Row.newBuilder()
@@ -2384,23 +2384,23 @@ public final class BinlogMessage {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return org.apache.flink.tidb.pb.BinlogMessage.internal_static_binlog_Row_descriptor;
+        return BinlogMessage.internal_static_binlog_Row_descriptor;
       }
 
-      public org.apache.flink.tidb.pb.BinlogMessage.Row getDefaultInstanceForType() {
-        return org.apache.flink.tidb.pb.BinlogMessage.Row.getDefaultInstance();
+      public Row getDefaultInstanceForType() {
+        return Row.getDefaultInstance();
       }
 
-      public org.apache.flink.tidb.pb.BinlogMessage.Row build() {
-        org.apache.flink.tidb.pb.BinlogMessage.Row result = buildPartial();
+      public Row build() {
+        Row result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public org.apache.flink.tidb.pb.BinlogMessage.Row buildPartial() {
-        org.apache.flink.tidb.pb.BinlogMessage.Row result = new org.apache.flink.tidb.pb.BinlogMessage.Row(this);
+      public Row buildPartial() {
+        Row result = new Row(this);
         int from_bitField0_ = bitField0_;
         if (columnsBuilder_ == null) {
           if (((bitField0_ & 0x00000001) == 0x00000001)) {
@@ -2442,16 +2442,16 @@ public final class BinlogMessage {
         return (Builder) super.addRepeatedField(field, value);
       }
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof org.apache.flink.tidb.pb.BinlogMessage.Row) {
-          return mergeFrom((org.apache.flink.tidb.pb.BinlogMessage.Row)other);
+        if (other instanceof Row) {
+          return mergeFrom((Row)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(org.apache.flink.tidb.pb.BinlogMessage.Row other) {
-        if (other == org.apache.flink.tidb.pb.BinlogMessage.Row.getDefaultInstance()) return this;
+      public Builder mergeFrom(Row other) {
+        if (other == Row.getDefaultInstance()) return this;
         if (columnsBuilder_ == null) {
           if (!other.columns_.isEmpty()) {
             if (columns_.isEmpty()) {
@@ -2491,11 +2491,11 @@ public final class BinlogMessage {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        org.apache.flink.tidb.pb.BinlogMessage.Row parsedMessage = null;
+        Row parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (org.apache.flink.tidb.pb.BinlogMessage.Row) e.getUnfinishedMessage();
+          parsedMessage = (Row) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -2506,22 +2506,22 @@ public final class BinlogMessage {
       }
       private int bitField0_;
 
-      private java.util.List<org.apache.flink.tidb.pb.BinlogMessage.Column> columns_ =
+      private java.util.List<Column> columns_ =
         java.util.Collections.emptyList();
       private void ensureColumnsIsMutable() {
         if (!((bitField0_ & 0x00000001) == 0x00000001)) {
-          columns_ = new java.util.ArrayList<org.apache.flink.tidb.pb.BinlogMessage.Column>(columns_);
+          columns_ = new java.util.ArrayList<Column>(columns_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          org.apache.flink.tidb.pb.BinlogMessage.Column, org.apache.flink.tidb.pb.BinlogMessage.Column.Builder, org.apache.flink.tidb.pb.BinlogMessage.ColumnOrBuilder> columnsBuilder_;
+          Column, Column.Builder, ColumnOrBuilder> columnsBuilder_;
 
       /**
        * <code>repeated .binlog.Column columns = 1;</code>
        */
-      public java.util.List<org.apache.flink.tidb.pb.BinlogMessage.Column> getColumnsList() {
+      public java.util.List<Column> getColumnsList() {
         if (columnsBuilder_ == null) {
           return java.util.Collections.unmodifiableList(columns_);
         } else {
@@ -2541,7 +2541,7 @@ public final class BinlogMessage {
       /**
        * <code>repeated .binlog.Column columns = 1;</code>
        */
-      public org.apache.flink.tidb.pb.BinlogMessage.Column getColumns(int index) {
+      public Column getColumns(int index) {
         if (columnsBuilder_ == null) {
           return columns_.get(index);
         } else {
@@ -2552,7 +2552,7 @@ public final class BinlogMessage {
        * <code>repeated .binlog.Column columns = 1;</code>
        */
       public Builder setColumns(
-          int index, org.apache.flink.tidb.pb.BinlogMessage.Column value) {
+          int index, Column value) {
         if (columnsBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -2569,7 +2569,7 @@ public final class BinlogMessage {
        * <code>repeated .binlog.Column columns = 1;</code>
        */
       public Builder setColumns(
-          int index, org.apache.flink.tidb.pb.BinlogMessage.Column.Builder builderForValue) {
+          int index, Column.Builder builderForValue) {
         if (columnsBuilder_ == null) {
           ensureColumnsIsMutable();
           columns_.set(index, builderForValue.build());
@@ -2582,7 +2582,7 @@ public final class BinlogMessage {
       /**
        * <code>repeated .binlog.Column columns = 1;</code>
        */
-      public Builder addColumns(org.apache.flink.tidb.pb.BinlogMessage.Column value) {
+      public Builder addColumns(Column value) {
         if (columnsBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -2599,7 +2599,7 @@ public final class BinlogMessage {
        * <code>repeated .binlog.Column columns = 1;</code>
        */
       public Builder addColumns(
-          int index, org.apache.flink.tidb.pb.BinlogMessage.Column value) {
+          int index, Column value) {
         if (columnsBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -2616,7 +2616,7 @@ public final class BinlogMessage {
        * <code>repeated .binlog.Column columns = 1;</code>
        */
       public Builder addColumns(
-          org.apache.flink.tidb.pb.BinlogMessage.Column.Builder builderForValue) {
+          Column.Builder builderForValue) {
         if (columnsBuilder_ == null) {
           ensureColumnsIsMutable();
           columns_.add(builderForValue.build());
@@ -2630,7 +2630,7 @@ public final class BinlogMessage {
        * <code>repeated .binlog.Column columns = 1;</code>
        */
       public Builder addColumns(
-          int index, org.apache.flink.tidb.pb.BinlogMessage.Column.Builder builderForValue) {
+          int index, Column.Builder builderForValue) {
         if (columnsBuilder_ == null) {
           ensureColumnsIsMutable();
           columns_.add(index, builderForValue.build());
@@ -2644,7 +2644,7 @@ public final class BinlogMessage {
        * <code>repeated .binlog.Column columns = 1;</code>
        */
       public Builder addAllColumns(
-          Iterable<? extends org.apache.flink.tidb.pb.BinlogMessage.Column> values) {
+          Iterable<? extends Column> values) {
         if (columnsBuilder_ == null) {
           ensureColumnsIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -2684,14 +2684,14 @@ public final class BinlogMessage {
       /**
        * <code>repeated .binlog.Column columns = 1;</code>
        */
-      public org.apache.flink.tidb.pb.BinlogMessage.Column.Builder getColumnsBuilder(
+      public Column.Builder getColumnsBuilder(
           int index) {
         return getColumnsFieldBuilder().getBuilder(index);
       }
       /**
        * <code>repeated .binlog.Column columns = 1;</code>
        */
-      public org.apache.flink.tidb.pb.BinlogMessage.ColumnOrBuilder getColumnsOrBuilder(
+      public ColumnOrBuilder getColumnsOrBuilder(
           int index) {
         if (columnsBuilder_ == null) {
           return columns_.get(index);  } else {
@@ -2701,7 +2701,7 @@ public final class BinlogMessage {
       /**
        * <code>repeated .binlog.Column columns = 1;</code>
        */
-      public java.util.List<? extends org.apache.flink.tidb.pb.BinlogMessage.ColumnOrBuilder>
+      public java.util.List<? extends ColumnOrBuilder>
            getColumnsOrBuilderList() {
         if (columnsBuilder_ != null) {
           return columnsBuilder_.getMessageOrBuilderList();
@@ -2712,31 +2712,31 @@ public final class BinlogMessage {
       /**
        * <code>repeated .binlog.Column columns = 1;</code>
        */
-      public org.apache.flink.tidb.pb.BinlogMessage.Column.Builder addColumnsBuilder() {
+      public Column.Builder addColumnsBuilder() {
         return getColumnsFieldBuilder().addBuilder(
-            org.apache.flink.tidb.pb.BinlogMessage.Column.getDefaultInstance());
+            Column.getDefaultInstance());
       }
       /**
        * <code>repeated .binlog.Column columns = 1;</code>
        */
-      public org.apache.flink.tidb.pb.BinlogMessage.Column.Builder addColumnsBuilder(
+      public Column.Builder addColumnsBuilder(
           int index) {
         return getColumnsFieldBuilder().addBuilder(
-            index, org.apache.flink.tidb.pb.BinlogMessage.Column.getDefaultInstance());
+            index, Column.getDefaultInstance());
       }
       /**
        * <code>repeated .binlog.Column columns = 1;</code>
        */
-      public java.util.List<org.apache.flink.tidb.pb.BinlogMessage.Column.Builder>
+      public java.util.List<Column.Builder>
            getColumnsBuilderList() {
         return getColumnsFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          org.apache.flink.tidb.pb.BinlogMessage.Column, org.apache.flink.tidb.pb.BinlogMessage.Column.Builder, org.apache.flink.tidb.pb.BinlogMessage.ColumnOrBuilder>
+          Column, Column.Builder, ColumnOrBuilder>
           getColumnsFieldBuilder() {
         if (columnsBuilder_ == null) {
           columnsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              org.apache.flink.tidb.pb.BinlogMessage.Column, org.apache.flink.tidb.pb.BinlogMessage.Column.Builder, org.apache.flink.tidb.pb.BinlogMessage.ColumnOrBuilder>(
+              Column, Column.Builder, ColumnOrBuilder>(
                   columns_,
                   ((bitField0_ & 0x00000001) == 0x00000001),
                   getParentForChildren(),
@@ -2760,12 +2760,12 @@ public final class BinlogMessage {
     }
 
     // @@protoc_insertion_point(class_scope:binlog.Row)
-    private static final org.apache.flink.tidb.pb.BinlogMessage.Row DEFAULT_INSTANCE;
+    private static final Row DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new org.apache.flink.tidb.pb.BinlogMessage.Row();
+      DEFAULT_INSTANCE = new Row();
     }
 
-    public static org.apache.flink.tidb.pb.BinlogMessage.Row getDefaultInstance() {
+    public static Row getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -2788,7 +2788,7 @@ public final class BinlogMessage {
       return PARSER;
     }
 
-    public org.apache.flink.tidb.pb.BinlogMessage.Row getDefaultInstanceForType() {
+    public Row getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -2829,12 +2829,12 @@ public final class BinlogMessage {
     /**
      * <code>repeated .binlog.ColumnInfo column_info = 3;</code>
      */
-    java.util.List<org.apache.flink.tidb.pb.BinlogMessage.ColumnInfo>
+    java.util.List<ColumnInfo>
         getColumnInfoList();
     /**
      * <code>repeated .binlog.ColumnInfo column_info = 3;</code>
      */
-    org.apache.flink.tidb.pb.BinlogMessage.ColumnInfo getColumnInfo(int index);
+    ColumnInfo getColumnInfo(int index);
     /**
      * <code>repeated .binlog.ColumnInfo column_info = 3;</code>
      */
@@ -2842,23 +2842,23 @@ public final class BinlogMessage {
     /**
      * <code>repeated .binlog.ColumnInfo column_info = 3;</code>
      */
-    java.util.List<? extends org.apache.flink.tidb.pb.BinlogMessage.ColumnInfoOrBuilder>
+    java.util.List<? extends ColumnInfoOrBuilder>
         getColumnInfoOrBuilderList();
     /**
      * <code>repeated .binlog.ColumnInfo column_info = 3;</code>
      */
-    org.apache.flink.tidb.pb.BinlogMessage.ColumnInfoOrBuilder getColumnInfoOrBuilder(
+    ColumnInfoOrBuilder getColumnInfoOrBuilder(
 		int index);
 
     /**
      * <code>repeated .binlog.TableMutation mutations = 4;</code>
      */
-    java.util.List<org.apache.flink.tidb.pb.BinlogMessage.TableMutation>
+    java.util.List<TableMutation>
         getMutationsList();
     /**
      * <code>repeated .binlog.TableMutation mutations = 4;</code>
      */
-    org.apache.flink.tidb.pb.BinlogMessage.TableMutation getMutations(int index);
+    TableMutation getMutations(int index);
     /**
      * <code>repeated .binlog.TableMutation mutations = 4;</code>
      */
@@ -2866,12 +2866,12 @@ public final class BinlogMessage {
     /**
      * <code>repeated .binlog.TableMutation mutations = 4;</code>
      */
-    java.util.List<? extends org.apache.flink.tidb.pb.BinlogMessage.TableMutationOrBuilder>
+    java.util.List<? extends TableMutationOrBuilder>
         getMutationsOrBuilderList();
     /**
      * <code>repeated .binlog.TableMutation mutations = 4;</code>
      */
-    org.apache.flink.tidb.pb.BinlogMessage.TableMutationOrBuilder getMutationsOrBuilder(
+    TableMutationOrBuilder getMutationsOrBuilder(
 		int index);
   }
   /**
@@ -2939,20 +2939,20 @@ public final class BinlogMessage {
             }
             case 26: {
               if (!((mutable_bitField0_ & 0x00000004) == 0x00000004)) {
-                columnInfo_ = new java.util.ArrayList<org.apache.flink.tidb.pb.BinlogMessage.ColumnInfo>();
+                columnInfo_ = new java.util.ArrayList<ColumnInfo>();
                 mutable_bitField0_ |= 0x00000004;
               }
               columnInfo_.add(
-                  input.readMessage(org.apache.flink.tidb.pb.BinlogMessage.ColumnInfo.PARSER, extensionRegistry));
+                  input.readMessage(ColumnInfo.PARSER, extensionRegistry));
               break;
             }
             case 34: {
               if (!((mutable_bitField0_ & 0x00000008) == 0x00000008)) {
-                mutations_ = new java.util.ArrayList<org.apache.flink.tidb.pb.BinlogMessage.TableMutation>();
+                mutations_ = new java.util.ArrayList<TableMutation>();
                 mutable_bitField0_ |= 0x00000008;
               }
               mutations_.add(
-                  input.readMessage(org.apache.flink.tidb.pb.BinlogMessage.TableMutation.PARSER, extensionRegistry));
+                  input.readMessage(TableMutation.PARSER, extensionRegistry));
               break;
             }
           }
@@ -2975,14 +2975,14 @@ public final class BinlogMessage {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return org.apache.flink.tidb.pb.BinlogMessage.internal_static_binlog_Table_descriptor;
+      return BinlogMessage.internal_static_binlog_Table_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return org.apache.flink.tidb.pb.BinlogMessage.internal_static_binlog_Table_fieldAccessorTable
+      return BinlogMessage.internal_static_binlog_Table_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              org.apache.flink.tidb.pb.BinlogMessage.Table.class, org.apache.flink.tidb.pb.BinlogMessage.Table.Builder.class);
+              Table.class, Builder.class);
     }
 
     private int bitField0_;
@@ -3071,17 +3071,17 @@ public final class BinlogMessage {
     }
 
     public static final int COLUMN_INFO_FIELD_NUMBER = 3;
-    private java.util.List<org.apache.flink.tidb.pb.BinlogMessage.ColumnInfo> columnInfo_;
+    private java.util.List<ColumnInfo> columnInfo_;
     /**
      * <code>repeated .binlog.ColumnInfo column_info = 3;</code>
      */
-    public java.util.List<org.apache.flink.tidb.pb.BinlogMessage.ColumnInfo> getColumnInfoList() {
+    public java.util.List<ColumnInfo> getColumnInfoList() {
       return columnInfo_;
     }
     /**
      * <code>repeated .binlog.ColumnInfo column_info = 3;</code>
      */
-    public java.util.List<? extends org.apache.flink.tidb.pb.BinlogMessage.ColumnInfoOrBuilder>
+    public java.util.List<? extends ColumnInfoOrBuilder>
         getColumnInfoOrBuilderList() {
       return columnInfo_;
     }
@@ -3094,29 +3094,29 @@ public final class BinlogMessage {
     /**
      * <code>repeated .binlog.ColumnInfo column_info = 3;</code>
      */
-    public org.apache.flink.tidb.pb.BinlogMessage.ColumnInfo getColumnInfo(int index) {
+    public ColumnInfo getColumnInfo(int index) {
       return columnInfo_.get(index);
     }
     /**
      * <code>repeated .binlog.ColumnInfo column_info = 3;</code>
      */
-    public org.apache.flink.tidb.pb.BinlogMessage.ColumnInfoOrBuilder getColumnInfoOrBuilder(
+    public ColumnInfoOrBuilder getColumnInfoOrBuilder(
         int index) {
       return columnInfo_.get(index);
     }
 
     public static final int MUTATIONS_FIELD_NUMBER = 4;
-    private java.util.List<org.apache.flink.tidb.pb.BinlogMessage.TableMutation> mutations_;
+    private java.util.List<TableMutation> mutations_;
     /**
      * <code>repeated .binlog.TableMutation mutations = 4;</code>
      */
-    public java.util.List<org.apache.flink.tidb.pb.BinlogMessage.TableMutation> getMutationsList() {
+    public java.util.List<TableMutation> getMutationsList() {
       return mutations_;
     }
     /**
      * <code>repeated .binlog.TableMutation mutations = 4;</code>
      */
-    public java.util.List<? extends org.apache.flink.tidb.pb.BinlogMessage.TableMutationOrBuilder>
+    public java.util.List<? extends TableMutationOrBuilder>
         getMutationsOrBuilderList() {
       return mutations_;
     }
@@ -3129,13 +3129,13 @@ public final class BinlogMessage {
     /**
      * <code>repeated .binlog.TableMutation mutations = 4;</code>
      */
-    public org.apache.flink.tidb.pb.BinlogMessage.TableMutation getMutations(int index) {
+    public TableMutation getMutations(int index) {
       return mutations_.get(index);
     }
     /**
      * <code>repeated .binlog.TableMutation mutations = 4;</code>
      */
-    public org.apache.flink.tidb.pb.BinlogMessage.TableMutationOrBuilder getMutationsOrBuilder(
+    public TableMutationOrBuilder getMutationsOrBuilder(
         int index) {
       return mutations_.get(index);
     }
@@ -3202,10 +3202,10 @@ public final class BinlogMessage {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof org.apache.flink.tidb.pb.BinlogMessage.Table)) {
+      if (!(obj instanceof Table)) {
         return super.equals(obj);
       }
-      org.apache.flink.tidb.pb.BinlogMessage.Table other = (org.apache.flink.tidb.pb.BinlogMessage.Table) obj;
+      Table other = (Table) obj;
 
       boolean result = true;
       result = result && (hasSchemaName() == other.hasSchemaName());
@@ -3254,69 +3254,69 @@ public final class BinlogMessage {
       return hash;
     }
 
-    public static org.apache.flink.tidb.pb.BinlogMessage.Table parseFrom(
+    public static Table parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.Table parseFrom(
+    public static Table parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.Table parseFrom(
+    public static Table parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.Table parseFrom(
+    public static Table parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.Table parseFrom(byte[] data)
+    public static Table parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.Table parseFrom(
+    public static Table parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.Table parseFrom(java.io.InputStream input)
+    public static Table parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.Table parseFrom(
+    public static Table parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.Table parseDelimitedFrom(java.io.InputStream input)
+    public static Table parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.Table parseDelimitedFrom(
+    public static Table parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.Table parseFrom(
+    public static Table parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.Table parseFrom(
+    public static Table parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -3328,7 +3328,7 @@ public final class BinlogMessage {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(org.apache.flink.tidb.pb.BinlogMessage.Table prototype) {
+    public static Builder newBuilder(Table prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() {
@@ -3352,17 +3352,17 @@ public final class BinlogMessage {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:binlog.Table)
-        org.apache.flink.tidb.pb.BinlogMessage.TableOrBuilder {
+        TableOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return org.apache.flink.tidb.pb.BinlogMessage.internal_static_binlog_Table_descriptor;
+        return BinlogMessage.internal_static_binlog_Table_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return org.apache.flink.tidb.pb.BinlogMessage.internal_static_binlog_Table_fieldAccessorTable
+        return BinlogMessage.internal_static_binlog_Table_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                org.apache.flink.tidb.pb.BinlogMessage.Table.class, org.apache.flink.tidb.pb.BinlogMessage.Table.Builder.class);
+                Table.class, Builder.class);
       }
 
       // Construct using org.apache.flink.tidb.pb.BinlogMessage.Table.newBuilder()
@@ -3405,23 +3405,23 @@ public final class BinlogMessage {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return org.apache.flink.tidb.pb.BinlogMessage.internal_static_binlog_Table_descriptor;
+        return BinlogMessage.internal_static_binlog_Table_descriptor;
       }
 
-      public org.apache.flink.tidb.pb.BinlogMessage.Table getDefaultInstanceForType() {
-        return org.apache.flink.tidb.pb.BinlogMessage.Table.getDefaultInstance();
+      public Table getDefaultInstanceForType() {
+        return Table.getDefaultInstance();
       }
 
-      public org.apache.flink.tidb.pb.BinlogMessage.Table build() {
-        org.apache.flink.tidb.pb.BinlogMessage.Table result = buildPartial();
+      public Table build() {
+        Table result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public org.apache.flink.tidb.pb.BinlogMessage.Table buildPartial() {
-        org.apache.flink.tidb.pb.BinlogMessage.Table result = new org.apache.flink.tidb.pb.BinlogMessage.Table(this);
+      public Table buildPartial() {
+        Table result = new Table(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -3482,16 +3482,16 @@ public final class BinlogMessage {
         return (Builder) super.addRepeatedField(field, value);
       }
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof org.apache.flink.tidb.pb.BinlogMessage.Table) {
-          return mergeFrom((org.apache.flink.tidb.pb.BinlogMessage.Table)other);
+        if (other instanceof Table) {
+          return mergeFrom((Table)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(org.apache.flink.tidb.pb.BinlogMessage.Table other) {
-        if (other == org.apache.flink.tidb.pb.BinlogMessage.Table.getDefaultInstance()) return this;
+      public Builder mergeFrom(Table other) {
+        if (other == Table.getDefaultInstance()) return this;
         if (other.hasSchemaName()) {
           bitField0_ |= 0x00000001;
           schemaName_ = other.schemaName_;
@@ -3572,11 +3572,11 @@ public final class BinlogMessage {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        org.apache.flink.tidb.pb.BinlogMessage.Table parsedMessage = null;
+        Table parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (org.apache.flink.tidb.pb.BinlogMessage.Table) e.getUnfinishedMessage();
+          parsedMessage = (Table) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -3739,22 +3739,22 @@ public final class BinlogMessage {
         return this;
       }
 
-      private java.util.List<org.apache.flink.tidb.pb.BinlogMessage.ColumnInfo> columnInfo_ =
+      private java.util.List<ColumnInfo> columnInfo_ =
         java.util.Collections.emptyList();
       private void ensureColumnInfoIsMutable() {
         if (!((bitField0_ & 0x00000004) == 0x00000004)) {
-          columnInfo_ = new java.util.ArrayList<org.apache.flink.tidb.pb.BinlogMessage.ColumnInfo>(columnInfo_);
+          columnInfo_ = new java.util.ArrayList<ColumnInfo>(columnInfo_);
           bitField0_ |= 0x00000004;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          org.apache.flink.tidb.pb.BinlogMessage.ColumnInfo, org.apache.flink.tidb.pb.BinlogMessage.ColumnInfo.Builder, org.apache.flink.tidb.pb.BinlogMessage.ColumnInfoOrBuilder> columnInfoBuilder_;
+          ColumnInfo, ColumnInfo.Builder, ColumnInfoOrBuilder> columnInfoBuilder_;
 
       /**
        * <code>repeated .binlog.ColumnInfo column_info = 3;</code>
        */
-      public java.util.List<org.apache.flink.tidb.pb.BinlogMessage.ColumnInfo> getColumnInfoList() {
+      public java.util.List<ColumnInfo> getColumnInfoList() {
         if (columnInfoBuilder_ == null) {
           return java.util.Collections.unmodifiableList(columnInfo_);
         } else {
@@ -3774,7 +3774,7 @@ public final class BinlogMessage {
       /**
        * <code>repeated .binlog.ColumnInfo column_info = 3;</code>
        */
-      public org.apache.flink.tidb.pb.BinlogMessage.ColumnInfo getColumnInfo(int index) {
+      public ColumnInfo getColumnInfo(int index) {
         if (columnInfoBuilder_ == null) {
           return columnInfo_.get(index);
         } else {
@@ -3785,7 +3785,7 @@ public final class BinlogMessage {
        * <code>repeated .binlog.ColumnInfo column_info = 3;</code>
        */
       public Builder setColumnInfo(
-          int index, org.apache.flink.tidb.pb.BinlogMessage.ColumnInfo value) {
+          int index, ColumnInfo value) {
         if (columnInfoBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -3802,7 +3802,7 @@ public final class BinlogMessage {
        * <code>repeated .binlog.ColumnInfo column_info = 3;</code>
        */
       public Builder setColumnInfo(
-          int index, org.apache.flink.tidb.pb.BinlogMessage.ColumnInfo.Builder builderForValue) {
+          int index, ColumnInfo.Builder builderForValue) {
         if (columnInfoBuilder_ == null) {
           ensureColumnInfoIsMutable();
           columnInfo_.set(index, builderForValue.build());
@@ -3815,7 +3815,7 @@ public final class BinlogMessage {
       /**
        * <code>repeated .binlog.ColumnInfo column_info = 3;</code>
        */
-      public Builder addColumnInfo(org.apache.flink.tidb.pb.BinlogMessage.ColumnInfo value) {
+      public Builder addColumnInfo(ColumnInfo value) {
         if (columnInfoBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -3832,7 +3832,7 @@ public final class BinlogMessage {
        * <code>repeated .binlog.ColumnInfo column_info = 3;</code>
        */
       public Builder addColumnInfo(
-          int index, org.apache.flink.tidb.pb.BinlogMessage.ColumnInfo value) {
+          int index, ColumnInfo value) {
         if (columnInfoBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -3849,7 +3849,7 @@ public final class BinlogMessage {
        * <code>repeated .binlog.ColumnInfo column_info = 3;</code>
        */
       public Builder addColumnInfo(
-          org.apache.flink.tidb.pb.BinlogMessage.ColumnInfo.Builder builderForValue) {
+          ColumnInfo.Builder builderForValue) {
         if (columnInfoBuilder_ == null) {
           ensureColumnInfoIsMutable();
           columnInfo_.add(builderForValue.build());
@@ -3863,7 +3863,7 @@ public final class BinlogMessage {
        * <code>repeated .binlog.ColumnInfo column_info = 3;</code>
        */
       public Builder addColumnInfo(
-          int index, org.apache.flink.tidb.pb.BinlogMessage.ColumnInfo.Builder builderForValue) {
+          int index, ColumnInfo.Builder builderForValue) {
         if (columnInfoBuilder_ == null) {
           ensureColumnInfoIsMutable();
           columnInfo_.add(index, builderForValue.build());
@@ -3877,7 +3877,7 @@ public final class BinlogMessage {
        * <code>repeated .binlog.ColumnInfo column_info = 3;</code>
        */
       public Builder addAllColumnInfo(
-          Iterable<? extends org.apache.flink.tidb.pb.BinlogMessage.ColumnInfo> values) {
+          Iterable<? extends ColumnInfo> values) {
         if (columnInfoBuilder_ == null) {
           ensureColumnInfoIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -3917,14 +3917,14 @@ public final class BinlogMessage {
       /**
        * <code>repeated .binlog.ColumnInfo column_info = 3;</code>
        */
-      public org.apache.flink.tidb.pb.BinlogMessage.ColumnInfo.Builder getColumnInfoBuilder(
+      public ColumnInfo.Builder getColumnInfoBuilder(
           int index) {
         return getColumnInfoFieldBuilder().getBuilder(index);
       }
       /**
        * <code>repeated .binlog.ColumnInfo column_info = 3;</code>
        */
-      public org.apache.flink.tidb.pb.BinlogMessage.ColumnInfoOrBuilder getColumnInfoOrBuilder(
+      public ColumnInfoOrBuilder getColumnInfoOrBuilder(
           int index) {
         if (columnInfoBuilder_ == null) {
           return columnInfo_.get(index);  } else {
@@ -3934,7 +3934,7 @@ public final class BinlogMessage {
       /**
        * <code>repeated .binlog.ColumnInfo column_info = 3;</code>
        */
-      public java.util.List<? extends org.apache.flink.tidb.pb.BinlogMessage.ColumnInfoOrBuilder>
+      public java.util.List<? extends ColumnInfoOrBuilder>
            getColumnInfoOrBuilderList() {
         if (columnInfoBuilder_ != null) {
           return columnInfoBuilder_.getMessageOrBuilderList();
@@ -3945,31 +3945,31 @@ public final class BinlogMessage {
       /**
        * <code>repeated .binlog.ColumnInfo column_info = 3;</code>
        */
-      public org.apache.flink.tidb.pb.BinlogMessage.ColumnInfo.Builder addColumnInfoBuilder() {
+      public ColumnInfo.Builder addColumnInfoBuilder() {
         return getColumnInfoFieldBuilder().addBuilder(
-            org.apache.flink.tidb.pb.BinlogMessage.ColumnInfo.getDefaultInstance());
+            ColumnInfo.getDefaultInstance());
       }
       /**
        * <code>repeated .binlog.ColumnInfo column_info = 3;</code>
        */
-      public org.apache.flink.tidb.pb.BinlogMessage.ColumnInfo.Builder addColumnInfoBuilder(
+      public ColumnInfo.Builder addColumnInfoBuilder(
           int index) {
         return getColumnInfoFieldBuilder().addBuilder(
-            index, org.apache.flink.tidb.pb.BinlogMessage.ColumnInfo.getDefaultInstance());
+            index, ColumnInfo.getDefaultInstance());
       }
       /**
        * <code>repeated .binlog.ColumnInfo column_info = 3;</code>
        */
-      public java.util.List<org.apache.flink.tidb.pb.BinlogMessage.ColumnInfo.Builder>
+      public java.util.List<ColumnInfo.Builder>
            getColumnInfoBuilderList() {
         return getColumnInfoFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          org.apache.flink.tidb.pb.BinlogMessage.ColumnInfo, org.apache.flink.tidb.pb.BinlogMessage.ColumnInfo.Builder, org.apache.flink.tidb.pb.BinlogMessage.ColumnInfoOrBuilder>
+          ColumnInfo, ColumnInfo.Builder, ColumnInfoOrBuilder>
           getColumnInfoFieldBuilder() {
         if (columnInfoBuilder_ == null) {
           columnInfoBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              org.apache.flink.tidb.pb.BinlogMessage.ColumnInfo, org.apache.flink.tidb.pb.BinlogMessage.ColumnInfo.Builder, org.apache.flink.tidb.pb.BinlogMessage.ColumnInfoOrBuilder>(
+              ColumnInfo, ColumnInfo.Builder, ColumnInfoOrBuilder>(
                   columnInfo_,
                   ((bitField0_ & 0x00000004) == 0x00000004),
                   getParentForChildren(),
@@ -3979,22 +3979,22 @@ public final class BinlogMessage {
         return columnInfoBuilder_;
       }
 
-      private java.util.List<org.apache.flink.tidb.pb.BinlogMessage.TableMutation> mutations_ =
+      private java.util.List<TableMutation> mutations_ =
         java.util.Collections.emptyList();
       private void ensureMutationsIsMutable() {
         if (!((bitField0_ & 0x00000008) == 0x00000008)) {
-          mutations_ = new java.util.ArrayList<org.apache.flink.tidb.pb.BinlogMessage.TableMutation>(mutations_);
+          mutations_ = new java.util.ArrayList<TableMutation>(mutations_);
           bitField0_ |= 0x00000008;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          org.apache.flink.tidb.pb.BinlogMessage.TableMutation, org.apache.flink.tidb.pb.BinlogMessage.TableMutation.Builder, org.apache.flink.tidb.pb.BinlogMessage.TableMutationOrBuilder> mutationsBuilder_;
+          TableMutation, TableMutation.Builder, TableMutationOrBuilder> mutationsBuilder_;
 
       /**
        * <code>repeated .binlog.TableMutation mutations = 4;</code>
        */
-      public java.util.List<org.apache.flink.tidb.pb.BinlogMessage.TableMutation> getMutationsList() {
+      public java.util.List<TableMutation> getMutationsList() {
         if (mutationsBuilder_ == null) {
           return java.util.Collections.unmodifiableList(mutations_);
         } else {
@@ -4014,7 +4014,7 @@ public final class BinlogMessage {
       /**
        * <code>repeated .binlog.TableMutation mutations = 4;</code>
        */
-      public org.apache.flink.tidb.pb.BinlogMessage.TableMutation getMutations(int index) {
+      public TableMutation getMutations(int index) {
         if (mutationsBuilder_ == null) {
           return mutations_.get(index);
         } else {
@@ -4025,7 +4025,7 @@ public final class BinlogMessage {
        * <code>repeated .binlog.TableMutation mutations = 4;</code>
        */
       public Builder setMutations(
-          int index, org.apache.flink.tidb.pb.BinlogMessage.TableMutation value) {
+          int index, TableMutation value) {
         if (mutationsBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -4042,7 +4042,7 @@ public final class BinlogMessage {
        * <code>repeated .binlog.TableMutation mutations = 4;</code>
        */
       public Builder setMutations(
-          int index, org.apache.flink.tidb.pb.BinlogMessage.TableMutation.Builder builderForValue) {
+          int index, TableMutation.Builder builderForValue) {
         if (mutationsBuilder_ == null) {
           ensureMutationsIsMutable();
           mutations_.set(index, builderForValue.build());
@@ -4055,7 +4055,7 @@ public final class BinlogMessage {
       /**
        * <code>repeated .binlog.TableMutation mutations = 4;</code>
        */
-      public Builder addMutations(org.apache.flink.tidb.pb.BinlogMessage.TableMutation value) {
+      public Builder addMutations(TableMutation value) {
         if (mutationsBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -4072,7 +4072,7 @@ public final class BinlogMessage {
        * <code>repeated .binlog.TableMutation mutations = 4;</code>
        */
       public Builder addMutations(
-          int index, org.apache.flink.tidb.pb.BinlogMessage.TableMutation value) {
+          int index, TableMutation value) {
         if (mutationsBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -4089,7 +4089,7 @@ public final class BinlogMessage {
        * <code>repeated .binlog.TableMutation mutations = 4;</code>
        */
       public Builder addMutations(
-          org.apache.flink.tidb.pb.BinlogMessage.TableMutation.Builder builderForValue) {
+          TableMutation.Builder builderForValue) {
         if (mutationsBuilder_ == null) {
           ensureMutationsIsMutable();
           mutations_.add(builderForValue.build());
@@ -4103,7 +4103,7 @@ public final class BinlogMessage {
        * <code>repeated .binlog.TableMutation mutations = 4;</code>
        */
       public Builder addMutations(
-          int index, org.apache.flink.tidb.pb.BinlogMessage.TableMutation.Builder builderForValue) {
+          int index, TableMutation.Builder builderForValue) {
         if (mutationsBuilder_ == null) {
           ensureMutationsIsMutable();
           mutations_.add(index, builderForValue.build());
@@ -4117,7 +4117,7 @@ public final class BinlogMessage {
        * <code>repeated .binlog.TableMutation mutations = 4;</code>
        */
       public Builder addAllMutations(
-          Iterable<? extends org.apache.flink.tidb.pb.BinlogMessage.TableMutation> values) {
+          Iterable<? extends TableMutation> values) {
         if (mutationsBuilder_ == null) {
           ensureMutationsIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -4157,14 +4157,14 @@ public final class BinlogMessage {
       /**
        * <code>repeated .binlog.TableMutation mutations = 4;</code>
        */
-      public org.apache.flink.tidb.pb.BinlogMessage.TableMutation.Builder getMutationsBuilder(
+      public TableMutation.Builder getMutationsBuilder(
           int index) {
         return getMutationsFieldBuilder().getBuilder(index);
       }
       /**
        * <code>repeated .binlog.TableMutation mutations = 4;</code>
        */
-      public org.apache.flink.tidb.pb.BinlogMessage.TableMutationOrBuilder getMutationsOrBuilder(
+      public TableMutationOrBuilder getMutationsOrBuilder(
           int index) {
         if (mutationsBuilder_ == null) {
           return mutations_.get(index);  } else {
@@ -4174,7 +4174,7 @@ public final class BinlogMessage {
       /**
        * <code>repeated .binlog.TableMutation mutations = 4;</code>
        */
-      public java.util.List<? extends org.apache.flink.tidb.pb.BinlogMessage.TableMutationOrBuilder>
+      public java.util.List<? extends TableMutationOrBuilder>
            getMutationsOrBuilderList() {
         if (mutationsBuilder_ != null) {
           return mutationsBuilder_.getMessageOrBuilderList();
@@ -4185,31 +4185,31 @@ public final class BinlogMessage {
       /**
        * <code>repeated .binlog.TableMutation mutations = 4;</code>
        */
-      public org.apache.flink.tidb.pb.BinlogMessage.TableMutation.Builder addMutationsBuilder() {
+      public TableMutation.Builder addMutationsBuilder() {
         return getMutationsFieldBuilder().addBuilder(
-            org.apache.flink.tidb.pb.BinlogMessage.TableMutation.getDefaultInstance());
+            TableMutation.getDefaultInstance());
       }
       /**
        * <code>repeated .binlog.TableMutation mutations = 4;</code>
        */
-      public org.apache.flink.tidb.pb.BinlogMessage.TableMutation.Builder addMutationsBuilder(
+      public TableMutation.Builder addMutationsBuilder(
           int index) {
         return getMutationsFieldBuilder().addBuilder(
-            index, org.apache.flink.tidb.pb.BinlogMessage.TableMutation.getDefaultInstance());
+            index, TableMutation.getDefaultInstance());
       }
       /**
        * <code>repeated .binlog.TableMutation mutations = 4;</code>
        */
-      public java.util.List<org.apache.flink.tidb.pb.BinlogMessage.TableMutation.Builder>
+      public java.util.List<TableMutation.Builder>
            getMutationsBuilderList() {
         return getMutationsFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          org.apache.flink.tidb.pb.BinlogMessage.TableMutation, org.apache.flink.tidb.pb.BinlogMessage.TableMutation.Builder, org.apache.flink.tidb.pb.BinlogMessage.TableMutationOrBuilder>
+          TableMutation, TableMutation.Builder, TableMutationOrBuilder>
           getMutationsFieldBuilder() {
         if (mutationsBuilder_ == null) {
           mutationsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              org.apache.flink.tidb.pb.BinlogMessage.TableMutation, org.apache.flink.tidb.pb.BinlogMessage.TableMutation.Builder, org.apache.flink.tidb.pb.BinlogMessage.TableMutationOrBuilder>(
+              TableMutation, TableMutation.Builder, TableMutationOrBuilder>(
                   mutations_,
                   ((bitField0_ & 0x00000008) == 0x00000008),
                   getParentForChildren(),
@@ -4233,12 +4233,12 @@ public final class BinlogMessage {
     }
 
     // @@protoc_insertion_point(class_scope:binlog.Table)
-    private static final org.apache.flink.tidb.pb.BinlogMessage.Table DEFAULT_INSTANCE;
+    private static final Table DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new org.apache.flink.tidb.pb.BinlogMessage.Table();
+      DEFAULT_INSTANCE = new Table();
     }
 
-    public static org.apache.flink.tidb.pb.BinlogMessage.Table getDefaultInstance() {
+    public static Table getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -4261,7 +4261,7 @@ public final class BinlogMessage {
       return PARSER;
     }
 
-    public org.apache.flink.tidb.pb.BinlogMessage.Table getDefaultInstanceForType() {
+    public Table getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -4278,7 +4278,7 @@ public final class BinlogMessage {
     /**
      * <code>required .binlog.MutationType type = 1;</code>
      */
-    org.apache.flink.tidb.pb.BinlogMessage.MutationType getType();
+    MutationType getType();
 
     /**
      * <code>required .binlog.Row row = 2;</code>
@@ -4287,11 +4287,11 @@ public final class BinlogMessage {
     /**
      * <code>required .binlog.Row row = 2;</code>
      */
-    org.apache.flink.tidb.pb.BinlogMessage.Row getRow();
+    Row getRow();
     /**
      * <code>required .binlog.Row row = 2;</code>
      */
-    org.apache.flink.tidb.pb.BinlogMessage.RowOrBuilder getRowOrBuilder();
+    RowOrBuilder getRowOrBuilder();
 
     /**
      * <pre>
@@ -4308,7 +4308,7 @@ public final class BinlogMessage {
      *
      * <code>optional .binlog.Row change_row = 3;</code>
      */
-    org.apache.flink.tidb.pb.BinlogMessage.Row getChangeRow();
+    Row getChangeRow();
     /**
      * <pre>
      * for Update MutationType only
@@ -4316,7 +4316,7 @@ public final class BinlogMessage {
      *
      * <code>optional .binlog.Row change_row = 3;</code>
      */
-    org.apache.flink.tidb.pb.BinlogMessage.RowOrBuilder getChangeRowOrBuilder();
+    RowOrBuilder getChangeRowOrBuilder();
   }
   /**
    * Protobuf type {@code binlog.TableMutation}
@@ -4364,7 +4364,7 @@ public final class BinlogMessage {
             }
             case 8: {
               int rawValue = input.readEnum();
-              org.apache.flink.tidb.pb.BinlogMessage.MutationType value = org.apache.flink.tidb.pb.BinlogMessage.MutationType.valueOf(rawValue);
+              MutationType value = MutationType.valueOf(rawValue);
               if (value == null) {
                 unknownFields.mergeVarintField(1, rawValue);
               } else {
@@ -4374,11 +4374,11 @@ public final class BinlogMessage {
               break;
             }
             case 18: {
-              org.apache.flink.tidb.pb.BinlogMessage.Row.Builder subBuilder = null;
+              Row.Builder subBuilder = null;
               if (((bitField0_ & 0x00000002) == 0x00000002)) {
                 subBuilder = row_.toBuilder();
               }
-              row_ = input.readMessage(org.apache.flink.tidb.pb.BinlogMessage.Row.PARSER, extensionRegistry);
+              row_ = input.readMessage(Row.PARSER, extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(row_);
                 row_ = subBuilder.buildPartial();
@@ -4387,11 +4387,11 @@ public final class BinlogMessage {
               break;
             }
             case 26: {
-              org.apache.flink.tidb.pb.BinlogMessage.Row.Builder subBuilder = null;
+              Row.Builder subBuilder = null;
               if (((bitField0_ & 0x00000004) == 0x00000004)) {
                 subBuilder = changeRow_.toBuilder();
               }
-              changeRow_ = input.readMessage(org.apache.flink.tidb.pb.BinlogMessage.Row.PARSER, extensionRegistry);
+              changeRow_ = input.readMessage(Row.PARSER, extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(changeRow_);
                 changeRow_ = subBuilder.buildPartial();
@@ -4413,14 +4413,14 @@ public final class BinlogMessage {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return org.apache.flink.tidb.pb.BinlogMessage.internal_static_binlog_TableMutation_descriptor;
+      return BinlogMessage.internal_static_binlog_TableMutation_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return org.apache.flink.tidb.pb.BinlogMessage.internal_static_binlog_TableMutation_fieldAccessorTable
+      return BinlogMessage.internal_static_binlog_TableMutation_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              org.apache.flink.tidb.pb.BinlogMessage.TableMutation.class, org.apache.flink.tidb.pb.BinlogMessage.TableMutation.Builder.class);
+              TableMutation.class, Builder.class);
     }
 
     private int bitField0_;
@@ -4435,13 +4435,13 @@ public final class BinlogMessage {
     /**
      * <code>required .binlog.MutationType type = 1;</code>
      */
-    public org.apache.flink.tidb.pb.BinlogMessage.MutationType getType() {
-      org.apache.flink.tidb.pb.BinlogMessage.MutationType result = org.apache.flink.tidb.pb.BinlogMessage.MutationType.valueOf(type_);
-      return result == null ? org.apache.flink.tidb.pb.BinlogMessage.MutationType.Insert : result;
+    public MutationType getType() {
+      MutationType result = MutationType.valueOf(type_);
+      return result == null ? MutationType.Insert : result;
     }
 
     public static final int ROW_FIELD_NUMBER = 2;
-    private org.apache.flink.tidb.pb.BinlogMessage.Row row_;
+    private Row row_;
     /**
      * <code>required .binlog.Row row = 2;</code>
      */
@@ -4451,18 +4451,18 @@ public final class BinlogMessage {
     /**
      * <code>required .binlog.Row row = 2;</code>
      */
-    public org.apache.flink.tidb.pb.BinlogMessage.Row getRow() {
-      return row_ == null ? org.apache.flink.tidb.pb.BinlogMessage.Row.getDefaultInstance() : row_;
+    public Row getRow() {
+      return row_ == null ? Row.getDefaultInstance() : row_;
     }
     /**
      * <code>required .binlog.Row row = 2;</code>
      */
-    public org.apache.flink.tidb.pb.BinlogMessage.RowOrBuilder getRowOrBuilder() {
-      return row_ == null ? org.apache.flink.tidb.pb.BinlogMessage.Row.getDefaultInstance() : row_;
+    public RowOrBuilder getRowOrBuilder() {
+      return row_ == null ? Row.getDefaultInstance() : row_;
     }
 
     public static final int CHANGE_ROW_FIELD_NUMBER = 3;
-    private org.apache.flink.tidb.pb.BinlogMessage.Row changeRow_;
+    private Row changeRow_;
     /**
      * <pre>
      * for Update MutationType only
@@ -4480,8 +4480,8 @@ public final class BinlogMessage {
      *
      * <code>optional .binlog.Row change_row = 3;</code>
      */
-    public org.apache.flink.tidb.pb.BinlogMessage.Row getChangeRow() {
-      return changeRow_ == null ? org.apache.flink.tidb.pb.BinlogMessage.Row.getDefaultInstance() : changeRow_;
+    public Row getChangeRow() {
+      return changeRow_ == null ? Row.getDefaultInstance() : changeRow_;
     }
     /**
      * <pre>
@@ -4490,8 +4490,8 @@ public final class BinlogMessage {
      *
      * <code>optional .binlog.Row change_row = 3;</code>
      */
-    public org.apache.flink.tidb.pb.BinlogMessage.RowOrBuilder getChangeRowOrBuilder() {
-      return changeRow_ == null ? org.apache.flink.tidb.pb.BinlogMessage.Row.getDefaultInstance() : changeRow_;
+    public RowOrBuilder getChangeRowOrBuilder() {
+      return changeRow_ == null ? Row.getDefaultInstance() : changeRow_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -4553,10 +4553,10 @@ public final class BinlogMessage {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof org.apache.flink.tidb.pb.BinlogMessage.TableMutation)) {
+      if (!(obj instanceof TableMutation)) {
         return super.equals(obj);
       }
-      org.apache.flink.tidb.pb.BinlogMessage.TableMutation other = (org.apache.flink.tidb.pb.BinlogMessage.TableMutation) obj;
+      TableMutation other = (TableMutation) obj;
 
       boolean result = true;
       result = result && (hasType() == other.hasType());
@@ -4601,69 +4601,69 @@ public final class BinlogMessage {
       return hash;
     }
 
-    public static org.apache.flink.tidb.pb.BinlogMessage.TableMutation parseFrom(
+    public static TableMutation parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.TableMutation parseFrom(
+    public static TableMutation parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.TableMutation parseFrom(
+    public static TableMutation parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.TableMutation parseFrom(
+    public static TableMutation parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.TableMutation parseFrom(byte[] data)
+    public static TableMutation parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.TableMutation parseFrom(
+    public static TableMutation parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.TableMutation parseFrom(java.io.InputStream input)
+    public static TableMutation parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.TableMutation parseFrom(
+    public static TableMutation parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.TableMutation parseDelimitedFrom(java.io.InputStream input)
+    public static TableMutation parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.TableMutation parseDelimitedFrom(
+    public static TableMutation parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.TableMutation parseFrom(
+    public static TableMutation parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.TableMutation parseFrom(
+    public static TableMutation parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -4675,7 +4675,7 @@ public final class BinlogMessage {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(org.apache.flink.tidb.pb.BinlogMessage.TableMutation prototype) {
+    public static Builder newBuilder(TableMutation prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() {
@@ -4695,17 +4695,17 @@ public final class BinlogMessage {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:binlog.TableMutation)
-        org.apache.flink.tidb.pb.BinlogMessage.TableMutationOrBuilder {
+        TableMutationOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return org.apache.flink.tidb.pb.BinlogMessage.internal_static_binlog_TableMutation_descriptor;
+        return BinlogMessage.internal_static_binlog_TableMutation_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return org.apache.flink.tidb.pb.BinlogMessage.internal_static_binlog_TableMutation_fieldAccessorTable
+        return BinlogMessage.internal_static_binlog_TableMutation_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                org.apache.flink.tidb.pb.BinlogMessage.TableMutation.class, org.apache.flink.tidb.pb.BinlogMessage.TableMutation.Builder.class);
+                TableMutation.class, Builder.class);
       }
 
       // Construct using org.apache.flink.tidb.pb.BinlogMessage.TableMutation.newBuilder()
@@ -4746,23 +4746,23 @@ public final class BinlogMessage {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return org.apache.flink.tidb.pb.BinlogMessage.internal_static_binlog_TableMutation_descriptor;
+        return BinlogMessage.internal_static_binlog_TableMutation_descriptor;
       }
 
-      public org.apache.flink.tidb.pb.BinlogMessage.TableMutation getDefaultInstanceForType() {
-        return org.apache.flink.tidb.pb.BinlogMessage.TableMutation.getDefaultInstance();
+      public TableMutation getDefaultInstanceForType() {
+        return TableMutation.getDefaultInstance();
       }
 
-      public org.apache.flink.tidb.pb.BinlogMessage.TableMutation build() {
-        org.apache.flink.tidb.pb.BinlogMessage.TableMutation result = buildPartial();
+      public TableMutation build() {
+        TableMutation result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public org.apache.flink.tidb.pb.BinlogMessage.TableMutation buildPartial() {
-        org.apache.flink.tidb.pb.BinlogMessage.TableMutation result = new org.apache.flink.tidb.pb.BinlogMessage.TableMutation(this);
+      public TableMutation buildPartial() {
+        TableMutation result = new TableMutation(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -4817,16 +4817,16 @@ public final class BinlogMessage {
         return (Builder) super.addRepeatedField(field, value);
       }
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof org.apache.flink.tidb.pb.BinlogMessage.TableMutation) {
-          return mergeFrom((org.apache.flink.tidb.pb.BinlogMessage.TableMutation)other);
+        if (other instanceof TableMutation) {
+          return mergeFrom((TableMutation)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(org.apache.flink.tidb.pb.BinlogMessage.TableMutation other) {
-        if (other == org.apache.flink.tidb.pb.BinlogMessage.TableMutation.getDefaultInstance()) return this;
+      public Builder mergeFrom(TableMutation other) {
+        if (other == TableMutation.getDefaultInstance()) return this;
         if (other.hasType()) {
           setType(other.getType());
         }
@@ -4855,11 +4855,11 @@ public final class BinlogMessage {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        org.apache.flink.tidb.pb.BinlogMessage.TableMutation parsedMessage = null;
+        TableMutation parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (org.apache.flink.tidb.pb.BinlogMessage.TableMutation) e.getUnfinishedMessage();
+          parsedMessage = (TableMutation) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -4880,14 +4880,14 @@ public final class BinlogMessage {
       /**
        * <code>required .binlog.MutationType type = 1;</code>
        */
-      public org.apache.flink.tidb.pb.BinlogMessage.MutationType getType() {
-        org.apache.flink.tidb.pb.BinlogMessage.MutationType result = org.apache.flink.tidb.pb.BinlogMessage.MutationType.valueOf(type_);
-        return result == null ? org.apache.flink.tidb.pb.BinlogMessage.MutationType.Insert : result;
+      public MutationType getType() {
+        MutationType result = MutationType.valueOf(type_);
+        return result == null ? MutationType.Insert : result;
       }
       /**
        * <code>required .binlog.MutationType type = 1;</code>
        */
-      public Builder setType(org.apache.flink.tidb.pb.BinlogMessage.MutationType value) {
+      public Builder setType(MutationType value) {
         if (value == null) {
           throw new NullPointerException();
         }
@@ -4906,9 +4906,9 @@ public final class BinlogMessage {
         return this;
       }
 
-      private org.apache.flink.tidb.pb.BinlogMessage.Row row_ = null;
+      private Row row_ = null;
       private com.google.protobuf.SingleFieldBuilderV3<
-          org.apache.flink.tidb.pb.BinlogMessage.Row, org.apache.flink.tidb.pb.BinlogMessage.Row.Builder, org.apache.flink.tidb.pb.BinlogMessage.RowOrBuilder> rowBuilder_;
+          Row, Row.Builder, RowOrBuilder> rowBuilder_;
       /**
        * <code>required .binlog.Row row = 2;</code>
        */
@@ -4918,9 +4918,9 @@ public final class BinlogMessage {
       /**
        * <code>required .binlog.Row row = 2;</code>
        */
-      public org.apache.flink.tidb.pb.BinlogMessage.Row getRow() {
+      public Row getRow() {
         if (rowBuilder_ == null) {
-          return row_ == null ? org.apache.flink.tidb.pb.BinlogMessage.Row.getDefaultInstance() : row_;
+          return row_ == null ? Row.getDefaultInstance() : row_;
         } else {
           return rowBuilder_.getMessage();
         }
@@ -4928,7 +4928,7 @@ public final class BinlogMessage {
       /**
        * <code>required .binlog.Row row = 2;</code>
        */
-      public Builder setRow(org.apache.flink.tidb.pb.BinlogMessage.Row value) {
+      public Builder setRow(Row value) {
         if (rowBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -4945,7 +4945,7 @@ public final class BinlogMessage {
        * <code>required .binlog.Row row = 2;</code>
        */
       public Builder setRow(
-          org.apache.flink.tidb.pb.BinlogMessage.Row.Builder builderForValue) {
+          Row.Builder builderForValue) {
         if (rowBuilder_ == null) {
           row_ = builderForValue.build();
           onChanged();
@@ -4958,13 +4958,13 @@ public final class BinlogMessage {
       /**
        * <code>required .binlog.Row row = 2;</code>
        */
-      public Builder mergeRow(org.apache.flink.tidb.pb.BinlogMessage.Row value) {
+      public Builder mergeRow(Row value) {
         if (rowBuilder_ == null) {
           if (((bitField0_ & 0x00000002) == 0x00000002) &&
               row_ != null &&
-              row_ != org.apache.flink.tidb.pb.BinlogMessage.Row.getDefaultInstance()) {
+              row_ != Row.getDefaultInstance()) {
             row_ =
-              org.apache.flink.tidb.pb.BinlogMessage.Row.newBuilder(row_).mergeFrom(value).buildPartial();
+              Row.newBuilder(row_).mergeFrom(value).buildPartial();
           } else {
             row_ = value;
           }
@@ -4991,7 +4991,7 @@ public final class BinlogMessage {
       /**
        * <code>required .binlog.Row row = 2;</code>
        */
-      public org.apache.flink.tidb.pb.BinlogMessage.Row.Builder getRowBuilder() {
+      public Row.Builder getRowBuilder() {
         bitField0_ |= 0x00000002;
         onChanged();
         return getRowFieldBuilder().getBuilder();
@@ -4999,23 +4999,23 @@ public final class BinlogMessage {
       /**
        * <code>required .binlog.Row row = 2;</code>
        */
-      public org.apache.flink.tidb.pb.BinlogMessage.RowOrBuilder getRowOrBuilder() {
+      public RowOrBuilder getRowOrBuilder() {
         if (rowBuilder_ != null) {
           return rowBuilder_.getMessageOrBuilder();
         } else {
           return row_ == null ?
-              org.apache.flink.tidb.pb.BinlogMessage.Row.getDefaultInstance() : row_;
+              Row.getDefaultInstance() : row_;
         }
       }
       /**
        * <code>required .binlog.Row row = 2;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          org.apache.flink.tidb.pb.BinlogMessage.Row, org.apache.flink.tidb.pb.BinlogMessage.Row.Builder, org.apache.flink.tidb.pb.BinlogMessage.RowOrBuilder>
+          Row, Row.Builder, RowOrBuilder>
           getRowFieldBuilder() {
         if (rowBuilder_ == null) {
           rowBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              org.apache.flink.tidb.pb.BinlogMessage.Row, org.apache.flink.tidb.pb.BinlogMessage.Row.Builder, org.apache.flink.tidb.pb.BinlogMessage.RowOrBuilder>(
+              Row, Row.Builder, RowOrBuilder>(
                   getRow(),
                   getParentForChildren(),
                   isClean());
@@ -5024,9 +5024,9 @@ public final class BinlogMessage {
         return rowBuilder_;
       }
 
-      private org.apache.flink.tidb.pb.BinlogMessage.Row changeRow_ = null;
+      private Row changeRow_ = null;
       private com.google.protobuf.SingleFieldBuilderV3<
-          org.apache.flink.tidb.pb.BinlogMessage.Row, org.apache.flink.tidb.pb.BinlogMessage.Row.Builder, org.apache.flink.tidb.pb.BinlogMessage.RowOrBuilder> changeRowBuilder_;
+          Row, Row.Builder, RowOrBuilder> changeRowBuilder_;
       /**
        * <pre>
        * for Update MutationType only
@@ -5044,9 +5044,9 @@ public final class BinlogMessage {
        *
        * <code>optional .binlog.Row change_row = 3;</code>
        */
-      public org.apache.flink.tidb.pb.BinlogMessage.Row getChangeRow() {
+      public Row getChangeRow() {
         if (changeRowBuilder_ == null) {
-          return changeRow_ == null ? org.apache.flink.tidb.pb.BinlogMessage.Row.getDefaultInstance() : changeRow_;
+          return changeRow_ == null ? Row.getDefaultInstance() : changeRow_;
         } else {
           return changeRowBuilder_.getMessage();
         }
@@ -5058,7 +5058,7 @@ public final class BinlogMessage {
        *
        * <code>optional .binlog.Row change_row = 3;</code>
        */
-      public Builder setChangeRow(org.apache.flink.tidb.pb.BinlogMessage.Row value) {
+      public Builder setChangeRow(Row value) {
         if (changeRowBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -5079,7 +5079,7 @@ public final class BinlogMessage {
        * <code>optional .binlog.Row change_row = 3;</code>
        */
       public Builder setChangeRow(
-          org.apache.flink.tidb.pb.BinlogMessage.Row.Builder builderForValue) {
+          Row.Builder builderForValue) {
         if (changeRowBuilder_ == null) {
           changeRow_ = builderForValue.build();
           onChanged();
@@ -5096,13 +5096,13 @@ public final class BinlogMessage {
        *
        * <code>optional .binlog.Row change_row = 3;</code>
        */
-      public Builder mergeChangeRow(org.apache.flink.tidb.pb.BinlogMessage.Row value) {
+      public Builder mergeChangeRow(Row value) {
         if (changeRowBuilder_ == null) {
           if (((bitField0_ & 0x00000004) == 0x00000004) &&
               changeRow_ != null &&
-              changeRow_ != org.apache.flink.tidb.pb.BinlogMessage.Row.getDefaultInstance()) {
+              changeRow_ != Row.getDefaultInstance()) {
             changeRow_ =
-              org.apache.flink.tidb.pb.BinlogMessage.Row.newBuilder(changeRow_).mergeFrom(value).buildPartial();
+              Row.newBuilder(changeRow_).mergeFrom(value).buildPartial();
           } else {
             changeRow_ = value;
           }
@@ -5137,7 +5137,7 @@ public final class BinlogMessage {
        *
        * <code>optional .binlog.Row change_row = 3;</code>
        */
-      public org.apache.flink.tidb.pb.BinlogMessage.Row.Builder getChangeRowBuilder() {
+      public Row.Builder getChangeRowBuilder() {
         bitField0_ |= 0x00000004;
         onChanged();
         return getChangeRowFieldBuilder().getBuilder();
@@ -5149,12 +5149,12 @@ public final class BinlogMessage {
        *
        * <code>optional .binlog.Row change_row = 3;</code>
        */
-      public org.apache.flink.tidb.pb.BinlogMessage.RowOrBuilder getChangeRowOrBuilder() {
+      public RowOrBuilder getChangeRowOrBuilder() {
         if (changeRowBuilder_ != null) {
           return changeRowBuilder_.getMessageOrBuilder();
         } else {
           return changeRow_ == null ?
-              org.apache.flink.tidb.pb.BinlogMessage.Row.getDefaultInstance() : changeRow_;
+              Row.getDefaultInstance() : changeRow_;
         }
       }
       /**
@@ -5165,11 +5165,11 @@ public final class BinlogMessage {
        * <code>optional .binlog.Row change_row = 3;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          org.apache.flink.tidb.pb.BinlogMessage.Row, org.apache.flink.tidb.pb.BinlogMessage.Row.Builder, org.apache.flink.tidb.pb.BinlogMessage.RowOrBuilder>
+          Row, Row.Builder, RowOrBuilder>
           getChangeRowFieldBuilder() {
         if (changeRowBuilder_ == null) {
           changeRowBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              org.apache.flink.tidb.pb.BinlogMessage.Row, org.apache.flink.tidb.pb.BinlogMessage.Row.Builder, org.apache.flink.tidb.pb.BinlogMessage.RowOrBuilder>(
+              Row, Row.Builder, RowOrBuilder>(
                   getChangeRow(),
                   getParentForChildren(),
                   isClean());
@@ -5192,12 +5192,12 @@ public final class BinlogMessage {
     }
 
     // @@protoc_insertion_point(class_scope:binlog.TableMutation)
-    private static final org.apache.flink.tidb.pb.BinlogMessage.TableMutation DEFAULT_INSTANCE;
+    private static final TableMutation DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new org.apache.flink.tidb.pb.BinlogMessage.TableMutation();
+      DEFAULT_INSTANCE = new TableMutation();
     }
 
-    public static org.apache.flink.tidb.pb.BinlogMessage.TableMutation getDefaultInstance() {
+    public static TableMutation getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -5220,7 +5220,7 @@ public final class BinlogMessage {
       return PARSER;
     }
 
-    public org.apache.flink.tidb.pb.BinlogMessage.TableMutation getDefaultInstanceForType() {
+    public TableMutation getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -5237,7 +5237,7 @@ public final class BinlogMessage {
      *
      * <code>repeated .binlog.Table tables = 1;</code>
      */
-    java.util.List<org.apache.flink.tidb.pb.BinlogMessage.Table>
+    java.util.List<Table>
         getTablesList();
     /**
      * <pre>
@@ -5246,7 +5246,7 @@ public final class BinlogMessage {
      *
      * <code>repeated .binlog.Table tables = 1;</code>
      */
-    org.apache.flink.tidb.pb.BinlogMessage.Table getTables(int index);
+    Table getTables(int index);
     /**
      * <pre>
      * tables contains all the table changes.
@@ -5262,7 +5262,7 @@ public final class BinlogMessage {
      *
      * <code>repeated .binlog.Table tables = 1;</code>
      */
-    java.util.List<? extends org.apache.flink.tidb.pb.BinlogMessage.TableOrBuilder>
+    java.util.List<? extends TableOrBuilder>
         getTablesOrBuilderList();
     /**
      * <pre>
@@ -5271,7 +5271,7 @@ public final class BinlogMessage {
      *
      * <code>repeated .binlog.Table tables = 1;</code>
      */
-    org.apache.flink.tidb.pb.BinlogMessage.TableOrBuilder getTablesOrBuilder(
+    TableOrBuilder getTablesOrBuilder(
 		int index);
   }
   /**
@@ -5320,11 +5320,11 @@ public final class BinlogMessage {
             }
             case 10: {
               if (!((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
-                tables_ = new java.util.ArrayList<org.apache.flink.tidb.pb.BinlogMessage.Table>();
+                tables_ = new java.util.ArrayList<Table>();
                 mutable_bitField0_ |= 0x00000001;
               }
               tables_.add(
-                  input.readMessage(org.apache.flink.tidb.pb.BinlogMessage.Table.PARSER, extensionRegistry));
+                  input.readMessage(Table.PARSER, extensionRegistry));
               break;
             }
           }
@@ -5344,18 +5344,18 @@ public final class BinlogMessage {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return org.apache.flink.tidb.pb.BinlogMessage.internal_static_binlog_DMLData_descriptor;
+      return BinlogMessage.internal_static_binlog_DMLData_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return org.apache.flink.tidb.pb.BinlogMessage.internal_static_binlog_DMLData_fieldAccessorTable
+      return BinlogMessage.internal_static_binlog_DMLData_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              org.apache.flink.tidb.pb.BinlogMessage.DMLData.class, org.apache.flink.tidb.pb.BinlogMessage.DMLData.Builder.class);
+              DMLData.class, Builder.class);
     }
 
     public static final int TABLES_FIELD_NUMBER = 1;
-    private java.util.List<org.apache.flink.tidb.pb.BinlogMessage.Table> tables_;
+    private java.util.List<Table> tables_;
     /**
      * <pre>
      * tables contains all the table changes.
@@ -5363,7 +5363,7 @@ public final class BinlogMessage {
      *
      * <code>repeated .binlog.Table tables = 1;</code>
      */
-    public java.util.List<org.apache.flink.tidb.pb.BinlogMessage.Table> getTablesList() {
+    public java.util.List<Table> getTablesList() {
       return tables_;
     }
     /**
@@ -5373,7 +5373,7 @@ public final class BinlogMessage {
      *
      * <code>repeated .binlog.Table tables = 1;</code>
      */
-    public java.util.List<? extends org.apache.flink.tidb.pb.BinlogMessage.TableOrBuilder>
+    public java.util.List<? extends TableOrBuilder>
         getTablesOrBuilderList() {
       return tables_;
     }
@@ -5394,7 +5394,7 @@ public final class BinlogMessage {
      *
      * <code>repeated .binlog.Table tables = 1;</code>
      */
-    public org.apache.flink.tidb.pb.BinlogMessage.Table getTables(int index) {
+    public Table getTables(int index) {
       return tables_.get(index);
     }
     /**
@@ -5404,7 +5404,7 @@ public final class BinlogMessage {
      *
      * <code>repeated .binlog.Table tables = 1;</code>
      */
-    public org.apache.flink.tidb.pb.BinlogMessage.TableOrBuilder getTablesOrBuilder(
+    public TableOrBuilder getTablesOrBuilder(
         int index) {
       return tables_.get(index);
     }
@@ -5452,10 +5452,10 @@ public final class BinlogMessage {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof org.apache.flink.tidb.pb.BinlogMessage.DMLData)) {
+      if (!(obj instanceof DMLData)) {
         return super.equals(obj);
       }
-      org.apache.flink.tidb.pb.BinlogMessage.DMLData other = (org.apache.flink.tidb.pb.BinlogMessage.DMLData) obj;
+      DMLData other = (DMLData) obj;
 
       boolean result = true;
       result = result && getTablesList()
@@ -5480,69 +5480,69 @@ public final class BinlogMessage {
       return hash;
     }
 
-    public static org.apache.flink.tidb.pb.BinlogMessage.DMLData parseFrom(
+    public static DMLData parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.DMLData parseFrom(
+    public static DMLData parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.DMLData parseFrom(
+    public static DMLData parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.DMLData parseFrom(
+    public static DMLData parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.DMLData parseFrom(byte[] data)
+    public static DMLData parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.DMLData parseFrom(
+    public static DMLData parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.DMLData parseFrom(java.io.InputStream input)
+    public static DMLData parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.DMLData parseFrom(
+    public static DMLData parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.DMLData parseDelimitedFrom(java.io.InputStream input)
+    public static DMLData parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.DMLData parseDelimitedFrom(
+    public static DMLData parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.DMLData parseFrom(
+    public static DMLData parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.DMLData parseFrom(
+    public static DMLData parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -5554,7 +5554,7 @@ public final class BinlogMessage {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(org.apache.flink.tidb.pb.BinlogMessage.DMLData prototype) {
+    public static Builder newBuilder(DMLData prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() {
@@ -5574,17 +5574,17 @@ public final class BinlogMessage {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:binlog.DMLData)
-        org.apache.flink.tidb.pb.BinlogMessage.DMLDataOrBuilder {
+        DMLDataOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return org.apache.flink.tidb.pb.BinlogMessage.internal_static_binlog_DMLData_descriptor;
+        return BinlogMessage.internal_static_binlog_DMLData_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return org.apache.flink.tidb.pb.BinlogMessage.internal_static_binlog_DMLData_fieldAccessorTable
+        return BinlogMessage.internal_static_binlog_DMLData_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                org.apache.flink.tidb.pb.BinlogMessage.DMLData.class, org.apache.flink.tidb.pb.BinlogMessage.DMLData.Builder.class);
+                DMLData.class, Builder.class);
       }
 
       // Construct using org.apache.flink.tidb.pb.BinlogMessage.DMLData.newBuilder()
@@ -5616,23 +5616,23 @@ public final class BinlogMessage {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return org.apache.flink.tidb.pb.BinlogMessage.internal_static_binlog_DMLData_descriptor;
+        return BinlogMessage.internal_static_binlog_DMLData_descriptor;
       }
 
-      public org.apache.flink.tidb.pb.BinlogMessage.DMLData getDefaultInstanceForType() {
-        return org.apache.flink.tidb.pb.BinlogMessage.DMLData.getDefaultInstance();
+      public DMLData getDefaultInstanceForType() {
+        return DMLData.getDefaultInstance();
       }
 
-      public org.apache.flink.tidb.pb.BinlogMessage.DMLData build() {
-        org.apache.flink.tidb.pb.BinlogMessage.DMLData result = buildPartial();
+      public DMLData build() {
+        DMLData result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public org.apache.flink.tidb.pb.BinlogMessage.DMLData buildPartial() {
-        org.apache.flink.tidb.pb.BinlogMessage.DMLData result = new org.apache.flink.tidb.pb.BinlogMessage.DMLData(this);
+      public DMLData buildPartial() {
+        DMLData result = new DMLData(this);
         int from_bitField0_ = bitField0_;
         if (tablesBuilder_ == null) {
           if (((bitField0_ & 0x00000001) == 0x00000001)) {
@@ -5674,16 +5674,16 @@ public final class BinlogMessage {
         return (Builder) super.addRepeatedField(field, value);
       }
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof org.apache.flink.tidb.pb.BinlogMessage.DMLData) {
-          return mergeFrom((org.apache.flink.tidb.pb.BinlogMessage.DMLData)other);
+        if (other instanceof DMLData) {
+          return mergeFrom((DMLData)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(org.apache.flink.tidb.pb.BinlogMessage.DMLData other) {
-        if (other == org.apache.flink.tidb.pb.BinlogMessage.DMLData.getDefaultInstance()) return this;
+      public Builder mergeFrom(DMLData other) {
+        if (other == DMLData.getDefaultInstance()) return this;
         if (tablesBuilder_ == null) {
           if (!other.tables_.isEmpty()) {
             if (tables_.isEmpty()) {
@@ -5728,11 +5728,11 @@ public final class BinlogMessage {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        org.apache.flink.tidb.pb.BinlogMessage.DMLData parsedMessage = null;
+        DMLData parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (org.apache.flink.tidb.pb.BinlogMessage.DMLData) e.getUnfinishedMessage();
+          parsedMessage = (DMLData) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -5743,17 +5743,17 @@ public final class BinlogMessage {
       }
       private int bitField0_;
 
-      private java.util.List<org.apache.flink.tidb.pb.BinlogMessage.Table> tables_ =
+      private java.util.List<Table> tables_ =
         java.util.Collections.emptyList();
       private void ensureTablesIsMutable() {
         if (!((bitField0_ & 0x00000001) == 0x00000001)) {
-          tables_ = new java.util.ArrayList<org.apache.flink.tidb.pb.BinlogMessage.Table>(tables_);
+          tables_ = new java.util.ArrayList<Table>(tables_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          org.apache.flink.tidb.pb.BinlogMessage.Table, org.apache.flink.tidb.pb.BinlogMessage.Table.Builder, org.apache.flink.tidb.pb.BinlogMessage.TableOrBuilder> tablesBuilder_;
+          Table, Table.Builder, TableOrBuilder> tablesBuilder_;
 
       /**
        * <pre>
@@ -5762,7 +5762,7 @@ public final class BinlogMessage {
        *
        * <code>repeated .binlog.Table tables = 1;</code>
        */
-      public java.util.List<org.apache.flink.tidb.pb.BinlogMessage.Table> getTablesList() {
+      public java.util.List<Table> getTablesList() {
         if (tablesBuilder_ == null) {
           return java.util.Collections.unmodifiableList(tables_);
         } else {
@@ -5790,7 +5790,7 @@ public final class BinlogMessage {
        *
        * <code>repeated .binlog.Table tables = 1;</code>
        */
-      public org.apache.flink.tidb.pb.BinlogMessage.Table getTables(int index) {
+      public Table getTables(int index) {
         if (tablesBuilder_ == null) {
           return tables_.get(index);
         } else {
@@ -5805,7 +5805,7 @@ public final class BinlogMessage {
        * <code>repeated .binlog.Table tables = 1;</code>
        */
       public Builder setTables(
-          int index, org.apache.flink.tidb.pb.BinlogMessage.Table value) {
+          int index, Table value) {
         if (tablesBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -5826,7 +5826,7 @@ public final class BinlogMessage {
        * <code>repeated .binlog.Table tables = 1;</code>
        */
       public Builder setTables(
-          int index, org.apache.flink.tidb.pb.BinlogMessage.Table.Builder builderForValue) {
+          int index, Table.Builder builderForValue) {
         if (tablesBuilder_ == null) {
           ensureTablesIsMutable();
           tables_.set(index, builderForValue.build());
@@ -5843,7 +5843,7 @@ public final class BinlogMessage {
        *
        * <code>repeated .binlog.Table tables = 1;</code>
        */
-      public Builder addTables(org.apache.flink.tidb.pb.BinlogMessage.Table value) {
+      public Builder addTables(Table value) {
         if (tablesBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -5864,7 +5864,7 @@ public final class BinlogMessage {
        * <code>repeated .binlog.Table tables = 1;</code>
        */
       public Builder addTables(
-          int index, org.apache.flink.tidb.pb.BinlogMessage.Table value) {
+          int index, Table value) {
         if (tablesBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -5885,7 +5885,7 @@ public final class BinlogMessage {
        * <code>repeated .binlog.Table tables = 1;</code>
        */
       public Builder addTables(
-          org.apache.flink.tidb.pb.BinlogMessage.Table.Builder builderForValue) {
+          Table.Builder builderForValue) {
         if (tablesBuilder_ == null) {
           ensureTablesIsMutable();
           tables_.add(builderForValue.build());
@@ -5903,7 +5903,7 @@ public final class BinlogMessage {
        * <code>repeated .binlog.Table tables = 1;</code>
        */
       public Builder addTables(
-          int index, org.apache.flink.tidb.pb.BinlogMessage.Table.Builder builderForValue) {
+          int index, Table.Builder builderForValue) {
         if (tablesBuilder_ == null) {
           ensureTablesIsMutable();
           tables_.add(index, builderForValue.build());
@@ -5921,7 +5921,7 @@ public final class BinlogMessage {
        * <code>repeated .binlog.Table tables = 1;</code>
        */
       public Builder addAllTables(
-          Iterable<? extends org.apache.flink.tidb.pb.BinlogMessage.Table> values) {
+          Iterable<? extends Table> values) {
         if (tablesBuilder_ == null) {
           ensureTablesIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -5973,7 +5973,7 @@ public final class BinlogMessage {
        *
        * <code>repeated .binlog.Table tables = 1;</code>
        */
-      public org.apache.flink.tidb.pb.BinlogMessage.Table.Builder getTablesBuilder(
+      public Table.Builder getTablesBuilder(
           int index) {
         return getTablesFieldBuilder().getBuilder(index);
       }
@@ -5984,7 +5984,7 @@ public final class BinlogMessage {
        *
        * <code>repeated .binlog.Table tables = 1;</code>
        */
-      public org.apache.flink.tidb.pb.BinlogMessage.TableOrBuilder getTablesOrBuilder(
+      public TableOrBuilder getTablesOrBuilder(
           int index) {
         if (tablesBuilder_ == null) {
           return tables_.get(index);  } else {
@@ -5998,7 +5998,7 @@ public final class BinlogMessage {
        *
        * <code>repeated .binlog.Table tables = 1;</code>
        */
-      public java.util.List<? extends org.apache.flink.tidb.pb.BinlogMessage.TableOrBuilder>
+      public java.util.List<? extends TableOrBuilder>
            getTablesOrBuilderList() {
         if (tablesBuilder_ != null) {
           return tablesBuilder_.getMessageOrBuilderList();
@@ -6013,9 +6013,9 @@ public final class BinlogMessage {
        *
        * <code>repeated .binlog.Table tables = 1;</code>
        */
-      public org.apache.flink.tidb.pb.BinlogMessage.Table.Builder addTablesBuilder() {
+      public Table.Builder addTablesBuilder() {
         return getTablesFieldBuilder().addBuilder(
-            org.apache.flink.tidb.pb.BinlogMessage.Table.getDefaultInstance());
+            Table.getDefaultInstance());
       }
       /**
        * <pre>
@@ -6024,10 +6024,10 @@ public final class BinlogMessage {
        *
        * <code>repeated .binlog.Table tables = 1;</code>
        */
-      public org.apache.flink.tidb.pb.BinlogMessage.Table.Builder addTablesBuilder(
+      public Table.Builder addTablesBuilder(
           int index) {
         return getTablesFieldBuilder().addBuilder(
-            index, org.apache.flink.tidb.pb.BinlogMessage.Table.getDefaultInstance());
+            index, Table.getDefaultInstance());
       }
       /**
        * <pre>
@@ -6036,16 +6036,16 @@ public final class BinlogMessage {
        *
        * <code>repeated .binlog.Table tables = 1;</code>
        */
-      public java.util.List<org.apache.flink.tidb.pb.BinlogMessage.Table.Builder>
+      public java.util.List<Table.Builder>
            getTablesBuilderList() {
         return getTablesFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          org.apache.flink.tidb.pb.BinlogMessage.Table, org.apache.flink.tidb.pb.BinlogMessage.Table.Builder, org.apache.flink.tidb.pb.BinlogMessage.TableOrBuilder>
+          Table, Table.Builder, TableOrBuilder>
           getTablesFieldBuilder() {
         if (tablesBuilder_ == null) {
           tablesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              org.apache.flink.tidb.pb.BinlogMessage.Table, org.apache.flink.tidb.pb.BinlogMessage.Table.Builder, org.apache.flink.tidb.pb.BinlogMessage.TableOrBuilder>(
+              Table, Table.Builder, TableOrBuilder>(
                   tables_,
                   ((bitField0_ & 0x00000001) == 0x00000001),
                   getParentForChildren(),
@@ -6069,12 +6069,12 @@ public final class BinlogMessage {
     }
 
     // @@protoc_insertion_point(class_scope:binlog.DMLData)
-    private static final org.apache.flink.tidb.pb.BinlogMessage.DMLData DEFAULT_INSTANCE;
+    private static final DMLData DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new org.apache.flink.tidb.pb.BinlogMessage.DMLData();
+      DEFAULT_INSTANCE = new DMLData();
     }
 
-    public static org.apache.flink.tidb.pb.BinlogMessage.DMLData getDefaultInstance() {
+    public static DMLData getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -6097,7 +6097,7 @@ public final class BinlogMessage {
       return PARSER;
     }
 
-    public org.apache.flink.tidb.pb.BinlogMessage.DMLData getDefaultInstanceForType() {
+    public DMLData getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -6253,14 +6253,14 @@ public final class BinlogMessage {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return org.apache.flink.tidb.pb.BinlogMessage.internal_static_binlog_DDLData_descriptor;
+      return BinlogMessage.internal_static_binlog_DDLData_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return org.apache.flink.tidb.pb.BinlogMessage.internal_static_binlog_DDLData_fieldAccessorTable
+      return BinlogMessage.internal_static_binlog_DDLData_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              org.apache.flink.tidb.pb.BinlogMessage.DDLData.class, org.apache.flink.tidb.pb.BinlogMessage.DDLData.Builder.class);
+              DDLData.class, Builder.class);
     }
 
     private int bitField0_;
@@ -6444,10 +6444,10 @@ public final class BinlogMessage {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof org.apache.flink.tidb.pb.BinlogMessage.DDLData)) {
+      if (!(obj instanceof DDLData)) {
         return super.equals(obj);
       }
-      org.apache.flink.tidb.pb.BinlogMessage.DDLData other = (org.apache.flink.tidb.pb.BinlogMessage.DDLData) obj;
+      DDLData other = (DDLData) obj;
 
       boolean result = true;
       result = result && (hasSchemaName() == other.hasSchemaName());
@@ -6493,69 +6493,69 @@ public final class BinlogMessage {
       return hash;
     }
 
-    public static org.apache.flink.tidb.pb.BinlogMessage.DDLData parseFrom(
+    public static DDLData parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.DDLData parseFrom(
+    public static DDLData parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.DDLData parseFrom(
+    public static DDLData parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.DDLData parseFrom(
+    public static DDLData parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.DDLData parseFrom(byte[] data)
+    public static DDLData parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.DDLData parseFrom(
+    public static DDLData parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.DDLData parseFrom(java.io.InputStream input)
+    public static DDLData parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.DDLData parseFrom(
+    public static DDLData parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.DDLData parseDelimitedFrom(java.io.InputStream input)
+    public static DDLData parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.DDLData parseDelimitedFrom(
+    public static DDLData parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.DDLData parseFrom(
+    public static DDLData parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.DDLData parseFrom(
+    public static DDLData parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -6567,7 +6567,7 @@ public final class BinlogMessage {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(org.apache.flink.tidb.pb.BinlogMessage.DDLData prototype) {
+    public static Builder newBuilder(DDLData prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() {
@@ -6587,17 +6587,17 @@ public final class BinlogMessage {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:binlog.DDLData)
-        org.apache.flink.tidb.pb.BinlogMessage.DDLDataOrBuilder {
+        DDLDataOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return org.apache.flink.tidb.pb.BinlogMessage.internal_static_binlog_DDLData_descriptor;
+        return BinlogMessage.internal_static_binlog_DDLData_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return org.apache.flink.tidb.pb.BinlogMessage.internal_static_binlog_DDLData_fieldAccessorTable
+        return BinlogMessage.internal_static_binlog_DDLData_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                org.apache.flink.tidb.pb.BinlogMessage.DDLData.class, org.apache.flink.tidb.pb.BinlogMessage.DDLData.Builder.class);
+                DDLData.class, Builder.class);
       }
 
       // Construct using org.apache.flink.tidb.pb.BinlogMessage.DDLData.newBuilder()
@@ -6628,23 +6628,23 @@ public final class BinlogMessage {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return org.apache.flink.tidb.pb.BinlogMessage.internal_static_binlog_DDLData_descriptor;
+        return BinlogMessage.internal_static_binlog_DDLData_descriptor;
       }
 
-      public org.apache.flink.tidb.pb.BinlogMessage.DDLData getDefaultInstanceForType() {
-        return org.apache.flink.tidb.pb.BinlogMessage.DDLData.getDefaultInstance();
+      public DDLData getDefaultInstanceForType() {
+        return DDLData.getDefaultInstance();
       }
 
-      public org.apache.flink.tidb.pb.BinlogMessage.DDLData build() {
-        org.apache.flink.tidb.pb.BinlogMessage.DDLData result = buildPartial();
+      public DDLData build() {
+        DDLData result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public org.apache.flink.tidb.pb.BinlogMessage.DDLData buildPartial() {
-        org.apache.flink.tidb.pb.BinlogMessage.DDLData result = new org.apache.flink.tidb.pb.BinlogMessage.DDLData(this);
+      public DDLData buildPartial() {
+        DDLData result = new DDLData(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -6691,16 +6691,16 @@ public final class BinlogMessage {
         return (Builder) super.addRepeatedField(field, value);
       }
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof org.apache.flink.tidb.pb.BinlogMessage.DDLData) {
-          return mergeFrom((org.apache.flink.tidb.pb.BinlogMessage.DDLData)other);
+        if (other instanceof DDLData) {
+          return mergeFrom((DDLData)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(org.apache.flink.tidb.pb.BinlogMessage.DDLData other) {
-        if (other == org.apache.flink.tidb.pb.BinlogMessage.DDLData.getDefaultInstance()) return this;
+      public Builder mergeFrom(DDLData other) {
+        if (other == DDLData.getDefaultInstance()) return this;
         if (other.hasSchemaName()) {
           bitField0_ |= 0x00000001;
           schemaName_ = other.schemaName_;
@@ -6727,11 +6727,11 @@ public final class BinlogMessage {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        org.apache.flink.tidb.pb.BinlogMessage.DDLData parsedMessage = null;
+        DDLData parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (org.apache.flink.tidb.pb.BinlogMessage.DDLData) e.getUnfinishedMessage();
+          parsedMessage = (DDLData) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -7007,12 +7007,12 @@ public final class BinlogMessage {
     }
 
     // @@protoc_insertion_point(class_scope:binlog.DDLData)
-    private static final org.apache.flink.tidb.pb.BinlogMessage.DDLData DEFAULT_INSTANCE;
+    private static final DDLData DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new org.apache.flink.tidb.pb.BinlogMessage.DDLData();
+      DEFAULT_INSTANCE = new DDLData();
     }
 
-    public static org.apache.flink.tidb.pb.BinlogMessage.DDLData getDefaultInstance() {
+    public static DDLData getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -7035,7 +7035,7 @@ public final class BinlogMessage {
       return PARSER;
     }
 
-    public org.apache.flink.tidb.pb.BinlogMessage.DDLData getDefaultInstanceForType() {
+    public DDLData getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -7052,7 +7052,7 @@ public final class BinlogMessage {
     /**
      * <code>optional .binlog.BinlogType type = 1 [(.gogoproto.nullable) = false];</code>
      */
-    org.apache.flink.tidb.pb.BinlogMessage.BinlogType getType();
+    BinlogType getType();
 
     /**
      * <code>optional int64 commit_ts = 2 [(.gogoproto.nullable) = false];</code>
@@ -7078,7 +7078,7 @@ public final class BinlogMessage {
      *
      * <code>optional .binlog.DMLData dml_data = 3;</code>
      */
-    org.apache.flink.tidb.pb.BinlogMessage.DMLData getDmlData();
+    DMLData getDmlData();
     /**
      * <pre>
      * dml_data is marshalled from DML type
@@ -7086,7 +7086,7 @@ public final class BinlogMessage {
      *
      * <code>optional .binlog.DMLData dml_data = 3;</code>
      */
-    org.apache.flink.tidb.pb.BinlogMessage.DMLDataOrBuilder getDmlDataOrBuilder();
+    DMLDataOrBuilder getDmlDataOrBuilder();
 
     /**
      * <code>optional .binlog.DDLData ddl_data = 4;</code>
@@ -7095,11 +7095,11 @@ public final class BinlogMessage {
     /**
      * <code>optional .binlog.DDLData ddl_data = 4;</code>
      */
-    org.apache.flink.tidb.pb.BinlogMessage.DDLData getDdlData();
+    DDLData getDdlData();
     /**
      * <code>optional .binlog.DDLData ddl_data = 4;</code>
      */
-    org.apache.flink.tidb.pb.BinlogMessage.DDLDataOrBuilder getDdlDataOrBuilder();
+    DDLDataOrBuilder getDdlDataOrBuilder();
   }
   /**
    * <pre>
@@ -7152,7 +7152,7 @@ public final class BinlogMessage {
             }
             case 8: {
               int rawValue = input.readEnum();
-              org.apache.flink.tidb.pb.BinlogMessage.BinlogType value = org.apache.flink.tidb.pb.BinlogMessage.BinlogType.valueOf(rawValue);
+              BinlogType value = BinlogType.valueOf(rawValue);
               if (value == null) {
                 unknownFields.mergeVarintField(1, rawValue);
               } else {
@@ -7167,11 +7167,11 @@ public final class BinlogMessage {
               break;
             }
             case 26: {
-              org.apache.flink.tidb.pb.BinlogMessage.DMLData.Builder subBuilder = null;
+              DMLData.Builder subBuilder = null;
               if (((bitField0_ & 0x00000004) == 0x00000004)) {
                 subBuilder = dmlData_.toBuilder();
               }
-              dmlData_ = input.readMessage(org.apache.flink.tidb.pb.BinlogMessage.DMLData.PARSER, extensionRegistry);
+              dmlData_ = input.readMessage(DMLData.PARSER, extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(dmlData_);
                 dmlData_ = subBuilder.buildPartial();
@@ -7180,11 +7180,11 @@ public final class BinlogMessage {
               break;
             }
             case 34: {
-              org.apache.flink.tidb.pb.BinlogMessage.DDLData.Builder subBuilder = null;
+              DDLData.Builder subBuilder = null;
               if (((bitField0_ & 0x00000008) == 0x00000008)) {
                 subBuilder = ddlData_.toBuilder();
               }
-              ddlData_ = input.readMessage(org.apache.flink.tidb.pb.BinlogMessage.DDLData.PARSER, extensionRegistry);
+              ddlData_ = input.readMessage(DDLData.PARSER, extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(ddlData_);
                 ddlData_ = subBuilder.buildPartial();
@@ -7206,14 +7206,14 @@ public final class BinlogMessage {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return org.apache.flink.tidb.pb.BinlogMessage.internal_static_binlog_Binlog_descriptor;
+      return BinlogMessage.internal_static_binlog_Binlog_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return org.apache.flink.tidb.pb.BinlogMessage.internal_static_binlog_Binlog_fieldAccessorTable
+      return BinlogMessage.internal_static_binlog_Binlog_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              org.apache.flink.tidb.pb.BinlogMessage.Binlog.class, org.apache.flink.tidb.pb.BinlogMessage.Binlog.Builder.class);
+              Binlog.class, Builder.class);
     }
 
     private int bitField0_;
@@ -7228,9 +7228,9 @@ public final class BinlogMessage {
     /**
      * <code>optional .binlog.BinlogType type = 1 [(.gogoproto.nullable) = false];</code>
      */
-    public org.apache.flink.tidb.pb.BinlogMessage.BinlogType getType() {
-      org.apache.flink.tidb.pb.BinlogMessage.BinlogType result = org.apache.flink.tidb.pb.BinlogMessage.BinlogType.valueOf(type_);
-      return result == null ? org.apache.flink.tidb.pb.BinlogMessage.BinlogType.DML : result;
+    public BinlogType getType() {
+      BinlogType result = BinlogType.valueOf(type_);
+      return result == null ? BinlogType.DML : result;
     }
 
     public static final int COMMIT_TS_FIELD_NUMBER = 2;
@@ -7249,7 +7249,7 @@ public final class BinlogMessage {
     }
 
     public static final int DML_DATA_FIELD_NUMBER = 3;
-    private org.apache.flink.tidb.pb.BinlogMessage.DMLData dmlData_;
+    private DMLData dmlData_;
     /**
      * <pre>
      * dml_data is marshalled from DML type
@@ -7267,8 +7267,8 @@ public final class BinlogMessage {
      *
      * <code>optional .binlog.DMLData dml_data = 3;</code>
      */
-    public org.apache.flink.tidb.pb.BinlogMessage.DMLData getDmlData() {
-      return dmlData_ == null ? org.apache.flink.tidb.pb.BinlogMessage.DMLData.getDefaultInstance() : dmlData_;
+    public DMLData getDmlData() {
+      return dmlData_ == null ? DMLData.getDefaultInstance() : dmlData_;
     }
     /**
      * <pre>
@@ -7277,12 +7277,12 @@ public final class BinlogMessage {
      *
      * <code>optional .binlog.DMLData dml_data = 3;</code>
      */
-    public org.apache.flink.tidb.pb.BinlogMessage.DMLDataOrBuilder getDmlDataOrBuilder() {
-      return dmlData_ == null ? org.apache.flink.tidb.pb.BinlogMessage.DMLData.getDefaultInstance() : dmlData_;
+    public DMLDataOrBuilder getDmlDataOrBuilder() {
+      return dmlData_ == null ? DMLData.getDefaultInstance() : dmlData_;
     }
 
     public static final int DDL_DATA_FIELD_NUMBER = 4;
-    private org.apache.flink.tidb.pb.BinlogMessage.DDLData ddlData_;
+    private DDLData ddlData_;
     /**
      * <code>optional .binlog.DDLData ddl_data = 4;</code>
      */
@@ -7292,14 +7292,14 @@ public final class BinlogMessage {
     /**
      * <code>optional .binlog.DDLData ddl_data = 4;</code>
      */
-    public org.apache.flink.tidb.pb.BinlogMessage.DDLData getDdlData() {
-      return ddlData_ == null ? org.apache.flink.tidb.pb.BinlogMessage.DDLData.getDefaultInstance() : ddlData_;
+    public DDLData getDdlData() {
+      return ddlData_ == null ? DDLData.getDefaultInstance() : ddlData_;
     }
     /**
      * <code>optional .binlog.DDLData ddl_data = 4;</code>
      */
-    public org.apache.flink.tidb.pb.BinlogMessage.DDLDataOrBuilder getDdlDataOrBuilder() {
-      return ddlData_ == null ? org.apache.flink.tidb.pb.BinlogMessage.DDLData.getDefaultInstance() : ddlData_;
+    public DDLDataOrBuilder getDdlDataOrBuilder() {
+      return ddlData_ == null ? DDLData.getDefaultInstance() : ddlData_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -7366,10 +7366,10 @@ public final class BinlogMessage {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof org.apache.flink.tidb.pb.BinlogMessage.Binlog)) {
+      if (!(obj instanceof Binlog)) {
         return super.equals(obj);
       }
-      org.apache.flink.tidb.pb.BinlogMessage.Binlog other = (org.apache.flink.tidb.pb.BinlogMessage.Binlog) obj;
+      Binlog other = (Binlog) obj;
 
       boolean result = true;
       result = result && (hasType() == other.hasType());
@@ -7424,69 +7424,69 @@ public final class BinlogMessage {
       return hash;
     }
 
-    public static org.apache.flink.tidb.pb.BinlogMessage.Binlog parseFrom(
+    public static Binlog parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.Binlog parseFrom(
+    public static Binlog parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.Binlog parseFrom(
+    public static Binlog parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.Binlog parseFrom(
+    public static Binlog parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.Binlog parseFrom(byte[] data)
+    public static Binlog parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.Binlog parseFrom(
+    public static Binlog parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.Binlog parseFrom(java.io.InputStream input)
+    public static Binlog parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.Binlog parseFrom(
+    public static Binlog parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.Binlog parseDelimitedFrom(java.io.InputStream input)
+    public static Binlog parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.Binlog parseDelimitedFrom(
+    public static Binlog parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.Binlog parseFrom(
+    public static Binlog parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static org.apache.flink.tidb.pb.BinlogMessage.Binlog parseFrom(
+    public static Binlog parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -7498,7 +7498,7 @@ public final class BinlogMessage {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(org.apache.flink.tidb.pb.BinlogMessage.Binlog prototype) {
+    public static Builder newBuilder(Binlog prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() {
@@ -7522,17 +7522,17 @@ public final class BinlogMessage {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:binlog.Binlog)
-        org.apache.flink.tidb.pb.BinlogMessage.BinlogOrBuilder {
+        BinlogOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return org.apache.flink.tidb.pb.BinlogMessage.internal_static_binlog_Binlog_descriptor;
+        return BinlogMessage.internal_static_binlog_Binlog_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return org.apache.flink.tidb.pb.BinlogMessage.internal_static_binlog_Binlog_fieldAccessorTable
+        return BinlogMessage.internal_static_binlog_Binlog_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                org.apache.flink.tidb.pb.BinlogMessage.Binlog.class, org.apache.flink.tidb.pb.BinlogMessage.Binlog.Builder.class);
+                Binlog.class, Builder.class);
       }
 
       // Construct using org.apache.flink.tidb.pb.BinlogMessage.Binlog.newBuilder()
@@ -7575,23 +7575,23 @@ public final class BinlogMessage {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return org.apache.flink.tidb.pb.BinlogMessage.internal_static_binlog_Binlog_descriptor;
+        return BinlogMessage.internal_static_binlog_Binlog_descriptor;
       }
 
-      public org.apache.flink.tidb.pb.BinlogMessage.Binlog getDefaultInstanceForType() {
-        return org.apache.flink.tidb.pb.BinlogMessage.Binlog.getDefaultInstance();
+      public Binlog getDefaultInstanceForType() {
+        return Binlog.getDefaultInstance();
       }
 
-      public org.apache.flink.tidb.pb.BinlogMessage.Binlog build() {
-        org.apache.flink.tidb.pb.BinlogMessage.Binlog result = buildPartial();
+      public Binlog build() {
+        Binlog result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public org.apache.flink.tidb.pb.BinlogMessage.Binlog buildPartial() {
-        org.apache.flink.tidb.pb.BinlogMessage.Binlog result = new org.apache.flink.tidb.pb.BinlogMessage.Binlog(this);
+      public Binlog buildPartial() {
+        Binlog result = new Binlog(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -7650,16 +7650,16 @@ public final class BinlogMessage {
         return (Builder) super.addRepeatedField(field, value);
       }
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof org.apache.flink.tidb.pb.BinlogMessage.Binlog) {
-          return mergeFrom((org.apache.flink.tidb.pb.BinlogMessage.Binlog)other);
+        if (other instanceof Binlog) {
+          return mergeFrom((Binlog)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(org.apache.flink.tidb.pb.BinlogMessage.Binlog other) {
-        if (other == org.apache.flink.tidb.pb.BinlogMessage.Binlog.getDefaultInstance()) return this;
+      public Builder mergeFrom(Binlog other) {
+        if (other == Binlog.getDefaultInstance()) return this;
         if (other.hasType()) {
           setType(other.getType());
         }
@@ -7690,11 +7690,11 @@ public final class BinlogMessage {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        org.apache.flink.tidb.pb.BinlogMessage.Binlog parsedMessage = null;
+        Binlog parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (org.apache.flink.tidb.pb.BinlogMessage.Binlog) e.getUnfinishedMessage();
+          parsedMessage = (Binlog) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -7715,14 +7715,14 @@ public final class BinlogMessage {
       /**
        * <code>optional .binlog.BinlogType type = 1 [(.gogoproto.nullable) = false];</code>
        */
-      public org.apache.flink.tidb.pb.BinlogMessage.BinlogType getType() {
-        org.apache.flink.tidb.pb.BinlogMessage.BinlogType result = org.apache.flink.tidb.pb.BinlogMessage.BinlogType.valueOf(type_);
-        return result == null ? org.apache.flink.tidb.pb.BinlogMessage.BinlogType.DML : result;
+      public BinlogType getType() {
+        BinlogType result = BinlogType.valueOf(type_);
+        return result == null ? BinlogType.DML : result;
       }
       /**
        * <code>optional .binlog.BinlogType type = 1 [(.gogoproto.nullable) = false];</code>
        */
-      public Builder setType(org.apache.flink.tidb.pb.BinlogMessage.BinlogType value) {
+      public Builder setType(BinlogType value) {
         if (value == null) {
           throw new NullPointerException();
         }
@@ -7773,9 +7773,9 @@ public final class BinlogMessage {
         return this;
       }
 
-      private org.apache.flink.tidb.pb.BinlogMessage.DMLData dmlData_ = null;
+      private DMLData dmlData_ = null;
       private com.google.protobuf.SingleFieldBuilderV3<
-          org.apache.flink.tidb.pb.BinlogMessage.DMLData, org.apache.flink.tidb.pb.BinlogMessage.DMLData.Builder, org.apache.flink.tidb.pb.BinlogMessage.DMLDataOrBuilder> dmlDataBuilder_;
+          DMLData, DMLData.Builder, DMLDataOrBuilder> dmlDataBuilder_;
       /**
        * <pre>
        * dml_data is marshalled from DML type
@@ -7793,9 +7793,9 @@ public final class BinlogMessage {
        *
        * <code>optional .binlog.DMLData dml_data = 3;</code>
        */
-      public org.apache.flink.tidb.pb.BinlogMessage.DMLData getDmlData() {
+      public DMLData getDmlData() {
         if (dmlDataBuilder_ == null) {
-          return dmlData_ == null ? org.apache.flink.tidb.pb.BinlogMessage.DMLData.getDefaultInstance() : dmlData_;
+          return dmlData_ == null ? DMLData.getDefaultInstance() : dmlData_;
         } else {
           return dmlDataBuilder_.getMessage();
         }
@@ -7807,7 +7807,7 @@ public final class BinlogMessage {
        *
        * <code>optional .binlog.DMLData dml_data = 3;</code>
        */
-      public Builder setDmlData(org.apache.flink.tidb.pb.BinlogMessage.DMLData value) {
+      public Builder setDmlData(DMLData value) {
         if (dmlDataBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -7828,7 +7828,7 @@ public final class BinlogMessage {
        * <code>optional .binlog.DMLData dml_data = 3;</code>
        */
       public Builder setDmlData(
-          org.apache.flink.tidb.pb.BinlogMessage.DMLData.Builder builderForValue) {
+          DMLData.Builder builderForValue) {
         if (dmlDataBuilder_ == null) {
           dmlData_ = builderForValue.build();
           onChanged();
@@ -7845,13 +7845,13 @@ public final class BinlogMessage {
        *
        * <code>optional .binlog.DMLData dml_data = 3;</code>
        */
-      public Builder mergeDmlData(org.apache.flink.tidb.pb.BinlogMessage.DMLData value) {
+      public Builder mergeDmlData(DMLData value) {
         if (dmlDataBuilder_ == null) {
           if (((bitField0_ & 0x00000004) == 0x00000004) &&
               dmlData_ != null &&
-              dmlData_ != org.apache.flink.tidb.pb.BinlogMessage.DMLData.getDefaultInstance()) {
+              dmlData_ != DMLData.getDefaultInstance()) {
             dmlData_ =
-              org.apache.flink.tidb.pb.BinlogMessage.DMLData.newBuilder(dmlData_).mergeFrom(value).buildPartial();
+              DMLData.newBuilder(dmlData_).mergeFrom(value).buildPartial();
           } else {
             dmlData_ = value;
           }
@@ -7886,7 +7886,7 @@ public final class BinlogMessage {
        *
        * <code>optional .binlog.DMLData dml_data = 3;</code>
        */
-      public org.apache.flink.tidb.pb.BinlogMessage.DMLData.Builder getDmlDataBuilder() {
+      public DMLData.Builder getDmlDataBuilder() {
         bitField0_ |= 0x00000004;
         onChanged();
         return getDmlDataFieldBuilder().getBuilder();
@@ -7898,12 +7898,12 @@ public final class BinlogMessage {
        *
        * <code>optional .binlog.DMLData dml_data = 3;</code>
        */
-      public org.apache.flink.tidb.pb.BinlogMessage.DMLDataOrBuilder getDmlDataOrBuilder() {
+      public DMLDataOrBuilder getDmlDataOrBuilder() {
         if (dmlDataBuilder_ != null) {
           return dmlDataBuilder_.getMessageOrBuilder();
         } else {
           return dmlData_ == null ?
-              org.apache.flink.tidb.pb.BinlogMessage.DMLData.getDefaultInstance() : dmlData_;
+              DMLData.getDefaultInstance() : dmlData_;
         }
       }
       /**
@@ -7914,11 +7914,11 @@ public final class BinlogMessage {
        * <code>optional .binlog.DMLData dml_data = 3;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          org.apache.flink.tidb.pb.BinlogMessage.DMLData, org.apache.flink.tidb.pb.BinlogMessage.DMLData.Builder, org.apache.flink.tidb.pb.BinlogMessage.DMLDataOrBuilder>
+          DMLData, DMLData.Builder, DMLDataOrBuilder>
           getDmlDataFieldBuilder() {
         if (dmlDataBuilder_ == null) {
           dmlDataBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              org.apache.flink.tidb.pb.BinlogMessage.DMLData, org.apache.flink.tidb.pb.BinlogMessage.DMLData.Builder, org.apache.flink.tidb.pb.BinlogMessage.DMLDataOrBuilder>(
+              DMLData, DMLData.Builder, DMLDataOrBuilder>(
                   getDmlData(),
                   getParentForChildren(),
                   isClean());
@@ -7927,9 +7927,9 @@ public final class BinlogMessage {
         return dmlDataBuilder_;
       }
 
-      private org.apache.flink.tidb.pb.BinlogMessage.DDLData ddlData_ = null;
+      private DDLData ddlData_ = null;
       private com.google.protobuf.SingleFieldBuilderV3<
-          org.apache.flink.tidb.pb.BinlogMessage.DDLData, org.apache.flink.tidb.pb.BinlogMessage.DDLData.Builder, org.apache.flink.tidb.pb.BinlogMessage.DDLDataOrBuilder> ddlDataBuilder_;
+          DDLData, DDLData.Builder, DDLDataOrBuilder> ddlDataBuilder_;
       /**
        * <code>optional .binlog.DDLData ddl_data = 4;</code>
        */
@@ -7939,9 +7939,9 @@ public final class BinlogMessage {
       /**
        * <code>optional .binlog.DDLData ddl_data = 4;</code>
        */
-      public org.apache.flink.tidb.pb.BinlogMessage.DDLData getDdlData() {
+      public DDLData getDdlData() {
         if (ddlDataBuilder_ == null) {
-          return ddlData_ == null ? org.apache.flink.tidb.pb.BinlogMessage.DDLData.getDefaultInstance() : ddlData_;
+          return ddlData_ == null ? DDLData.getDefaultInstance() : ddlData_;
         } else {
           return ddlDataBuilder_.getMessage();
         }
@@ -7949,7 +7949,7 @@ public final class BinlogMessage {
       /**
        * <code>optional .binlog.DDLData ddl_data = 4;</code>
        */
-      public Builder setDdlData(org.apache.flink.tidb.pb.BinlogMessage.DDLData value) {
+      public Builder setDdlData(DDLData value) {
         if (ddlDataBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -7966,7 +7966,7 @@ public final class BinlogMessage {
        * <code>optional .binlog.DDLData ddl_data = 4;</code>
        */
       public Builder setDdlData(
-          org.apache.flink.tidb.pb.BinlogMessage.DDLData.Builder builderForValue) {
+          DDLData.Builder builderForValue) {
         if (ddlDataBuilder_ == null) {
           ddlData_ = builderForValue.build();
           onChanged();
@@ -7979,13 +7979,13 @@ public final class BinlogMessage {
       /**
        * <code>optional .binlog.DDLData ddl_data = 4;</code>
        */
-      public Builder mergeDdlData(org.apache.flink.tidb.pb.BinlogMessage.DDLData value) {
+      public Builder mergeDdlData(DDLData value) {
         if (ddlDataBuilder_ == null) {
           if (((bitField0_ & 0x00000008) == 0x00000008) &&
               ddlData_ != null &&
-              ddlData_ != org.apache.flink.tidb.pb.BinlogMessage.DDLData.getDefaultInstance()) {
+              ddlData_ != DDLData.getDefaultInstance()) {
             ddlData_ =
-              org.apache.flink.tidb.pb.BinlogMessage.DDLData.newBuilder(ddlData_).mergeFrom(value).buildPartial();
+              DDLData.newBuilder(ddlData_).mergeFrom(value).buildPartial();
           } else {
             ddlData_ = value;
           }
@@ -8012,7 +8012,7 @@ public final class BinlogMessage {
       /**
        * <code>optional .binlog.DDLData ddl_data = 4;</code>
        */
-      public org.apache.flink.tidb.pb.BinlogMessage.DDLData.Builder getDdlDataBuilder() {
+      public DDLData.Builder getDdlDataBuilder() {
         bitField0_ |= 0x00000008;
         onChanged();
         return getDdlDataFieldBuilder().getBuilder();
@@ -8020,23 +8020,23 @@ public final class BinlogMessage {
       /**
        * <code>optional .binlog.DDLData ddl_data = 4;</code>
        */
-      public org.apache.flink.tidb.pb.BinlogMessage.DDLDataOrBuilder getDdlDataOrBuilder() {
+      public DDLDataOrBuilder getDdlDataOrBuilder() {
         if (ddlDataBuilder_ != null) {
           return ddlDataBuilder_.getMessageOrBuilder();
         } else {
           return ddlData_ == null ?
-              org.apache.flink.tidb.pb.BinlogMessage.DDLData.getDefaultInstance() : ddlData_;
+              DDLData.getDefaultInstance() : ddlData_;
         }
       }
       /**
        * <code>optional .binlog.DDLData ddl_data = 4;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          org.apache.flink.tidb.pb.BinlogMessage.DDLData, org.apache.flink.tidb.pb.BinlogMessage.DDLData.Builder, org.apache.flink.tidb.pb.BinlogMessage.DDLDataOrBuilder>
+          DDLData, DDLData.Builder, DDLDataOrBuilder>
           getDdlDataFieldBuilder() {
         if (ddlDataBuilder_ == null) {
           ddlDataBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              org.apache.flink.tidb.pb.BinlogMessage.DDLData, org.apache.flink.tidb.pb.BinlogMessage.DDLData.Builder, org.apache.flink.tidb.pb.BinlogMessage.DDLDataOrBuilder>(
+              DDLData, DDLData.Builder, DDLDataOrBuilder>(
                   getDdlData(),
                   getParentForChildren(),
                   isClean());
@@ -8059,12 +8059,12 @@ public final class BinlogMessage {
     }
 
     // @@protoc_insertion_point(class_scope:binlog.Binlog)
-    private static final org.apache.flink.tidb.pb.BinlogMessage.Binlog DEFAULT_INSTANCE;
+    private static final Binlog DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new org.apache.flink.tidb.pb.BinlogMessage.Binlog();
+      DEFAULT_INSTANCE = new Binlog();
     }
 
-    public static org.apache.flink.tidb.pb.BinlogMessage.Binlog getDefaultInstance() {
+    public static Binlog getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -8087,7 +8087,7 @@ public final class BinlogMessage {
       return PARSER;
     }
 
-    public org.apache.flink.tidb.pb.BinlogMessage.Binlog getDefaultInstanceForType() {
+    public Binlog getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 

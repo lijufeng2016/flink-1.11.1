@@ -1,4 +1,5 @@
-package org.apache.flink.connector.hbase.util;/*
+package org.apache.flink.connector.hbase.util;
+/*
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -15,7 +16,6 @@ package org.apache.flink.connector.hbase.util;/*
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 
 import org.apache.flink.annotation.Internal;
 import org.apache.flink.util.Preconditions;

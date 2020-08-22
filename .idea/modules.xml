@@ -177,6 +177,7 @@
       <module fileurl="file://$PROJECT_DIR$/flink-test-utils-parent/flink-test-utils-parent.iml" filepath="$PROJECT_DIR$/flink-test-utils-parent/flink-test-utils-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/flink-test-utils-parent/flink-test-utils/flink-test-utils_2.11.iml" filepath="$PROJECT_DIR$/flink-test-utils-parent/flink-test-utils/flink-test-utils_2.11.iml" />
       <module fileurl="file://$PROJECT_DIR$/flink-tests/flink-tests.iml" filepath="$PROJECT_DIR$/flink-tests/flink-tests.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flink-formats/flink-tidb-pb/flink-tidb-pb.iml" filepath="$PROJECT_DIR$/flink-formats/flink-tidb-pb/flink-tidb-pb.iml" />
       <module fileurl="file://$PROJECT_DIR$/flink-end-to-end-tests/flink-tpcds-test/flink-tpcds-test.iml" filepath="$PROJECT_DIR$/flink-end-to-end-tests/flink-tpcds-test/flink-tpcds-test.iml" />
       <module fileurl="file://$PROJECT_DIR$/flink-end-to-end-tests/flink-tpch-test/flink-tpch-test.iml" filepath="$PROJECT_DIR$/flink-end-to-end-tests/flink-tpch-test/flink-tpch-test.iml" />
       <module fileurl="file://$PROJECT_DIR$/flink-walkthroughs/flink-walkthrough-common/flink-walkthrough-common_2.11.iml" filepath="$PROJECT_DIR$/flink-walkthroughs/flink-walkthrough-common/flink-walkthrough-common_2.11.iml" />

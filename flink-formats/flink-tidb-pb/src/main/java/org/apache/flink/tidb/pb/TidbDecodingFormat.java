@@ -38,5 +38,6 @@ public class TidbDecodingFormat implements DecodingFormat<DeserializationSchema<
 			.addContainedKind(RowKind.UPDATE_BEFORE)
 			.addContainedKind(RowKind.UPDATE_AFTER)
 			.addContainedKind(RowKind.DELETE)
-			.build();	}
+			.build();
+	}
 }
