@@ -1,0 +1,48 @@
+Manifest-Version: 1.0
+Created-By: Apache Maven Bundle Plugin
+Built-By: build
+Build-Jdk: 9.0.4
+Specification-Title: jaxb-api
+Specification-Version: 2.3.1
+Specification-Vendor: Oracle Corporation
+Extension-Name: javax.xml.bind
+Implementation-Build-Id: UNKNOWN-7de2ca118a0cfc4a373872915aef59148dff5
+ f93, 2018-09-12T06:28:43-0700
+Multi-Release: true
+Bnd-LastModified: 1536758926757
+Bundle-Description: JAXB (JSR 222) API
+Bundle-DocURL: http://www.oracle.com/
+Bundle-License: https://oss.oracle.com/licenses/CDDL+GPL-1.1, https://
+ oss.oracle.com/licenses/CDDL+GPL-1.1
+Bundle-ManifestVersion: 2
+Bundle-Name: jaxb-api
+Bundle-SymbolicName: jaxb-api
+Bundle-Vendor: Oracle Corporation
+Bundle-Version: 2.3.1
+DynamicImport-Package: org.glassfish.hk2.osgiresourcelocator
+Export-Package: javax.xml.bind;version="2.3";uses:="javax.xml.bind.ann
+ otation.adapters,javax.xml.bind.attachment,javax.xml.namespace,javax.
+ xml.stream,javax.xml.transform,javax.xml.validation,org.w3c.dom,org.x
+ ml.sax",javax.xml.bind.annotation;version="2.3";uses:="javax.xml.bind
+ ,javax.xml.parsers,javax.xml.transform,javax.xml.transform.dom,org.w3
+ c.dom",javax.xml.bind.annotation.adapters;version="2.3",javax.xml.bin
+ d.attachment;version="2.3";uses:="javax.activation",javax.xml.bind.he
+ lpers;version="2.3";uses:="javax.xml.bind,javax.xml.bind.annotation.a
+ dapters,javax.xml.bind.attachment,javax.xml.stream,javax.xml.transfor
+ m,javax.xml.validation,org.w3c.dom,org.xml.sax",javax.xml.bind.util;v
+ ersion="2.3";uses:="javax.xml.bind,javax.xml.transform.sax"
+Implementation-Vendor: Oracle Corporation
+Implementation-Vendor-Id: org.glassfish
+Implementation-Version: 2.3.0
+Import-Package: javax.activation,javax.xml.bind;version="[2.3,3)",java
+ x.xml.bind.annotation;version="[2.3,3)",javax.xml.bind.annotation.ada
+ pters;version="[2.3,3)",javax.xml.bind.attachment;version="[2.3,3)",j
+ avax.xml.datatype,javax.xml.namespace,javax.xml.parsers,javax.xml.str
+ eam,javax.xml.transform,javax.xml.transform.dom,javax.xml.transform.s
+ ax,javax.xml.transform.stream,javax.xml.validation,org.w3c.dom,org.xm
+ l.sax,org.xml.sax.ext,org.xml.sax.helpers,javax.xml.bind.helpers;vers
+ ion="[2.3,3)",javax.xml.bind.util;version="[2.3,3)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version>=1.8))
+ "
+Tool: Bnd-3.5.0.201709291849
+

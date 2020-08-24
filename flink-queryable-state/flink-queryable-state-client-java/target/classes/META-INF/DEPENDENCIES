@@ -1,0 +1,19 @@
+// ------------------------------------------------------------------
+// Transitive dependencies of this project determined from the
+// maven pom organized by organization.
+// ------------------------------------------------------------------
+
+flink-queryable-state-client-java
+
+
+From: 'The Apache Software Foundation' (https://www.apache.org/)
+  - flink-shaded-guava-18 (http://flink.apache.org/flink-shaded-guava) org.apache.flink:flink-shaded-guava:jar:18.0-11.0
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - flink-shaded-netty-4 (http://flink.apache.org/flink-shaded-netty) org.apache.flink:flink-shaded-netty:jar:4.1.39.Final-11.0
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - force-shading (https://www.apache.org/force-shading/) org.apache.flink:force-shading:jar:1.11.1
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+
+
+

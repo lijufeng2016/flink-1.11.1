@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="8.14">
+<file name="D:\workspace\flink-1.11.1\flink-filesystems\flink-s3-fs-base\src\main\java\com\amazonaws\services\s3\model\transform\XmlResponsesSaxParser.java">
+</file>
+<file name="D:\workspace\flink-1.11.1\flink-filesystems\flink-s3-fs-base\src\main\java\org\apache\flink\fs\s3\common\AbstractS3FileSystemFactory.java">
+</file>
+<file name="D:\workspace\flink-1.11.1\flink-filesystems\flink-s3-fs-base\src\main\java\org\apache\flink\fs\s3\common\FlinkS3FileSystem.java">
+</file>
+<file name="D:\workspace\flink-1.11.1\flink-filesystems\flink-s3-fs-base\src\main\java\org\apache\flink\fs\s3\common\utils\BackPressuringExecutor.java">
+</file>
+<file name="D:\workspace\flink-1.11.1\flink-filesystems\flink-s3-fs-base\src\main\java\org\apache\flink\fs\s3\common\utils\OffsetAwareOutputStream.java">
+</file>
+<file name="D:\workspace\flink-1.11.1\flink-filesystems\flink-s3-fs-base\src\main\java\org\apache\flink\fs\s3\common\utils\RefCountedBufferingFileStream.java">
+</file>
+<file name="D:\workspace\flink-1.11.1\flink-filesystems\flink-s3-fs-base\src\main\java\org\apache\flink\fs\s3\common\utils\RefCountedFileWithStream.java">
+</file>
+<file name="D:\workspace\flink-1.11.1\flink-filesystems\flink-s3-fs-base\src\main\java\org\apache\flink\fs\s3\common\utils\RefCountedFSOutputStream.java">
+</file>
+<file name="D:\workspace\flink-1.11.1\flink-filesystems\flink-s3-fs-base\src\main\java\org\apache\flink\fs\s3\common\utils\RefCountedTmpFileCreator.java">
+</file>
+<file name="D:\workspace\flink-1.11.1\flink-filesystems\flink-s3-fs-base\src\main\java\org\apache\flink\fs\s3\common\writer\MultiPartUploadInfo.java">
+</file>
+<file name="D:\workspace\flink-1.11.1\flink-filesystems\flink-s3-fs-base\src\main\java\org\apache\flink\fs\s3\common\writer\RecoverableMultiPartUpload.java">
+</file>
+<file name="D:\workspace\flink-1.11.1\flink-filesystems\flink-s3-fs-base\src\main\java\org\apache\flink\fs\s3\common\writer\RecoverableMultiPartUploadImpl.java">
+</file>
+<file name="D:\workspace\flink-1.11.1\flink-filesystems\flink-s3-fs-base\src\main\java\org\apache\flink\fs\s3\common\writer\S3AccessHelper.java">
+</file>
+<file name="D:\workspace\flink-1.11.1\flink-filesystems\flink-s3-fs-base\src\main\java\org\apache\flink\fs\s3\common\writer\S3Committer.java">
+</file>
+<file name="D:\workspace\flink-1.11.1\flink-filesystems\flink-s3-fs-base\src\main\java\org\apache\flink\fs\s3\common\writer\S3Recoverable.java">
+</file>
+<file name="D:\workspace\flink-1.11.1\flink-filesystems\flink-s3-fs-base\src\main\java\org\apache\flink\fs\s3\common\writer\S3RecoverableFsDataOutputStream.java">
+</file>
+<file name="D:\workspace\flink-1.11.1\flink-filesystems\flink-s3-fs-base\src\main\java\org\apache\flink\fs\s3\common\writer\S3RecoverableMultipartUploadFactory.java">
+</file>
+<file name="D:\workspace\flink-1.11.1\flink-filesystems\flink-s3-fs-base\src\main\java\org\apache\flink\fs\s3\common\writer\S3RecoverableSerializer.java">
+</file>
+<file name="D:\workspace\flink-1.11.1\flink-filesystems\flink-s3-fs-base\src\main\java\org\apache\flink\fs\s3\common\writer\S3RecoverableWriter.java">
+</file>
+<file name="D:\workspace\flink-1.11.1\flink-filesystems\flink-s3-fs-base\src\test\java\org\apache\flink\fs\s3\common\S3EntropyFsFactoryTest.java">
+</file>
+<file name="D:\workspace\flink-1.11.1\flink-filesystems\flink-s3-fs-base\src\test\java\org\apache\flink\fs\s3\common\utils\RefCountedBufferingFileStreamTest.java">
+</file>
+<file name="D:\workspace\flink-1.11.1\flink-filesystems\flink-s3-fs-base\src\test\java\org\apache\flink\fs\s3\common\utils\RefCountedFileWithStreamTest.java">
+</file>
+<file name="D:\workspace\flink-1.11.1\flink-filesystems\flink-s3-fs-base\src\test\java\org\apache\flink\fs\s3\common\writer\IncompletePartPrefixTest.java">
+</file>
+<file name="D:\workspace\flink-1.11.1\flink-filesystems\flink-s3-fs-base\src\test\java\org\apache\flink\fs\s3\common\writer\RecoverableMultiPartUploadImplTest.java">
+</file>
+<file name="D:\workspace\flink-1.11.1\flink-filesystems\flink-s3-fs-base\src\test\java\org\apache\flink\fs\s3\common\writer\S3RecoverableFsDataOutputStreamTest.java">
+</file>
+<file name="D:\workspace\flink-1.11.1\flink-filesystems\flink-s3-fs-base\src\test\java\org\apache\flink\fs\s3\common\writer\S3RecoverableSerializerTest.java">
+</file>
+<file name="D:\workspace\flink-1.11.1\flink-filesystems\flink-s3-fs-base\src\test\resources\log4j2-test.properties">
+</file>
+</checkstyle>

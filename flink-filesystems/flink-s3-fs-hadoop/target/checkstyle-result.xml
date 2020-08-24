@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="8.14">
+<file name="D:\workspace\flink-1.11.1\flink-filesystems\flink-s3-fs-hadoop\src\main\java\org\apache\flink\fs\s3hadoop\HadoopS3AccessHelper.java">
+</file>
+<file name="D:\workspace\flink-1.11.1\flink-filesystems\flink-s3-fs-hadoop\src\main\java\org\apache\flink\fs\s3hadoop\S3AFileSystemFactory.java">
+</file>
+<file name="D:\workspace\flink-1.11.1\flink-filesystems\flink-s3-fs-hadoop\src\main\java\org\apache\flink\fs\s3hadoop\S3FileSystemFactory.java">
+</file>
+<file name="D:\workspace\flink-1.11.1\flink-filesystems\flink-s3-fs-hadoop\src\test\java\org\apache\flink\fs\s3hadoop\HadoopS3FileSystemBehaviorITCase.java">
+</file>
+<file name="D:\workspace\flink-1.11.1\flink-filesystems\flink-s3-fs-hadoop\src\test\java\org\apache\flink\fs\s3hadoop\HadoopS3FileSystemITCase.java">
+</file>
+<file name="D:\workspace\flink-1.11.1\flink-filesystems\flink-s3-fs-hadoop\src\test\java\org\apache\flink\fs\s3hadoop\HadoopS3FileSystemsSchemesTest.java">
+</file>
+<file name="D:\workspace\flink-1.11.1\flink-filesystems\flink-s3-fs-hadoop\src\test\java\org\apache\flink\fs\s3hadoop\HadoopS3FileSystemTest.java">
+</file>
+<file name="D:\workspace\flink-1.11.1\flink-filesystems\flink-s3-fs-hadoop\src\test\java\org\apache\flink\fs\s3hadoop\HadoopS3RecoverableWriterExceptionITCase.java">
+</file>
+<file name="D:\workspace\flink-1.11.1\flink-filesystems\flink-s3-fs-hadoop\src\test\java\org\apache\flink\fs\s3hadoop\HadoopS3RecoverableWriterITCase.java">
+</file>
+<file name="D:\workspace\flink-1.11.1\flink-filesystems\flink-s3-fs-hadoop\src\test\resources\log4j2-test.properties">
+</file>
+</checkstyle>

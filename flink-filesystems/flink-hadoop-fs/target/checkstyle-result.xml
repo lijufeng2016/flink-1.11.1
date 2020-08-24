@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="8.14">
+<file name="D:\workspace\flink-1.11.1\flink-filesystems\flink-hadoop-fs\src\main\java\org\apache\flink\runtime\fs\hdfs\HadoopBlockLocation.java">
+</file>
+<file name="D:\workspace\flink-1.11.1\flink-filesystems\flink-hadoop-fs\src\main\java\org\apache\flink\runtime\fs\hdfs\HadoopDataInputStream.java">
+</file>
+<file name="D:\workspace\flink-1.11.1\flink-filesystems\flink-hadoop-fs\src\main\java\org\apache\flink\runtime\fs\hdfs\HadoopDataOutputStream.java">
+</file>
+<file name="D:\workspace\flink-1.11.1\flink-filesystems\flink-hadoop-fs\src\main\java\org\apache\flink\runtime\fs\hdfs\HadoopFileStatus.java">
+</file>
+<file name="D:\workspace\flink-1.11.1\flink-filesystems\flink-hadoop-fs\src\main\java\org\apache\flink\runtime\fs\hdfs\HadoopFileSystem.java">
+</file>
+<file name="D:\workspace\flink-1.11.1\flink-filesystems\flink-hadoop-fs\src\main\java\org\apache\flink\runtime\fs\hdfs\HadoopFsFactory.java">
+</file>
+<file name="D:\workspace\flink-1.11.1\flink-filesystems\flink-hadoop-fs\src\main\java\org\apache\flink\runtime\fs\hdfs\HadoopFsRecoverable.java">
+</file>
+<file name="D:\workspace\flink-1.11.1\flink-filesystems\flink-hadoop-fs\src\main\java\org\apache\flink\runtime\fs\hdfs\HadoopRecoverableFsDataOutputStream.java">
+</file>
+<file name="D:\workspace\flink-1.11.1\flink-filesystems\flink-hadoop-fs\src\main\java\org\apache\flink\runtime\fs\hdfs\HadoopRecoverableSerializer.java">
+</file>
+<file name="D:\workspace\flink-1.11.1\flink-filesystems\flink-hadoop-fs\src\main\java\org\apache\flink\runtime\fs\hdfs\HadoopRecoverableWriter.java">
+</file>
+<file name="D:\workspace\flink-1.11.1\flink-filesystems\flink-hadoop-fs\src\main\java\org\apache\flink\runtime\util\HadoopConfigLoader.java">
+</file>
+<file name="D:\workspace\flink-1.11.1\flink-filesystems\flink-hadoop-fs\src\main\java\org\apache\flink\runtime\util\HadoopUtils.java">
+</file>
+<file name="D:\workspace\flink-1.11.1\flink-filesystems\flink-hadoop-fs\src\test\java\org\apache\flink\runtime\fs\hdfs\AbstractHadoopFileSystemITTest.java">
+</file>
+<file name="D:\workspace\flink-1.11.1\flink-filesystems\flink-hadoop-fs\src\test\java\org\apache\flink\runtime\fs\hdfs\HadoopConfigLoadingTest.java">
+</file>
+<file name="D:\workspace\flink-1.11.1\flink-filesystems\flink-hadoop-fs\src\test\java\org\apache\flink\runtime\fs\hdfs\HadoopDataInputStreamTest.java">
+</file>
+<file name="D:\workspace\flink-1.11.1\flink-filesystems\flink-hadoop-fs\src\test\java\org\apache\flink\runtime\fs\hdfs\HadoopFreeFsFactoryTest.java">
+</file>
+<file name="D:\workspace\flink-1.11.1\flink-filesystems\flink-hadoop-fs\src\test\java\org\apache\flink\runtime\fs\hdfs\HadoopFreeTests.java">
+</file>
+<file name="D:\workspace\flink-1.11.1\flink-filesystems\flink-hadoop-fs\src\test\java\org\apache\flink\runtime\fs\hdfs\HadoopFsFactoryTest.java">
+</file>
+<file name="D:\workspace\flink-1.11.1\flink-filesystems\flink-hadoop-fs\src\test\java\org\apache\flink\runtime\fs\hdfs\HadoopLocalFileSystemBehaviorTest.java">
+</file>
+<file name="D:\workspace\flink-1.11.1\flink-filesystems\flink-hadoop-fs\src\test\java\org\apache\flink\runtime\fs\hdfs\HadoopRecoverableWriterOldHadoopWithNoTruncateSupportTest.java">
+</file>
+<file name="D:\workspace\flink-1.11.1\flink-filesystems\flink-hadoop-fs\src\test\java\org\apache\flink\runtime\fs\hdfs\HadoopRecoverableWriterTest.java">
+</file>
+<file name="D:\workspace\flink-1.11.1\flink-filesystems\flink-hadoop-fs\src\test\java\org\apache\flink\runtime\fs\hdfs\HdfsBehaviorTest.java">
+</file>
+<file name="D:\workspace\flink-1.11.1\flink-filesystems\flink-hadoop-fs\src\test\java\org\apache\flink\runtime\fs\hdfs\HdfsKindTest.java">
+</file>
+<file name="D:\workspace\flink-1.11.1\flink-filesystems\flink-hadoop-fs\src\test\java\org\apache\flink\runtime\fs\hdfs\LimitedConnectionsConfigurationTest.java">
+</file>
+<file name="D:\workspace\flink-1.11.1\flink-filesystems\flink-hadoop-fs\src\test\java\org\apache\flink\runtime\util\HadoopUtilsTest.java">
+</file>
+<file name="D:\workspace\flink-1.11.1\flink-filesystems\flink-hadoop-fs\src\test\resources\log4j2-test.properties">
+</file>
+</checkstyle>

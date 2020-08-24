@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="8.14">
+<file name="D:\workspace\flink-1.11.1\flink-filesystems\flink-swift-fs-hadoop\src\main\java\org\apache\flink\fs\openstackhadoop\SwiftFileSystemFactory.java">
+</file>
+<file name="D:\workspace\flink-1.11.1\flink-filesystems\flink-swift-fs-hadoop\src\main\java\org\apache\hadoop\conf\Configuration.java">
+</file>
+<file name="D:\workspace\flink-1.11.1\flink-filesystems\flink-swift-fs-hadoop\src\main\java\org\apache\hadoop\util\NativeCodeLoader.java">
+</file>
+<file name="D:\workspace\flink-1.11.1\flink-filesystems\flink-swift-fs-hadoop\src\test\java\org\apache\flink\fs\openstackhadoop\HadoopSwiftFileSystemITCase.java">
+</file>
+<file name="D:\workspace\flink-1.11.1\flink-filesystems\flink-swift-fs-hadoop\src\test\resources\log4j2-test.properties">
+</file>
+</checkstyle>

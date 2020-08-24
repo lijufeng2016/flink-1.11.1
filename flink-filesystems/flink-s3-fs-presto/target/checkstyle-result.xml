@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="8.14">
+<file name="D:\workspace\flink-1.11.1\flink-filesystems\flink-s3-fs-presto\src\main\java\org\apache\flink\fs\s3presto\S3FileSystemFactory.java">
+</file>
+<file name="D:\workspace\flink-1.11.1\flink-filesystems\flink-s3-fs-presto\src\main\java\org\apache\flink\fs\s3presto\S3PFileSystemFactory.java">
+</file>
+<file name="D:\workspace\flink-1.11.1\flink-filesystems\flink-s3-fs-presto\src\main\java\org\openjdk\jol\info\ClassLayout.java">
+</file>
+<file name="D:\workspace\flink-1.11.1\flink-filesystems\flink-s3-fs-presto\src\main\java\org\openjdk\jol\info\package-info.java">
+</file>
+<file name="D:\workspace\flink-1.11.1\flink-filesystems\flink-s3-fs-presto\src\test\java\org\apache\flink\fs\s3presto\PrestoS3FileSystemBehaviorITCase.java">
+</file>
+<file name="D:\workspace\flink-1.11.1\flink-filesystems\flink-s3-fs-presto\src\test\java\org\apache\flink\fs\s3presto\PrestoS3FileSystemITCase.java">
+</file>
+<file name="D:\workspace\flink-1.11.1\flink-filesystems\flink-s3-fs-presto\src\test\java\org\apache\flink\fs\s3presto\PrestoS3FileSystemTest.java">
+</file>
+<file name="D:\workspace\flink-1.11.1\flink-filesystems\flink-s3-fs-presto\src\test\java\org\apache\flink\fs\s3presto\PrestoS3RecoverableWriterTest.java">
+</file>
+<file name="D:\workspace\flink-1.11.1\flink-filesystems\flink-s3-fs-presto\src\test\resources\log4j2-test.properties">
+</file>
+</checkstyle>

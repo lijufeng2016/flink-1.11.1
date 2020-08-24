@@ -21,7 +21,7 @@ package org.apache.flink.connector.hbase.source;
 import org.apache.flink.annotation.Internal;
 import org.apache.flink.annotation.VisibleForTesting;
 import org.apache.flink.api.common.typeinfo.TypeInformation;
-import org.apache.flink.connector.hbase.util.HBaseConfigurationUtil;
+import org.apache.flink.connector.hbase.util.HBaseConfigurationUtils;
 import org.apache.flink.connector.hbase.util.HBaseReadWriteHelper;
 import org.apache.flink.connector.hbase.util.HBaseTableSchema;
 import org.apache.flink.table.functions.FunctionContext;
@@ -63,7 +63,7 @@ public class HBaseLookupFunction extends TableFunction<Row> {
 			Configuration configuration,
 			String hTableName,
 			HBaseTableSchema hbaseTableSchema) {
-		this.serializedConfig = HBaseConfigurationUtil.serializeConfiguration(configuration);
+		this.serializedConfig = HBaseConfigurationUtils.serializeConfiguration(configuration);
 		this.hTableName = hTableName;
 		this.hbaseTableSchema = hbaseTableSchema;
 	}
@@ -90,9 +90,9 @@ public class HBaseLookupFunction extends TableFunction<Row> {
 		// create default configuration from current runtime env (`hbase-site.xml` in classpath) first,
 		// and overwrite configuration using serialized configuration from client-side env (`hbase-site.xml` in classpath).
 		// user params from client-side have the highest priority
-		org.apache.hadoop.conf.Configuration runtimeConfig = HBaseConfigurationUtil.deserializeConfiguration(
+		org.apache.hadoop.conf.Configuration runtimeConfig = HBaseConfigurationUtils.deserializeConfiguration(
 			serializedConfig,
-			HBaseConfigurationUtil.getHBaseConfiguration());
+			HBaseConfigurationUtils.getHBaseConfiguration());
 
 		// do validation: check key option(s) in final runtime configuration
 		if (StringUtils.isNullOrWhitespaceOnly(runtimeConfig.get(HConstants.ZOOKEEPER_QUORUM))) {
