@@ -24,7 +24,7 @@ import org.apache.flink.api.common.io.LocatableInputSplitAssigner;
 import org.apache.flink.api.common.io.RichInputFormat;
 import org.apache.flink.api.common.io.statistics.BaseStatistics;
 import org.apache.flink.configuration.Configuration;
-import org.apache.flink.connector.hbase.util.HBaseConfigurationUtil;
+import org.apache.flink.connector.hbase.util.HBaseConfigurationUtils;
 import org.apache.flink.core.io.InputSplitAssigner;
 
 import org.apache.hadoop.hbase.client.Connection;
@@ -67,7 +67,7 @@ abstract class AbstractTableInputFormat<T> extends RichInputFormat<T, TableInput
 	protected byte[] serializedConfig;
 
 	public AbstractTableInputFormat(org.apache.hadoop.conf.Configuration hConf) {
-		serializedConfig = HBaseConfigurationUtil.serializeConfiguration(hConf);
+		serializedConfig = HBaseConfigurationUtils.serializeConfiguration(hConf);
 	}
 
 	/**
@@ -110,7 +110,7 @@ abstract class AbstractTableInputFormat<T> extends RichInputFormat<T, TableInput
 	public abstract void configure(Configuration parameters);
 
 	protected org.apache.hadoop.conf.Configuration getHadoopConfiguration() {
-		return HBaseConfigurationUtil.deserializeConfiguration(serializedConfig, HBaseConfigurationUtil.getHBaseConfiguration());
+		return HBaseConfigurationUtils.deserializeConfiguration(serializedConfig, HBaseConfigurationUtils.getHBaseConfiguration());
 	}
 
 	@Override
