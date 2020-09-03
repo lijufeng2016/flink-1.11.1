@@ -86,7 +86,7 @@ public class RedisDynamicTableFactory implements DynamicTableSinkFactory {
 		// 如果是删除操作，不能有过期时间和keyPrefix、keySuffix
 		if (writeType.equals(WriteTypeEnum.DEL.getLabel()) || writeType.equals(WriteTypeEnum.HDEL.getLabel())) {
 			if (Integer.MAX_VALUE != expire || StringUtils.isNotBlank(keyPrefix) || StringUtils.isNotBlank(keySuffix)) {
-				throw new IllegalArgumentException("del和hdel操作不允许keyPrefix、keySuffix");
+				throw new IllegalArgumentException("del和hdel操作不允许keyPrefix、keySuffix、expire");
 			}
 		}
 	}

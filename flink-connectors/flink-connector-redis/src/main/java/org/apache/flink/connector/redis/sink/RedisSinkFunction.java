@@ -18,18 +18,22 @@ public class RedisSinkFunction extends RichSinkFunction<RowData> {
 	private Integer expire;
 	private JedisCluster jedisCluster;
 	private RedisOperator operator;
+	private String keyPrefix;
+	private String suffix;
 
-	public RedisSinkFunction(String redisHosts, String auth, WriteTypeEnum writeTypeEnum, Integer expire) {
+	public RedisSinkFunction(String redisHosts, String auth, WriteTypeEnum writeTypeEnum, Integer expire, String keyPrefix, String suffix) {
 		this.redisHost = redisHosts;
 		this.auth = auth;
 		this.writeTypeEnum = writeTypeEnum;
 		this.expire = expire;
+		this.keyPrefix = keyPrefix;
+		this.suffix = suffix;
 	}
 
 	@Override
 	public void open(Configuration parameters) throws Exception {
 		jedisCluster = JedisUtil.getJedisCluster(redisHost, auth);
-		operator = new RedisOperator(jedisCluster);
+		operator = new RedisOperator(jedisCluster, keyPrefix, suffix);
 		super.open(parameters);
 	}
 

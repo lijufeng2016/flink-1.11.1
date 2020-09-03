@@ -32,6 +32,8 @@ public class RedisDynamicTableSink implements DynamicTableSink {
 	public SinkRuntimeProvider getSinkRuntimeProvider(Context context) {
 		WriteTypeEnum writeTypeEnum = null;
 		String writeType = configuration.getString(RedisDynamicTableFactory.REDIS_WRITE_TYPE);
+		String keyPrefix = configuration.getString(RedisDynamicTableFactory.REDIS_KEY_PREFIX, "");
+		String suffix = configuration.getString(RedisDynamicTableFactory.REDIS_KEY_SUFFIX, "");
 		WriteTypeEnum[] values = WriteTypeEnum.values();
 		for (int i = 0; i < values.length; i++) {
 			WriteTypeEnum value = values[i];
@@ -42,7 +44,7 @@ public class RedisDynamicTableSink implements DynamicTableSink {
 		String redisHosts = configuration.getString(RedisDynamicTableFactory.REDIS_HOSTS);
 		String redisAuth = configuration.getString(RedisDynamicTableFactory.REDIS_AUTH);
 		Integer expire = configuration.getInteger(RedisDynamicTableFactory.REDIS_KEY_EXPIRE, Integer.MAX_VALUE);
-		RedisSinkFunction redisSinkFunction = new RedisSinkFunction(redisHosts, redisAuth, writeTypeEnum, expire);
+		RedisSinkFunction redisSinkFunction = new RedisSinkFunction(redisHosts, redisAuth, writeTypeEnum, expire, keyPrefix, suffix);
 		return SinkFunctionProvider.of(redisSinkFunction);
 	}
 
