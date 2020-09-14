@@ -30,8 +30,13 @@ import org.apache.flink.table.connector.sink.DynamicTableSink;
 import org.apache.flink.table.connector.sink.SinkFunctionProvider;
 import org.apache.flink.table.data.RowData;
 import org.apache.flink.types.RowKind;
+import org.apache.flink.util.StringUtils;
 
 import org.apache.http.HttpHost;
+import org.apache.http.auth.AuthScope;
+import org.apache.http.auth.UsernamePasswordCredentials;
+import org.apache.http.client.CredentialsProvider;
+import org.apache.http.impl.client.BasicCredentialsProvider;
 import org.elasticsearch.action.delete.DeleteRequest;
 import org.elasticsearch.action.index.IndexRequest;
 import org.elasticsearch.action.update.UpdateRequest;
@@ -57,9 +62,9 @@ final class Elasticsearch6DynamicSink implements DynamicTableSink {
 	private final Elasticsearch6Configuration config;
 
 	public Elasticsearch6DynamicSink(
-			EncodingFormat<SerializationSchema<RowData>> format,
-			Elasticsearch6Configuration config,
-			TableSchema schema) {
+		EncodingFormat<SerializationSchema<RowData>> format,
+		Elasticsearch6Configuration config,
+		TableSchema schema) {
 		this(format, config, schema, (ElasticsearchSink.Builder::new));
 	}
 
@@ -83,10 +88,10 @@ final class Elasticsearch6DynamicSink implements DynamicTableSink {
 	}
 
 	Elasticsearch6DynamicSink(
-			EncodingFormat<SerializationSchema<RowData>> format,
-			Elasticsearch6Configuration config,
-			TableSchema schema,
-			ElasticSearchBuilderProvider builderProvider) {
+		EncodingFormat<SerializationSchema<RowData>> format,
+		Elasticsearch6Configuration config,
+		TableSchema schema,
+		ElasticSearchBuilderProvider builderProvider) {
 		this.format = format;
 		this.schema = schema;
 		this.config = config;
@@ -138,7 +143,14 @@ final class Elasticsearch6DynamicSink implements DynamicTableSink {
 
 			// we must overwrite the default factory which is defined with a lambda because of a bug
 			// in shading lambda serialization shading see FLINK-18006
-			builder.setRestClientFactory(new DefaultRestClientFactory(config.getPathPrefix().orElse(null)));
+			if (config.getUsername().isPresent()
+				&& config.getPassword().isPresent()
+				&& !StringUtils.isNullOrWhitespaceOnly(config.getUsername().get())
+				&& !StringUtils.isNullOrWhitespaceOnly(config.getPassword().get())) {
+				builder.setRestClientFactory(new AuthRestClientFactory(config.getPathPrefix().orElse(null), config.getUsername().get(), config.getPassword().get()));
+			} else {
+				builder.setRestClientFactory(new DefaultRestClientFactory(config.getPathPrefix().orElse(null)));
+			}
 
 			final ElasticsearchSink<RowData> sink = builder.build();
 
@@ -198,6 +210,57 @@ final class Elasticsearch6DynamicSink implements DynamicTableSink {
 	}
 
 	/**
+	 * Serializable {@link RestClientFactory} used by the sink which enable authentication.
+	 */
+	@VisibleForTesting
+	static class AuthRestClientFactory implements RestClientFactory {
+
+		private final String pathPrefix;
+		private final String username;
+		private final String password;
+		private transient CredentialsProvider credentialsProvider;
+
+		public AuthRestClientFactory(@Nullable String pathPrefix, String username, String password) {
+			this.pathPrefix = pathPrefix;
+			this.password = password;
+			this.username = username;
+		}
+
+		@Override
+		public void configureRestClientBuilder(RestClientBuilder restClientBuilder) {
+			if (pathPrefix != null) {
+				restClientBuilder.setPathPrefix(pathPrefix);
+			}
+			if (credentialsProvider == null) {
+				credentialsProvider = new BasicCredentialsProvider();
+				credentialsProvider.setCredentials(AuthScope.ANY, new UsernamePasswordCredentials(username, password));
+			}
+			restClientBuilder.setHttpClientConfigCallback(httpAsyncClientBuilder ->
+				httpAsyncClientBuilder.setDefaultCredentialsProvider(credentialsProvider));
+		}
+
+		@Override
+		public boolean equals(Object o) {
+			if (this == o) {
+				return true;
+			}
+			if (o == null || getClass() != o.getClass()) {
+				return false;
+			}
+			AuthRestClientFactory that = (AuthRestClientFactory) o;
+			return Objects.equals(pathPrefix, that.pathPrefix) &&
+				Objects.equals(username, that.username) &&
+				Objects.equals(password, that.password);
+		}
+
+		@Override
+		public int hashCode() {
+			return Objects.hash(pathPrefix, username, password);
+		}
+	}
+
+
+	/**
 	 * Version-specific creation of {@link org.elasticsearch.action.ActionRequest}s used by the sink.
 	 */
 	private static class Elasticsearch6RequestFactory implements RequestFactory {
@@ -215,11 +278,11 @@ final class Elasticsearch6DynamicSink implements DynamicTableSink {
 
 		@Override
 		public IndexRequest createIndexRequest(
-				String index,
-				String docType,
-				String key,
-				XContentType contentType,
-				byte[] document) {
+			String index,
+			String docType,
+			String key,
+			XContentType contentType,
+			byte[] document) {
 			return new IndexRequest(index, docType, key)
 				.source(document, contentType);
 		}
