@@ -12,8 +12,6 @@ import org.apache.flink.table.factories.DeserializationFormatFactory;
 import org.apache.flink.table.factories.DynamicTableFactory;
 import org.apache.flink.table.factories.FactoryUtil;
 import org.apache.flink.table.factories.SerializationFormatFactory;
-import org.apache.flink.tidb.PbOptions;
-import org.apache.flink.tidb.TimestampFormat;
 
 import java.util.Collections;
 import java.util.HashSet;
@@ -22,16 +20,18 @@ import java.util.Set;
 public class TidbProtoBufFormatFactory implements DeserializationFormatFactory, SerializationFormatFactory {
 
 	public static final String IDENTIFIER = "tidb-pb";
-	public static final ConfigOption<Boolean> IGNORE_PARSE_ERRORS = PbOptions.IGNORE_PARSE_ERRORS;
-
-	public static final ConfigOption<String> TIMESTAMP_FORMAT = PbOptions.TIMESTAMP_FORMAT;
-
+	public static final ConfigOption<Boolean> IGNORE_PARSE_ERRORS = ConfigOptions
+		.key("ignore-parse-errors")
+		.booleanType()
+		.defaultValue(false)
+		.withDescription("Optional flag to skip fields and rows with parse errors instead of failing;\n"
+			+ "fields are set to null in case of errors, false by default");
 	@Override
 	public DecodingFormat<DeserializationSchema<RowData>> createDecodingFormat(DynamicTableFactory.Context context, ReadableConfig formatOptions) {
 		FactoryUtil.validateFactoryOptions(this, formatOptions);
 		final boolean ignoreParseErrors = formatOptions.get(IGNORE_PARSE_ERRORS);
-		TimestampFormat timestampFormatOption = PbOptions.getTimestampFormat(formatOptions);
-		return new TidbDecodingFormat(ignoreParseErrors, timestampFormatOption);
+
+		return new TidbDecodingFormat(ignoreParseErrors);
 	}
 
 	@Override
@@ -53,7 +53,6 @@ public class TidbProtoBufFormatFactory implements DeserializationFormatFactory, 
 	public Set<ConfigOption<?>> optionalOptions() {
 		Set<ConfigOption<?>> options = new HashSet<>();
 		options.add(IGNORE_PARSE_ERRORS);
-		options.add(TIMESTAMP_FORMAT);
 		return options;
 	}
 
