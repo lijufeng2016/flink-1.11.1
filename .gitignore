@@ -1,6 +1,6 @@
 target
 !.mvn/wrapper/maven-wrapper.jar
-
+web-dashboard
 ### STS ###
 .apt_generated
 .classpath
