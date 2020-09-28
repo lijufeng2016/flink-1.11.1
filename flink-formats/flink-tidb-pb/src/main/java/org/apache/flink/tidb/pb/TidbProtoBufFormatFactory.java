@@ -44,12 +44,20 @@ public class TidbProtoBufFormatFactory implements DeserializationFormatFactory, 
 		.defaultValue(false)
 		.withDescription("Optional flag to skip fields and rows with parse errors instead of failing;\n"
 			+ "fields are set to null in case of errors, false by default");
+
+	public static final ConfigOption<String> FILTER_TABLE_NAME = ConfigOptions
+		.key("filter-table-name")
+		.stringType()
+		.defaultValue("")
+		.withDescription("filter data by table name");
+
+
 	@Override
 	public DecodingFormat<DeserializationSchema<RowData>> createDecodingFormat(DynamicTableFactory.Context context, ReadableConfig formatOptions) {
 		FactoryUtil.validateFactoryOptions(this, formatOptions);
 		final boolean ignoreParseErrors = formatOptions.get(IGNORE_PARSE_ERRORS);
-
-		return new TidbDecodingFormat(ignoreParseErrors);
+		String filterTablename = formatOptions.get(FILTER_TABLE_NAME);
+		return new TidbDecodingFormat(ignoreParseErrors,filterTablename);
 	}
 
 	@Override
@@ -71,6 +79,7 @@ public class TidbProtoBufFormatFactory implements DeserializationFormatFactory, 
 	public Set<ConfigOption<?>> optionalOptions() {
 		Set<ConfigOption<?>> options = new HashSet<>();
 		options.add(IGNORE_PARSE_ERRORS);
+		options.add(FILTER_TABLE_NAME);
 		return options;
 	}
 

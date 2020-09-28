@@ -12,8 +12,10 @@ import org.apache.flink.types.RowKind;
 
 public class TidbDecodingFormat implements DecodingFormat<DeserializationSchema<RowData>> {
 	private boolean ignoreParseErrors;
-	public TidbDecodingFormat(boolean ignoreParseErrors) {
+	private String filterTablename;
+	public TidbDecodingFormat(boolean ignoreParseErrors, String filterTablename) {
 		this.ignoreParseErrors = ignoreParseErrors;
+		this.filterTablename = filterTablename;
 	}
 
 	@Override
@@ -24,7 +26,8 @@ public class TidbDecodingFormat implements DecodingFormat<DeserializationSchema<
 		return new TidbProtobufDeserializationSchema(
 			rowType,
 			rowDataTypeInfo,
-			ignoreParseErrors);
+			ignoreParseErrors,
+			filterTablename);
 	}
 
 	@Override

@@ -1,5 +1,6 @@
 package org.apache.flink.tidb.pb;
 
+import org.apache.commons.lang3.StringUtils;
 import org.apache.flink.api.common.serialization.DeserializationSchema;
 import org.apache.flink.api.common.typeinfo.TypeInformation;
 import org.apache.flink.api.java.tuple.Tuple2;
@@ -32,17 +33,20 @@ public class TidbProtobufDeserializationSchema implements DeserializationSchema<
 	private DeserializationRuntimeConverter converter;
 	private TypeInformation<RowData> resultTypeInfo;
 	private boolean ignoreParseErrors;
+	private String filterTablename;
+
 
 	/**
 	 * Timestamp format specification which is used to parse timestamp.
 	 */
 	private final TimestampFormat timestampFormat;
 
-	public TidbProtobufDeserializationSchema(RowType rowType, TypeInformation<RowData> resultTypeInfo, boolean ignoreParseErrors) {
+	public TidbProtobufDeserializationSchema(RowType rowType, TypeInformation<RowData> resultTypeInfo, boolean ignoreParseErrors, String filterTablename) {
 		this.resultTypeInfo = resultTypeInfo;
 		this.ignoreParseErrors = ignoreParseErrors;
 		this.converter = createRowConverter(rowType);
 		this.timestampFormat = null;
+		this.filterTablename = filterTablename;
 	}
 
 
@@ -56,12 +60,20 @@ public class TidbProtobufDeserializationSchema implements DeserializationSchema<
 	public void deserialize(byte[] message, Collector<RowData> out) throws IOException {
 		try {
 			Binlog binlog = Binlog.parseFrom(message);
+
 			// only process dml sql
 			if (binlog.hasDmlData()) {
 				DMLData dmlData = binlog.getDmlData();
 				List<Table> tablesList = dmlData.getTablesList();
 				for (int i = 0; i < tablesList.size(); i++) {
 					Table table = tablesList.get(i);
+					// 保留指定表的数据
+					if (StringUtils.isNotBlank(filterTablename)) {
+						String tableName = table.getTableName();
+						if (!tableName.equalsIgnoreCase(filterTablename)) {
+							continue;
+						}
+					}
 					List<ColumnInfo> columnInfoList = table.getColumnInfoList();
 					// one table may contains multiple mutations
 					List<TableMutation> mutationsList = table.getMutationsList();
