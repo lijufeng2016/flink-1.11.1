@@ -1,8 +1,11 @@
 package org.apache.flink.connector.redis.sink;
 
 import org.apache.flink.table.data.ArrayData;
+import org.apache.flink.table.data.GenericRowData;
 import org.apache.flink.table.data.MapData;
 import org.apache.flink.table.data.RowData;
+import org.apache.flink.table.data.StringData;
+import org.apache.flink.types.RowKind;
 
 import redis.clients.jedis.JedisCluster;
 
@@ -78,5 +81,54 @@ public class RedisOperator {
 		String fileds = rowData.getString(1).toString();
 		String[] split = fileds.split(",");
 		jedisCluster.hdel(key, split);
+	}
+
+	public void hdelCdc(RowData rowData) {
+		String key = rowData.getString(0).toString();
+		key = keyPrefix + key + suffix;
+		MapData map = rowData.getMap(1);
+		ArrayData keyArray = map.keyArray();
+		for (int i = 0; i < map.size(); i++) {
+			String filed = keyArray.getString(i).toString();
+			jedisCluster.hdel(key, filed);
+		}
+	}
+
+	public void cdc(RowData rowData, Integer expire) {
+		GenericRowData genericRowData = (GenericRowData) rowData;
+		RowKind rowKind = genericRowData.getRowKind();
+		switch (rowKind) {
+			case DELETE:
+				// 区分是key的delete还是field的delete
+				if (genericRowData.getField(1) instanceof MapData) {
+					hdelCdc(rowData);
+				} else {
+					del(rowData);
+				}
+				break;
+			case INSERT:
+				// insert支持redis的list，hash，string类型
+				Object valueInsert = genericRowData.getField(1);
+				if (valueInsert instanceof ArrayData) {
+					lpush(genericRowData, expire);
+				} else if (valueInsert instanceof StringData) {
+					set(genericRowData, expire);
+				} else if (valueInsert instanceof MapData) {
+					hset(rowData, expire);
+				}
+				break;
+			case UPDATE_AFTER:
+				// update支持redis的list，hash，string类型
+				Object valueUpdateAfter = genericRowData.getField(1);
+				if (valueUpdateAfter instanceof StringData) {
+					set(genericRowData, expire);
+				} else if (valueUpdateAfter instanceof MapData) {
+					hset(rowData, expire);
+				} else if (valueUpdateAfter instanceof ArrayData) {
+					del(rowData);
+					lpush(rowData, expire);
+				}
+				break;
+		}
 	}
 }

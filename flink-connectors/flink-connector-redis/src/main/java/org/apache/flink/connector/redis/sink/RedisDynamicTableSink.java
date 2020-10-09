@@ -19,13 +19,12 @@ public class RedisDynamicTableSink implements DynamicTableSink {
 
 	@Override
 	public ChangelogMode getChangelogMode(ChangelogMode requestedMode) {
-		ChangelogMode.Builder builder = ChangelogMode.newBuilder();
-		for (RowKind kind : requestedMode.getContainedKinds()) {
-			if (kind != RowKind.UPDATE_BEFORE) {
-				builder.addContainedKind(kind);
-			}
-		}
-		return builder.build();
+		return ChangelogMode.newBuilder()
+			.addContainedKind(RowKind.INSERT)
+			.addContainedKind(RowKind.UPDATE_BEFORE)
+			.addContainedKind(RowKind.UPDATE_AFTER)
+			.addContainedKind(RowKind.DELETE)
+			.build();
 	}
 
 	@Override
@@ -43,8 +42,9 @@ public class RedisDynamicTableSink implements DynamicTableSink {
 		}
 		String redisHosts = configuration.getString(RedisDynamicTableFactory.REDIS_HOSTS);
 		String redisAuth = configuration.getString(RedisDynamicTableFactory.REDIS_AUTH);
+		boolean ignoreErrorData = configuration.getBoolean(RedisDynamicTableFactory.IGNOE_ERROR_DATA);
 		Integer expire = configuration.getInteger(RedisDynamicTableFactory.REDIS_KEY_EXPIRE, Integer.MAX_VALUE);
-		RedisSinkFunction redisSinkFunction = new RedisSinkFunction(redisHosts, redisAuth, writeTypeEnum, expire, keyPrefix, suffix);
+		RedisSinkFunction redisSinkFunction = new RedisSinkFunction(redisHosts, redisAuth, writeTypeEnum, expire, keyPrefix, suffix, ignoreErrorData);
 		return SinkFunctionProvider.of(redisSinkFunction);
 	}
 

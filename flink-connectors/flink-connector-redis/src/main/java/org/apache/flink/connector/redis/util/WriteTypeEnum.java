@@ -10,7 +10,8 @@ public enum WriteTypeEnum {
 	RPUSH("rpush", "list类型右边push"),
 	HSET("hset", "hash类型添加field值"),
 	DEL("del", "删除redis key"),
-	HDEL("hdel", "删除hash类型的filed");
+	HDEL("hdel", "删除hash类型的filed"),
+	CDC("cdc", "cdc数据变更同步");
 
 	String label;
 	String massage;
