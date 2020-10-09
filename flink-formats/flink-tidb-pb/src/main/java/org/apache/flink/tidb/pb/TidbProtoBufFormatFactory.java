@@ -12,9 +12,10 @@ import org.apache.flink.table.factories.DeserializationFormatFactory;
 import org.apache.flink.table.factories.DynamicTableFactory;
 import org.apache.flink.table.factories.FactoryUtil;
 import org.apache.flink.table.factories.SerializationFormatFactory;
-import org.apache.flink.tidb.PbOptions;
-import org.apache.flink.tidb.TimestampFormat;
 
+import java.time.format.DateTimeFormatter;
+import java.time.format.DateTimeFormatterBuilder;
+import java.time.temporal.ChronoField;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
@@ -22,16 +23,41 @@ import java.util.Set;
 public class TidbProtoBufFormatFactory implements DeserializationFormatFactory, SerializationFormatFactory {
 
 	public static final String IDENTIFIER = "tidb-pb";
-	public static final ConfigOption<Boolean> IGNORE_PARSE_ERRORS = PbOptions.IGNORE_PARSE_ERRORS;
+	/** Formatter for SQL string representation of a time value. */
+	static final DateTimeFormatter SQL_TIME_FORMAT = new DateTimeFormatterBuilder()
+		.appendPattern("HH:mm:ss")
+		.appendFraction(ChronoField.NANO_OF_SECOND, 0, 9, true)
+		.toFormatter();
 
-	public static final ConfigOption<String> TIMESTAMP_FORMAT = PbOptions.TIMESTAMP_FORMAT;
+	/** Formatter for SQL string representation of a timestamp value (without UTC timezone). */
+	static final DateTimeFormatter SQL_TIMESTAMP_FORMAT = new DateTimeFormatterBuilder()
+		.append(DateTimeFormatter.ISO_LOCAL_DATE)
+		.appendLiteral(' ')
+		.append(SQL_TIME_FORMAT)
+		.toFormatter();
+	/** Formatter for ISO8601 string representation of a timestamp value (without UTC timezone). */
+	static final DateTimeFormatter ISO8601_TIMESTAMP_FORMAT = DateTimeFormatter.ISO_LOCAL_DATE_TIME;
+
+	public static final ConfigOption<Boolean> IGNORE_PARSE_ERRORS = ConfigOptions
+		.key("ignore-parse-errors")
+		.booleanType()
+		.defaultValue(false)
+		.withDescription("Optional flag to skip fields and rows with parse errors instead of failing;\n"
+			+ "fields are set to null in case of errors, false by default");
+
+	public static final ConfigOption<String> FILTER_TABLE_NAME = ConfigOptions
+		.key("filter-table-name")
+		.stringType()
+		.defaultValue("")
+		.withDescription("filter data by table name");
+
 
 	@Override
 	public DecodingFormat<DeserializationSchema<RowData>> createDecodingFormat(DynamicTableFactory.Context context, ReadableConfig formatOptions) {
 		FactoryUtil.validateFactoryOptions(this, formatOptions);
 		final boolean ignoreParseErrors = formatOptions.get(IGNORE_PARSE_ERRORS);
-		TimestampFormat timestampFormatOption = PbOptions.getTimestampFormat(formatOptions);
-		return new TidbDecodingFormat(ignoreParseErrors, timestampFormatOption);
+		String filterTablename = formatOptions.get(FILTER_TABLE_NAME);
+		return new TidbDecodingFormat(ignoreParseErrors,filterTablename);
 	}
 
 	@Override
@@ -53,7 +79,7 @@ public class TidbProtoBufFormatFactory implements DeserializationFormatFactory, 
 	public Set<ConfigOption<?>> optionalOptions() {
 		Set<ConfigOption<?>> options = new HashSet<>();
 		options.add(IGNORE_PARSE_ERRORS);
-		options.add(TIMESTAMP_FORMAT);
+		options.add(FILTER_TABLE_NAME);
 		return options;
 	}
 

@@ -8,15 +8,14 @@ import org.apache.flink.table.connector.source.DynamicTableSource;
 import org.apache.flink.table.data.RowData;
 import org.apache.flink.table.types.DataType;
 import org.apache.flink.table.types.logical.RowType;
-import org.apache.flink.tidb.TimestampFormat;
 import org.apache.flink.types.RowKind;
 
 public class TidbDecodingFormat implements DecodingFormat<DeserializationSchema<RowData>> {
 	private boolean ignoreParseErrors;
-	private TimestampFormat timestampFormatOption;
-	public TidbDecodingFormat(boolean ignoreParseErrors, TimestampFormat timestampFormatOption) {
+	private String filterTablename;
+	public TidbDecodingFormat(boolean ignoreParseErrors, String filterTablename) {
 		this.ignoreParseErrors = ignoreParseErrors;
-		this.timestampFormatOption = timestampFormatOption;
+		this.filterTablename = filterTablename;
 	}
 
 	@Override
@@ -28,7 +27,7 @@ public class TidbDecodingFormat implements DecodingFormat<DeserializationSchema<
 			rowType,
 			rowDataTypeInfo,
 			ignoreParseErrors,
-			timestampFormatOption);
+			filterTablename);
 	}
 
 	@Override

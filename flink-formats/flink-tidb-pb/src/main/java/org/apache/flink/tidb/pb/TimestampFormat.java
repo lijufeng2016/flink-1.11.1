@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package org.apache.flink.tidb;
+package org.apache.flink.tidb.pb;
 
 import org.apache.flink.annotation.Internal;
 
