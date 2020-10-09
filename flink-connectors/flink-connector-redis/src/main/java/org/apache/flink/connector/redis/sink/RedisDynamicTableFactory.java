@@ -59,6 +59,12 @@ public class RedisDynamicTableFactory implements DynamicTableSinkFactory {
 		.noDefaultValue()
 		.withDescription("redis key的后缀");
 
+	protected static final ConfigOption<Boolean> IGNOE_ERROR_DATA = ConfigOptions
+		.key("ignore-parse-errors")
+		.booleanType()
+		.defaultValue(Boolean.FALSE)
+		.withDescription("忽略错误的数据");
+
 	@Override
 	public DynamicTableSink createDynamicTableSink(Context context) {
 		FactoryUtil.TableFactoryHelper helper = createTableFactoryHelper(this, context);
@@ -111,6 +117,7 @@ public class RedisDynamicTableFactory implements DynamicTableSinkFactory {
 		set.add(REDIS_KEY_PREFIX);
 		set.add(REDIS_KEY_SUFFIX);
 		set.add(REDIS_KEY_EXPIRE);
+		set.add(IGNOE_ERROR_DATA);
 		return set;
 	}
 }
